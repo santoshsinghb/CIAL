@@ -12,6 +12,6 @@ public class Constants {
 	public static final String ChromeDriverPath = "Drivers/chromedriver.exe";
 	public static final String firefoxdriverpath="Drivers/geckodriver.exe";
 	public static final String TestDataFile = "TestData/DnataStock_TestData.xlsx";
-	public static final String URL="https://galaxyqa.kalelogistics.com/CIAL/Login.aspx";
-	
+//	public static final String URL="https://galaxyqa.kalelogistics.com/CIAL/Login.aspx";
+	public static final String URL="https://galaxydemo.kalelogistics.in/GalaxyV3/Login.aspx";
 }

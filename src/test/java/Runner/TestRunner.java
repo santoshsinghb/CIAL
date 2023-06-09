@@ -13,8 +13,12 @@ import io.cucumber.junit.CucumberOptions;
 	                		 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	                		 "rerun:Rerun/rerun1.txt" },
 	                 		
-
-	                 tags ="@tc42cial")
+	              //   tags ="@warehouseLocation")
+	                // tags ="@starting_TO_vctGENERATION_flowcovercial")
+	               //  tags ="@VCT_to_SECURITY_flowcovercial")
+                   //  tags ="@SECURITY_acceptance_flowcial")
+	               //   tags ="@AWBdeatilsTabFlowCial")
+	                 tags ="@BuildManifest")
 
 public class TestRunner {
 
