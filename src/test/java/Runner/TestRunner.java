@@ -14,10 +14,11 @@ import io.cucumber.junit.CucumberOptions;
 	                		 "rerun:Rerun/rerun1.txt" },
 	                 		
 	              //   tags ="@warehouseLocation")
-	                // tags ="@starting_TO_vctGENERATION_flowcovercial")
+	              //   tags ="@cialImport")
 	               //  tags ="@VCT_to_SECURITY_flowcovercial")
                    //  tags ="@SECURITY_acceptance_flowcial")
 	               //   tags ="@AWBdeatilsTabFlowCial")
+	              //  tags ="@CELEBI57")
 	                 tags ="@BuildManifest")
 
 public class TestRunner {

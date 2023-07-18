@@ -194,7 +194,7 @@ Feature: AUTOMATION FOR CIAL EXPORT TEST CASES
      @warehouseLocation
   Scenario: To verify flow for warehouse location
     Then To verify flow for warehouse location
-    
+    #2919
       @BuildManifest
   Scenario: To verify flow for BuildManifest
     Then To verify flow for BuildManifest

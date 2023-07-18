@@ -576,4 +576,855 @@ public class xpathCIALexport extends Pages.BasePage {
 	
 	@FindBy(xpath = "//*[@id='btnSaveAWB']")
 	public WebElement cialAWBdetailsSAVEBUTTON;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[1]/ul/li[8]/ul/li[5]/a/span")
+	public WebElement cialMoreExportcustomsactionTab;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSAWBPrefixSelected']")
+	public WebElement cialexportcustomactionAWBprefix;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSAWBNoSelected']")
+	public WebElement cialexportcustomactionAWBnum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSHAWNoSelected']")
+	public WebElement cialexportcustomactionHAWBnofield;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnSearchShipments']")
+	public WebElement cialexportcustomactionSerchBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB6;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB8;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB7;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB9;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB10;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB11;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB12;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB13;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB14;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAddHAWB']")
+	public WebElement cialAWBdetailssaveHAWB15;
+
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnHold']")
+	public WebElement cialexportCustomActionHoldBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_ChkMethod_1']")
+	public WebElement cialexportHoldVerbalCheckboxTik;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_txtOrderNo']")
+	public WebElement cialexportCustomActionOrderNumber;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_txtAuthorityName']")
+	public WebElement cialexportCustomActionAuthorityName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_txtAuthorityDetails_txtData']")
+	public WebElement cialexportCustomActionAuthorityDetails;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnHold']")
+	public WebElement cialexportCustomActionFinalHoldBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_txtRemarks_txtData']")
+	public WebElement cialexportcustomactionRemarkField;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdHoldDetails_ctl02_uxEdit']")
+	public WebElement cialexportToUnholdEditBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnUnhold']")
+	public WebElement cialexportUnholdBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdHoldDetails_ctl02_chkSelect']")
+	public WebElement cialexportSelectShipment;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdLoc_ctl02_uxLocSelect']")
+	public WebElement cialEXPORTLocationSelectSeize;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnSeizeSave']")
+	public WebElement cialEXPORTSeizeBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdLoc_ctl02_uxClear']")
+	public WebElement cialEXPORTUnSeizeBtn;
+	
+	//-----------------------------now downword IMPORT xpath is present----------------------
+	
+	
+	@FindBy(xpath = "//*[@id='3']")
+	public WebElement cialIMPORTtab;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[2]/ul/li[3]/a/span")
+	public WebElement cialIMPORTimportmanifest;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_AirNo']")
+	public WebElement cialIMPORTflightnumPREFIX;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_FltNo']")
+	public WebElement cialIMPORTflightnum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_showpopup']")
+	public WebElement cialIMPORTflightsearchICON;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[4]/td[1]")
+	public WebElement cialIMPORTflightselect1;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[6]/td[1]")
+	public WebElement cialIMPORTflightselect2;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxULD_FMSULDType']")
+	public WebElement cialIMPORTuldTYPE;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxULD_FMSULDNumber']")
+	public WebElement cialIMPORT_ULDnumber;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxULD_FMSULDOwner']")
+	public WebElement cialIMPORT_carriershort;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxULDCreate']")
+	public WebElement cialIMPORTadduldbtn;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div[4]/div/div/fieldset/table[4]/tbody/tr[2]/td[1]/div/div/table/tbody/tr[3]/td[5]")
+	public WebElement cialIMPORTaddedULDselect;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gPrefix_FMSAirlineSelected']")
+	public WebElement cialIMPORTaddedULDflightPREFIX;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gAwbNo']")
+	public WebElement cialIMPORTaddedULDawbNUM;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gO_FMSAirportSelected']")
+	public WebElement cialIMPORTaddedULDdestination;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gMaster']")
+	public WebElement cialIMPORTconsoleTIK;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gD']")
+	public WebElement cialIMPORTaddedULDnatureofGOODS;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gX']")
+	public WebElement cialIMPORTaddedULDnpx;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gW_Number']")
+	public WebElement cialIMPORTaddedUldnpxwt;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gCW_Number']")
+	public WebElement cialIMPORTaddedULDchargebleWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_uxCN_FMSShipperSelected']")
+	public WebElement cialIMPORTaddedULDconsignee;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl05_fmslblName']")
+	public WebElement cialIMPORTaddedULDconsigneeSELECT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_btnAdd']")
+	public WebElement cialIMPORTaddbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gPrefix_FMSAirlineSelected']")
+	public WebElement cialIMPORT2ndprefix;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gAwbNo']")
+	public WebElement cialIMPORT2ndAWBnum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gO_FMSAirportSelected']")
+	public WebElement cialIMPORT2ndORIGIN;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gCTN_FMSCommSearchCode']")
+	public WebElement cialIMPORT2ndcommodity;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gD']")
+	public WebElement cialIMPORT2ndNATUREofGOODS;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gX']")
+	public WebElement cialIMPORT2ndNPX;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gW_Number']")
+	public WebElement cialIMPORT2ndNPXwt;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gCW_Number']")
+	public WebElement cialIMPORT2ndCHARGEBLEwt;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_uxCN_FMSShipperSelected']")
+	public WebElement cialIMPORT2ndconsignee;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnSaveClose']")
+	public WebElement cialIMPORTAddedULDsavecloseBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btnSearchNew']")
+	public WebElement cialIMPORTsearchBTN;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxCustomRef']")
+	public WebElement cialIMPORTcoustomerRefNum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxATA_txtDateField']")
+	public WebElement cialIMPORTataDATE;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxATAT_uxTime']")
+	public WebElement cialIMPORTtime;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxRecordFlight']")
+	public WebElement cialIMPORTrecordATAbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGrdShipment_ctl01_uxCheckAllshipments']")
+	public WebElement cialIMPORTtoSelectAllAWBnumCreated;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxMatch']")
+	public WebElement cialIMPORTmatchBTN;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gNo']")
+	public WebElement cialIMPORTslect_M_TOenterHAWBnum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gO_FMSAirportSelected']")
+	public WebElement cialIMPORTslect_M_TOenterOrigin;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gCTN_FMSCommSearchCode']")
+	public WebElement cialIMPORTslect_M_TOenterCommodity;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gD']")
+	public WebElement cialIMPORTslect_M_TOenterNatureofgoods;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gfX']")
+	public WebElement cialIMPORTnpxTOEnter;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gfW_Number']")
+	public WebElement cialIMPORTestWTToenter;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gfR']")
+	public WebElement cialIMPORTNPXtoenter;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gfWR_Number']")
+	public WebElement cialIMPORTWTrecorded;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gTX']")
+	public WebElement cialIMPORThouseNPX;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gTW_Number']")
+	public WebElement cialIMPORThouseWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_gC_Number']")
+	public WebElement cialIMPORTchargebleWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_uxCN_FMSShipperSelected']")
+	public WebElement cialIMPORTconsigneename;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl02_btnAdd']")
+	public WebElement cialIMPORTaddrowplusbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gNo']")
+	public WebElement cialIMPORT2ndHousenumber;
+
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gO_FMSAirportSelected']")
+	public WebElement cialIMPORTtoenter2ndORIGIN;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gCTN_FMSCommSearchCode']")
+	public WebElement cialIMPORTtoenterCommodity;
+	
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gD']")
+	public WebElement cialIMPORTtoenter2ndGoodsnature;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gfX']")
+	public WebElement cialIMPORTtoENTER2ndNPX;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gfW_Number']")
+	public WebElement cialIMPORTtoENTER2ndNPXWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gfR']")
+	public WebElement cialIMPORTtoEnter2ndNPR;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gfWR_Number']")
+	public WebElement cialIMPORTtoEnter2ndrecordWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gTX']")
+	public WebElement cialIMPORTtoenter2NDhouseNPX;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gTW_Number']")
+	public WebElement cialIMPORTtoenter2ndHOUSEwt;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gC_Number']")
+	public WebElement cialIMPORT2ndtoenterChargebleWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_uxCN_FMSShipperSelected']")
+	public WebElement cialIMPORT2NDtoenterCONSIGNEE;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnSaveClose']")
+	public WebElement cialIMPORTenterMsaveClose;
+	//popup willcome after this
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxDiscrepancy']")
+	public WebElement cialIMPORTDiscrepancyBTN;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[4]/table/tbody/tr[2]/td[2]/input")
+	public WebElement cialIMPORTafterMatchOkBTN;  
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGrdShipment_ctl03_uxShipmentSelect']")
+	public WebElement cialIMPORTdirectshipmentselecTIK;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdDesc_ctl02_uxtxtNPR']")
+	public WebElement cialIMPORThouseDiscrepancyDirectShipmentNPR;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdDesc_ctl02_uxtxtWtRec_Number']")
+	public WebElement cialIMPORThouseDiscrepancyDirectShipmentWTrecd;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxSave']")
+	public WebElement cialIMPORThouseDiscrepancyDirectShipmentSaveBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxDamage']")
+	public WebElement cialIMPORTdamageBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtTActualPcs']")
+	public WebElement cialIMPORTdamagePICES;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtTActualValue_Number']")
+	public WebElement cialIMPORTdamageWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtIDamageDoc_Number']")
+	public WebElement cialIMPORTasPerDocumentWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtIDamageAct_Number']")
+	public WebElement cialIMPORTasPerActuakWT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxChkMaterial_0']")
+	public WebElement cialIMPORTdamageTIK1;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxChkOPacking_0']")
+	public WebElement cialIMPORTdamageTIK2;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxChkMLabels_0']")
+	public WebElement cialIMPORTdamageTIK3;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxChkIPacking_0']")
+	public WebElement cialIMPORTdamageTIK4;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxlblDRemarked1']")
+	public WebElement cialIMPORTscroolRemark1;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtDRemarked']")
+	public WebElement cialIMPORTscroolRemark1Field;
+
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtRemarks_txtData']")
+	public WebElement cialIMPORTscroolRemark2Field;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtGHARep']")
+	public WebElement cialIMPORTGHArep;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtAirlineRep']")
+	public WebElement cialIMPORTairlineREP;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxtxtSecurityRep']")
+	public WebElement cialIMPORTsecurityREP;
+	
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxbtnSave']")
+	public WebElement cialIMPORTdamageSAVEbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxDateFlightReceiveTime_txtDateField']")
+	public WebElement cialIMPORTbreakdownDocumentReciveDate;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBreakDown']")
+	public WebElement cialIMPORTBreakdownBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightReceiveTime_uxTime']")
+	public WebElement cialIMPORTBreakdownTime;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxBtnSave']")
+	public WebElement cialIMPORTSavEBtnBreakdown;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFinaliseFlight']")
+	public WebElement cialIMPORTfinalizeBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGenRno']")
+	public WebElement cialIMPORTrotationalNUMgeneTAB;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGenerate']")
+	public WebElement cialIMPORTRotationalnumGENERATEbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGrdShipment_ctl02_uxShipmentSelect']")
+	public WebElement cialIMPORTconsoleShipmentSelectTik;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[2]/ul/li[4]/a/span")
+	public WebElement cialIMPORTWAREHOUSElocation;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_gH_ctl03_gDT_FMSAirportSelected']")
+	public WebElement cialIMPORT2ndDestinationToEnter;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div[4]/div/div/fieldset/table[4]/tbody/tr[2]/td[3]/div/div/table/tbody/tr[2]/td[3]")
+	public WebElement cialIMPORT_M_hyperlink;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSAWBPrefixSelected']")
+	public WebElement cialIMPORTwarehouseAWBprefix;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSAWBNoSelected']")
+	public WebElement cialIMPORTwarehouseAWBnum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSHAWNoSelected']")
+	public WebElement cialIMPORTwarehousenumber;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnSearchShipments']")
+	public WebElement cialIMPORTwarehouseSEARCHbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdSplitLoc_ctl02_uxGroupId']")
+	public WebElement cialIMPORTwarehouseGroupID;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdSplitLoc_ctl02_uxWHLoc_FMSWarehouseLocSelected']")
+	public WebElement cialIMPORTwarehouseLOcation;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnLocSave']")
+	public WebElement cialIMPORTwarehouselocationSAVEbtn;
+	
+	@FindBy(xpath = "//*[@id='234']")
+	public WebElement cialIMPORTAWBdetailsTab;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp1_ctl00_uxAWB_FMSAWBPrefixSelected']")
+	public WebElement cialIMPORTawbDEtailsPrefix;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp1_ctl00_uxAWB_FMSAWBNoSelected']")
+	public WebElement cialIMPORTawbDETAILSawbnum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp1_ctl00_uxAWB_FMSHAWNoSelected']")
+	public WebElement cialIMPORTawbDETAILShawbNUM;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGenRno']")
+	public WebElement cialIMPORTrotationalNUMgTAB;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGenRno']")
+	public WebElement cialIMPORTrotationalNUMg;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[2]/ul/li[6]/a/span")
+	public WebElement cialIMPORTAOAtab;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_showpopup']")
+	public WebElement cialIMPORTAOAflightserachICON;
+	
+	
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl04_fmslblFlight']")
+	public WebElement cialIMPORTAOAflightSELECT;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdAdviceOfArrival1_ctl02_uxSelect']")
+	
+	public WebElement cialIMPORTAOAselectSHIPMENTforEMAIL;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxNotify']")
+	public WebElement cialIMPORTaoaNOTIFYbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdNotificationAddress_ctl02_uxtxtAddress']")
+	public WebElement cialIMPORTAOAemailADDRESS;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxSubmit']")
+	public WebElement cialIMPORTAOAemailsubmitBTN;
+	
+	@FindBy(xpath = "//*[@id='1229']")
+	public WebElement cialIMPORTwarehousedeliveryOder;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSAWBPrefixSelected']")
+	public WebElement cialIMPORTwarehousedeleveryoderAWBprefix;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSAWBNoSelected']")
+	public WebElement cialIMPORTwarehousedeliveryoderAWBNUM;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxAWB_FMSHAWNoSelected']")
+	public WebElement cialIMPORTwarehousedelieryHAWBno;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnSearch']")
+	public WebElement cialIMPORTwarehousedeliverySERACHbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdWDO_ctl02_uxULDSelect']")
+	public WebElement cialIMPORTWAREhouseDELIVERYoderDSELECT1ST;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdWDO_ctl02_txtCustomsRefNo']")
+	public WebElement cialIMPORTwarehouseDELIVERYselectCOUSTOMSno;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnGenerateWDO']")
+	public WebElement cialIMPORTgenerateWDObtndelivery;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnPrintWDO']")
+	public WebElement cialIMPORTprintWDObtnDELIVERY;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_grdWDO_ctl03_uxULDSelect']")
+	public WebElement cialIMPORT2ndtikDELIVERY;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_btnReleased']")
+	public WebElement cialIMPORTrealeasedBTNdelivery;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[4]/table/tbody/tr[2]/td[2]/input")
+	public WebElement cialIMPORTfinalizeOKpopBTN;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[5]/td[1]")
+	public WebElement cialIMPORTAOA2ndFlightSelect;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[5]/td[1]")
+	public WebElement cialIMPORTmanifest3rdFlightSElect;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[5]/td[1]")
+	public WebElement cialIMPORTAOA3RDFLIGHTselect;
+	
+	//CELEBI-MASTER-XPATH-----------------------------------------------------------------------------------------------------------
+	
+	@FindBy(xpath = "//*[@id='textfield']")
+	public WebElement celibiUserNameInput;
+	
+	@FindBy(xpath = "//*[@id='textfield2']")
+	public WebElement celibiPasswordInput;
+	
+	@FindBy(xpath = "//*[@id='imgButton']")
+	public WebElement celibiLoginBtn;
+	
+	@FindBy(xpath = "//*[@id='FMSGenericMessage']")
+	public WebElement celibiAlertToEnterValidUserPass;
+	
+	@FindBy(xpath = "//*[@id='menu_more']")
+	public WebElement celibiMoreBtn;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div/ul/li[8]/div[1]/ul/li[1]/a")
+	public WebElement celibiMoreBtnSystemSetup;  //*[@id="1"]
+	
+	@FindBy(xpath = "//*[@id='205']")
+	public WebElement celibiMoreBtnSystemSetupMaster;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btnNew']")
+	public WebElement celibiNewIconBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtUserName']")
+	public WebElement celibiNewUsernameInput;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtGroup_showpopup']")
+	public WebElement celibiGroupselectWindow;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl04_fmslblGroupName']")
+	public WebElement celibiSelectingGroupName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtFirstName']")
+	public WebElement celibiNewName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtLastName']")
+	public WebElement celibiNewLastName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtEmail']")
+	public WebElement celibiNewEmailId;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtLocationCode_showpopup']")
+	public WebElement celibiNewLocationSearchIcon;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl02_fmslblCode']")
+	public WebElement celibinewLocationSelect;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtLocationCode_FMSAirportSelected']")
+	public WebElement celibiNewLocation;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtPassword']")
+	public WebElement celibinewPassword;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtConfirmPassword']")
+	public WebElement celibiconfirmNewPassword;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btnSave']")
+	public WebElement celibiSaveBtn;
+	
+	@FindBy(xpath = "//*[@id='customerHeader1_uxlnkbtnlogout']")
+	public WebElement celibiLogOutBtn;
+	
+	@FindBy(xpath = "//*[@id='207']")
+	public WebElement celibiMoreGroupMaster;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div[1]/div/fieldset/div/div[2]/div[1]/fieldset/table/tbody/tr/td/div/table/tbody/tr[4]/td[1]")
+	public WebElement celibiGroupMasterUserDetails;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btn']")
+	public WebElement celibiGroupMasterEDITbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxGroupDescription']")
+	public WebElement celibiEditGroupDescription;
+	
+	@FindBy(xpath = "//*[@id='__tab_ctl00_cp_tc_tp3']")
+	public WebElement celibiSystemAuthorization;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp3_ctl00_grdSystemAuthorisation_ctl02_uxCreate']")
+	public WebElement celibiAthorizationTik1;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp3_ctl00_grdSystemAuthorisation_ctl02_uxUpdate']")
+	public WebElement celibiAthorizationTik2;
+	
+	@FindBy(xpath = "//*[@id='995']")
+	public WebElement celibiPasswordPolicyTab;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/fieldset/div/div[2]/div/fieldset/table[2]/tbody/tr[3]/td/input")
+	public WebElement celibiUpdatePasswordPolicyBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tab_TabTBL_ctl00_FMSChkNotNumOrLetter']")
+	public WebElement celibipaswordpolicytik1;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tab_TabTBL_ctl00_FMSChkNotExceed']")
+	public WebElement celibipaswordpolicytik2;
+	
+	@FindBy(xpath = "//*[@id='2']")
+	public WebElement celibiMasterTab;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[2]/a/span")
+	public WebElement celibiMasterAirline;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCarrierCode']")
+	public WebElement celibiCarrierCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxShortCode']")
+	public WebElement celibiShortCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxAirlineName']")
+	public WebElement celibiAirlineName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxWocCode']")
+	public WebElement celibiWOCcode;
+	
+	@FindBy(xpath = "//*[@id=ctl00_cp_tc_tp2_ctl00_txtawbwtdeviations']")
+	public WebElement celibiWthDeviation;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_txtVoldeviations']")
+	public WebElement celibivolumeDeviation;
+	
+	@FindBy(xpath = "//*[@id='__tab_ctl00_cp_tc_tp3']")
+	public WebElement celibiprefixDetailsBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp3_ctl00_uxDefaultPrefix']")
+	public WebElement celibiPrefixField;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp3_ctl00_uxchkCheckDigit']")
+	public WebElement celibiCheckDigitTikMark;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div[1]/div/fieldset/div/div[2]/div[3]/fieldset/fieldset/table[1]/tbody/tr/td/table/tbody/tr[1]/td[4]/label")
+	public WebElement celibiDefaultPrefixTikMark;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp3_ctl00_uxOk']")
+	public WebElement celibiairlineOkBtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btnSave']")
+	public WebElement celibiFLOPPYSAVEbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp1_ctl00_grdAirline_ctl01_txtFilter1']")
+	public WebElement celibicarrierCodeSearchField;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div[1]/div/fieldset/div/div[2]/div[1]/fieldset/div[1]/table/tbody/tr[2]/td[2]")
+	public WebElement celibiAirlineForDetailsClick;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btn']")
+	public WebElement celibieditbtn;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxContactName']")
+	public WebElement celibicontactName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxContactNameHO']")
+	public WebElement celibiHeadContactName;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[3]/a/span")
+	public WebElement celibiAirlineShedule;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxAirline_FMSAirlineSelected']")
+	public WebElement celibischeduleairlineNameFiled;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxFromDate_txtDateField']")
+	public WebElement celibischeduleairlineFromdate;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxToDate_txtDateField']")
+	public WebElement celibischeduleairlineTOdate;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxDescription_txtData']")
+	public WebElement celibischeduleairlineCommentField;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div/div[2]/div[1]/fieldset/div/table/tbody/tr[14]/td[1]")
+	public WebElement celibischeduleairlinedetailseditselect;
+	
+	@FindBy(xpath = "//*[@id='ctl00_Toolbar2_btnCancel']")
+	public WebElement celibiFloppyCancleBtn;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[4]/a/span")
+	public WebElement celibiAirportCityTab;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxAirportCode']")
+	public WebElement celibiAirportCityAirportCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxNameOfAirPort']")
+	public WebElement celibiAirportCityNameAirport;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCityCode']")
+	public WebElement celibiAirportCityCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxAirPortCity']")
+	public WebElement celibiAirportCityName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxsitadd']")
+	public WebElement celibiAirportCitySitaAddress;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxcustno']")
+	public WebElement celibiAirportCityCustPermissionNum;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCountry_FMSCountrySelected']")
+	public WebElement celibiAirportCityCountryCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxState_FMSStateId']")
+	public WebElement celibiAirportCityStateCode;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[8]/a")
+	public WebElement celibiMasterMoreTab;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[8]/ul/li[1]/a/span")
+	public WebElement celibiMasterMoreCountryMaster;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCountryCode']")
+	public WebElement celibiMasterMoreCountryMasterCountryCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtName']")
+	public WebElement celibiMasterMoreCountryMasterFullName;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxtxtISDCode']")
+	public WebElement celibiMasterMoreCountryMasterISDcode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCurrency_FMSCurrencySelected']")
+	public WebElement celibiMasterMoreCountryMasterCurrency;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp1_ctl00_grdCountryMaster_ctl01_txtFilter0']")
+	public WebElement celibiMasterMoreCountryMasterCountryCodeSearching;
+	
+	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div/fieldset/div/div[2]/div[1]/fieldset/div[1]/div/table/tbody/tr[2]/td[2]")
+	public WebElement celibiMasterMoreCountryMasterCountryCodeSearchingSelect;
+	
+	@FindBy(xpath = "//*[@id='202']")
+	public WebElement celibiMasterMoreCustomerMaster;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxShortCode']")
+	public WebElement celibiMasterMoreCustomerMasterShortCode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCustomerName']")
+	public WebElement celibiMasterMoreCustomerMasterCustomername;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCustomerAdd1']")
+	public WebElement celibiMasterMoreCustomerMasterSreetAddress;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCustomerAdd2']")
+	public WebElement celibiMasterMoreCustomerMasterplace;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCustomerAdd3']")
+	public WebElement celibiMasterMoreCustomerstate;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxCountry_FMSCountrySelected']")
+	public WebElement celibiMasterMoreCustomercountry;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxPostalCode']")
+	public WebElement celibiMasterMoreCustomerpostalcode;
+	
+	@FindBy(xpath = "//*[@id='ctl00_cp_tc_tp2_ctl00_uxState_FMSStateId']")
+	public WebElement celibiMasterMoreCustomerStatecode;
+	
+	@FindBy(xpath = "//*[@id='206']")
+	public WebElement celibicustomermasterCurrencyMaster;
+	
+	@FindBy(xpath = "//*[@id='263']")
+	public WebElement celibicustomercommodityMaster;
+	
+	@FindBy(xpath = "//*[@id='216']")
+	public WebElement celibiMasterMoreFlight;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[8]/ul/li[10]/a/span")
+	public WebElement celibiMasterMoreScreenerMaster;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[8]/ul/li[9]/a/span")
+	public WebElement celibiMasterMorAirlineUldMapping;
+	
+	@FindBy(xpath = "//*[@id='__tab_ctl00_cp_tc_tp3']")
+	public WebElement celibiMasterMoreflightRoutingDetails;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[8]/ul/li[5]/a/span")
+	public WebElement celibiMasterMoreflightscheduleBtn;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi3411;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi3511;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi3611;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi3711;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi3811;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi3911;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4011;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4111;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4211;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4311;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4411;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4511;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi46111;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4711;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4811;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi4911;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi5011;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi5111;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi5211;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi5311;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi5411;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi6511;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi6611;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi6711;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi6811;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi6911;
+	
+	@FindBy(xpath = "")
+	public WebElement celibi7011;
 }
