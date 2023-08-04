@@ -3021,7 +3021,7 @@ public class TEST {
 			  driver.switchTo().window(parentBM);
 			   Thread.sleep(3000);
 			   driver.switchTo().frame(0);
-			   /*
+			   
 			   ce.cialmoreBuildManifestULDprefixfield.click();
 			   ce.cialmoreBuildManifestULDprefixfield.sendKeys("HMA");
 			   ce.cialmoreBuildManifestULDprefixfield.sendKeys(Keys.ARROW_DOWN);
@@ -3075,7 +3075,7 @@ public class TEST {
 			   }
 			   driver.switchTo().window(parent);
 			   Thread.sleep(3000);
-			   driver.switchTo().frame(0); */
+			   driver.switchTo().frame(0); 
 			   Thread.sleep(2000);
 			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("874210");
 			    Thread.sleep(3000);
@@ -3093,7 +3093,7 @@ public class TEST {
 			   
 			   
 			 //----------EXPORT--CUSTOM--ACTIONS------
-			/*	    ce.cialMoreExportcustomsactionTab.click();
+				    ce.cialMoreExportcustomsactionTab.click();
 				    Thread.sleep(3000);
 				    driver.switchTo().frame(0);
 				    ce.cialexportcustomactionAWBprefix.click();
@@ -3194,13 +3194,13 @@ public class TEST {
 					   ce.cialEXPORTUnSeizeBtn.click();
 					   Thread.sleep(2000);
 					   driver.switchTo().alert().accept();
-						  Thread.sleep(5000);*/
+						  Thread.sleep(5000);
 	}
 //FOR COMPLETE FLOW OF CIAL
 
 	@Then("To verify COMPLETE flow for CIAL")
 	public void to_verify_complete_flow_for_cial() throws InterruptedException, AWTException {
-		 ce.cialExportTab.click();
+	/*	 ce.cialExportTab.click();
 		    Thread.sleep(3000);
 		   ce.cialVCTgenerationTab.click();
 		    Thread.sleep(3000);
@@ -3211,13 +3211,18 @@ public class TEST {
 			   ce.cial_driverName.sendKeys("JHONdriver");
 				   Thread.sleep(2000);
 				   ce.cial_vehicleNumber.click();
-				   ce.cial_vehicleNumber.sendKeys("JH20DV1010");
+				   ce.cial_vehicleNumber.sendKeys("JH20DV2020");
 				   Thread.sleep(2000);
-				   int awb1=17072053;
-				   int awb2=17072064;
-				   int grpid1=32092071;
-				   int grpid2=90750030;
-				   int csbnum=32027073;
+				   int awb1=21072096;
+				   int awb2=21072100;
+				   int grpid1=202386;
+				   int grpid2=202387;
+				   int grpid3=202389;
+				   int grpid4=202390;
+				   int grpid5=202391;
+				   int grpid6=202392;
+				   int csbnum=202392;
+				   
 		    ce.cialAWBnumberField.click();
 		    ce.cialAWBnumberField.sendKeys("125"+awb1);
 		    Thread.sleep(2000);
@@ -3550,7 +3555,7 @@ public class TEST {
 	  driver.switchTo().window(parentVG4);
 		   Thread.sleep(3000);
 		   
-		   //VCT ACCEPTANCE PART STARTING
+//----------------------------------VCT ACCEPTANCE PART STARTING
 		   
 		  ce.CialVCTacceptanceTab.click();
 		  Thread.sleep(10000);
@@ -3572,7 +3577,7 @@ public class TEST {
 		   Thread.sleep(3000);
 		   ce.cialAcceptanceGateInDate.click();
 		   ce.cialAcceptanceGateInDate.clear();
-		   ce.cialAcceptanceGateInDate.sendKeys("17/07/2023");
+		   ce.cialAcceptanceGateInDate.sendKeys("21/07/2023");
 		   Thread.sleep(2000);
 		   ce.cialAcceptanceGateInTime.click();
 		   ce.cialAcceptanceGateInTime.clear();
@@ -3584,19 +3589,12 @@ public class TEST {
 		   Select DoordrpDown = new Select(driver.findElement(By.name("ctl00$cp$ddlDoor")));
 		   DoordrpDown.selectByVisibleText("Door 2");
 		   Thread.sleep(3000);
-		/*   ce.cialVCTdockINdate.click();
-		   ce.cialVCTdockINdate.clear();
-		   ce.cialVCTdockINdate.sendKeys("13/06/2023");
-		   Thread.sleep(2000);
-		   ce.cialVCTdockINtime.click();
-		   ce.cialVCTdockINtime.clear();
-		   ce.cialVCTdockINtime.sendKeys("1115"); */
+		
 		   ce.cialDockInBtn.click();
 		   Thread.sleep(3000);
 		   
 		  ce.cialacceptance1stAWBtikbox.click();
-		//  ce.cialacceptance1stAWBtikbox.click();
-		//  ce.cialacceptance1stAWBtikbox.click();
+		
 		  Thread.sleep(2000);
 		  ce.cialVCTacceptacnce1stTIKgroupID.click();
 		  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys(""+grpid1);
@@ -3630,11 +3628,10 @@ public class TEST {
 			 jsff.executeScript("window.scrollBy(0,-250)", "");
 			 
 			   Thread.sleep(5000);
-			//   ce.cialacceptance1stAWBtikbox.click();
-			//   ce.cialacceptance1stAWBtikbox.click();
-			//	  ce.cialacceptance1stAWBtikbox.click();
-			//	  ce.cialacceptance1stAWBtikbox.click();
-				//  Thread.sleep(2000);
+			   Thread.sleep(2000);
+				  ce.cialVCTacceptacnce1stTIKgroupID.click();
+				  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys(""+grpid6);
+				  Thread.sleep(2000);
 			   ce.cialVCTacceptance1stTikNPXremaining.click();
 				  ce.cialVCTacceptance1stTikNPXremaining.clear();
 				  ce.cialVCTacceptance1stTikNPXremaining.sendKeys("10");
@@ -3700,7 +3697,9 @@ public class TEST {
 							 Thread.sleep(3000);
 							 
 							 ce.cialVCTacceptanceHH2tikbox.click();
-							 
+							 Thread.sleep(2000);
+							 driver.findElement(By.id("ctl00_cp_uxtxtGroupId")).sendKeys(""+grpid3);
+							 Thread.sleep(2000);
 							 ce.cialVCTacceptance1stTikNPXremaining.click();
 							  ce.cialVCTacceptance1stTikNPXremaining.clear();
 							  ce.cialVCTacceptance1stTikNPXremaining.sendKeys("10");
@@ -3785,9 +3784,14 @@ public class TEST {
 										
 										 ce.cialsecurityacceptancsaveBtn.click();
 										 Thread.sleep(7000);
-										  JavascriptExecutor jsSA = (JavascriptExecutor) driver;
-											 jsSA.executeScript("window.scrollBy(0,-300)", "");
+										  JavascriptExecutor js3 = (JavascriptExecutor) driver;
+											 js3.executeScript("window.scrollBy(0,-300)", "");
 											 Thread.sleep(3000);
+											  
+									 
+									 
+								 ce.cialsecurityacceptancfinalsubmitBtn.click();
+								 Thread.sleep(10000);
 											 
 											driver.navigate().refresh();
 											ce.cialExportTab.click();
@@ -3844,8 +3848,8 @@ public class TEST {
 												
 												 ce.cialsecurityacceptancsaveBtn.click();
 												 Thread.sleep(7000);
-												  JavascriptExecutor js3 = (JavascriptExecutor) driver;
-													 js3.executeScript("window.scrollBy(0,-300)", "");
+												  JavascriptExecutor js4 = (JavascriptExecutor) driver;
+													 js4.executeScript("window.scrollBy(0,-300)", "");
 													 Thread.sleep(3000);
 													  
 											 
@@ -3875,7 +3879,7 @@ public class TEST {
 											   ce.cialWarehouseLocationSEARCHbtn.click();
 											   Thread.sleep(2000);
 											   ce.cialWarehouseLocationGroupId.click();
-											   ce.cialWarehouseLocationGroupId.sendKeys("6005431101");
+											   ce.cialWarehouseLocationGroupId.sendKeys(""+grpid4);
 											   Thread.sleep(2000);
 											   ce.cialWarehouseLocation_locationsearchicon.click();
 											   Thread.sleep(2000);
@@ -3919,7 +3923,7 @@ public class TEST {
 											   Thread.sleep(3000);
 											   
 											   ce.cialWarehouseLocationGroupId.click();
-											   ce.cialWarehouseLocationGroupId.sendKeys("6800044202");
+											   ce.cialWarehouseLocationGroupId.sendKeys(""+grpid5);
 											   Thread.sleep(2000);
 											   ce.cialWarehouseLocation_locationsearchicon.click();
 											   Thread.sleep(2000);
@@ -4000,7 +4004,7 @@ public class TEST {
 											   Thread.sleep(3000);
 										 
 //------------------------------------------AWB DETAILS PART STARTING
-								/*		 driver.switchTo().window(parentVG4);
+										 driver.switchTo().window(parentVG4);
 										   Thread.sleep(3000);
 										 
 										 ce.cialAWB_DetailsTab.click();
@@ -4086,46 +4090,7 @@ public class TEST {
 											   driver.switchTo().frame(0);
 											   Thread.sleep(2000);
 											   
-									/*		   ce.cialAWBdetailsAIRwayBILL.click();
-											    Thread.sleep(3000);
-											    
-											    String parentAWD=driver.getWindowHandle();
-
-												   Set<String>sAWD=driver.getWindowHandles();
-
-												   // Now iterate using Iterator
-												   Iterator<String> IAWD= sAWD.iterator();
-
-												   while(IAWD.hasNext())
-												   {
-
-												   String child_window=IAWD.next();
-
-
-												   if(!parentAWD.equals(child_window))
-												   {
-												   driver.switchTo().window(child_window);
-												   Thread.sleep(4000);
-												   System.out.println(driver.switchTo().window(child_window));
-												  // ce.cialAWBdetailsenterHAWBNUM.sendKeys("H1");
-												   Thread.sleep(2000);
-												   ce.cialAWBdetailsAIRwaypopverifired.click();
-												   Thread.sleep(2000);
-												   ce.cialAWBdetailssaveHAWB.click();
-												   Thread.sleep(2000);
-												   driver.switchTo().alert().accept();
-													  Thread.sleep(3000);
-											//	   driver.close();
-												   
-												   }
-
-												   }
-												   //switch to the parent window
-												  driver.switchTo().window(parentAWD);
-												   Thread.sleep(5000);
-												   driver.switchTo().frame(0);
-												   Thread.sleep(2000);
-											   */
+									
 										    ce.cialAWBdetailsflightnumfield.click();
 										    Thread.sleep(1000);
 										    ce.cialAWBdetailsflightnumfield.sendKeys("BA101");
@@ -4134,87 +4099,9 @@ public class TEST {
 										    ce.cialAWBdetailsflightnumfield.sendKeys(Keys.ENTER);
 										    Thread.sleep(2000);
 										    ce.cialAWBdetailsflightdatefield.click();
-										    ce.cialAWBdetailsflightdatefield.sendKeys("12-JULY-2023");
+										    ce.cialAWBdetailsflightdatefield.sendKeys("21-JUL-2023");
 										    Thread.sleep(5000);
-										/*    ce.cialAWBdetailsCOUSTOMinfoBTN.click();
-										    Thread.sleep(10000);
-										    Thread.sleep(2000);
-										    String parentAWD2=driver.getWindowHandle();
-
-											   Set<String>sAWD2=driver.getWindowHandles();
-
-											   // Now iterate using Iterator
-											   Iterator<String> IAWD2= sAWD2.iterator();
-
-											   while(IAWD2.hasNext())
-											   {
-
-											   String child_window=IAWD2.next();
-
-
-											   if(!parentAWD2.equals(child_window))
-											   {
-											   driver.switchTo().window(child_window);
-											   Thread.sleep(4000);
-											   System.out.println(driver.switchTo().window(child_window));
-											   ce.cialAWBdetailsCSBnum.click();
-											   ce.cialAWBdetailsCSBnum.sendKeys(""+csbnum);
-											   Thread.sleep(1000);
-											   ce.cialAWBdetaisCSBdate.click();
-											   ce.cialAWBdetaisCSBdate.sendKeys("18/06/2023");
-											   Thread.sleep(1000);
-											   ce.cialAWBdetailsPicesesfiled.sendKeys("20");
-											   Thread.sleep(1000);
-											   ce.cialAWBdetailsGrossweight.clear();
-											   Thread.sleep(5000);
-											   ce.cialAWBdetailsGrossweight.click();
-											   Thread.sleep(5000);
-											   ce.cialAWBdetailsGrossweight.sendKeys("20");
-											   Thread.sleep(1000);
-											 
-											   ce.cialAWBdetailschargebleweight.clear();
-											   Thread.sleep(5000);
-											   ce.cialAWBdetailschargebleweight.click();
-											   Thread.sleep(5000);
-											   ce.cialAWBdetailschargebleweight.sendKeys("20");
-											   Thread.sleep(1000);
-											   ce.cialAWBdetailsFOBvalue.clear();
-											   Thread.sleep(5000);
-											   ce.cialAWBdetailsFOBvalue.click();
-											   Thread.sleep(5000);
-											   ce.cialAWBdetailsFOBvalue.sendKeys("45");
-											   Thread.sleep(2000);
-											   
-											   ce.cialAWBdetailscoustomsaveBTN.click();
-											   Thread.sleep(2000);
-											   driver.switchTo().alert().accept();
-												  Thread.sleep(3000);
-											   ce.cialAWBdetailsSendCarrBTN.click();
-											   Thread.sleep(1000);
-											//   ce.cialAWBdetailscoustomsaveBTN.click();
-											//   Thread.sleep(1000);
-											//   driver.switchTo().alert().accept();
-											//   Thread.sleep(1000);
-											   ce.cialAWBfdetailsLeonumFiled.sendKeys("576777123");
-											   Thread.sleep(1000);
-											   ce.cialAWBdeatailsLEOdate.sendKeys("18/06/2023");
-											   Thread.sleep(1000);
-											   ce.cialAWBdetailsLEOtime.sendKeys("1730");
-											   Thread.sleep(1000);
-											   ce.cialAWBdetailscoustomsaveBTN.click();
-											   Thread.sleep(1000);
-											   driver.switchTo().alert().accept();
-											   Thread.sleep(1000);
-										//	   driver.close();
-											   
-											   }
-
-											   }
-											   //switch to the parent window
-											  driver.switchTo().window(parentAWD2);
-											   Thread.sleep(5000);
-											   driver.switchTo().frame(0);
-											   */
+										
 										    JavascriptExecutor jsAD = (JavascriptExecutor) driver;
 											 WebElement flagAD= driver.findElement(By.xpath("/html/body/form/div[6]/fieldset/div/div[1]/div/table/tbody/tr/td[6]"));
 											 jsAD.executeScript("arguments[0].scrollIntoView();",flagAD);
@@ -4242,10 +4129,296 @@ public class TEST {
 												ce.cialAWBdetailsSAVEBUTTON.click();
 												Thread.sleep(2000);
 												 driver.switchTo().alert().accept();
-												   
+												 Thread.sleep(2000);
+												 driver.switchTo().alert().accept();
 												 Thread.sleep(10000);
 												 
-		  
+////-----------------more--tab---------------------------------------------------	
+												////switch to default window
+												   driver.switchTo().defaultContent();*/
+												   Thread.sleep(2000);
+												   int awb1=21072096;
+												 ce.cialExportTab.click();
+												    Thread.sleep(3000);
+												    ce.cialMoreTab.click();
+												    Thread.sleep(5000);
+///-------Custom info--------------------------------------------------------------------------------		    
+												    driver.findElement(By.id("1249")).click();
+												    Thread.sleep(5000);
+												    driver.switchTo().frame(0);
+												    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBPrefixSelected")).sendKeys("125");
+												    Thread.sleep(1000);
+												    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys(""+awb1);
+												    Thread.sleep(1000);
+												    driver.findElement(By.id("ctl00_cp_btnSearchShipments")).click();
+												    Thread.sleep(1000);
+												    ce.cialAWBdetailsCSBnum.click();
+												    Thread.sleep(1000);
+													//   ce.cialAWBdetailsCSBnum.sendKeys(""+csbnum);
+													   Thread.sleep(1000);
+													   ce.cialAWBdetailsCSBnum.sendKeys("800032");
+													   Thread.sleep(1000);
+													   ce.cialAWBdetaisCSBdate.click();
+													   ce.cialAWBdetaisCSBdate.sendKeys("21/07/2023");
+													   Thread.sleep(1000);
+													   ce.cialAWBdetailsPicesesfiled.sendKeys("100");
+													   Thread.sleep(1000);
+													   ce.cialAWBdetailsGrossweight.clear();
+													   Thread.sleep(5000);
+													   ce.cialAWBdetailsGrossweight.click();
+													   Thread.sleep(5000);
+													   ce.cialAWBdetailsGrossweight.sendKeys("10");
+													   Thread.sleep(1000);
+													 
+													   ce.cialAWBdetailschargebleweight.clear();
+													   Thread.sleep(5000);
+													   ce.cialAWBdetailschargebleweight.click();
+													   Thread.sleep(5000);
+													   ce.cialAWBdetailschargebleweight.sendKeys("10");
+													   Thread.sleep(1000);
+													   ce.cialAWBdetailsFOBvalue.clear();
+													   Thread.sleep(5000);
+													   ce.cialAWBdetailsFOBvalue.click();
+													   Thread.sleep(5000);
+													   ce.cialAWBdetailsFOBvalue.sendKeys("10");
+													   Thread.sleep(2000);
+													   
+													   ce.cialAWBdetailscoustomsaveBTN.click();
+													   Thread.sleep(2000);
+													   driver.switchTo().alert().accept(); 
+														  Thread.sleep(3000);
+														  driver.findElement(By.id("ctl00_cp_uxGrdHouseDetails_ctl02_uxchkinfoitem")).click();
+													   ce.cialAWBdetailsSendCarrBTN.click();
+													   Thread.sleep(2000);
+													   driver.switchTo().alert().accept();
+													   Thread.sleep(3000);
+													   driver.findElement(By.id("ctl00_cp_uxGrdHouseDetails_ctl02_uxLEONo")).sendKeys("9000651");
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_cp_uxGrdHouseDetails_ctl02_uxLEODate_txtDateField")).sendKeys("19/07/2023");
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_cp_uxGrdHouseDetails_ctl02_uxLEOTime_uxTime")).sendKeys("2020");
+													    Thread.sleep(1000);
+													    ce.cialAWBdetailscoustomsaveBTN.click();
+														   Thread.sleep(2000);
+														   driver.switchTo().alert().accept();
+														   Thread.sleep(3000);
+//---------BuildManifestTab------STARTING-----------------------------------------------		    
+												    //switch to default
+												    driver.switchTo().defaultContent();
+												    ce.cialMoreTab.click();
+												    Thread.sleep(5000);
+												    ce.cialmoreBuildManifestTab.click();
+												    Thread.sleep(5000);
+												    driver.switchTo().frame(0);
+												   ce.cialmoreBuildManifestflightsearchIcon.click();
+												    Thread.sleep(5000);
+												    
+												    String parentBM=driver.getWindowHandle();
+
+													   Set<String>sBM=driver.getWindowHandles();
+
+													   // Now iterate using Iterator
+													   Iterator<String> IBM= sBM.iterator();
+
+													   while(IBM.hasNext())
+													   {
+
+													   String child_window=IBM.next();
+
+
+													   if(!parentBM.equals(child_window))
+													   {
+													   driver.switchTo().window(child_window);
+													   Thread.sleep(4000);
+													   System.out.println(driver.switchTo().window(child_window));
+													   driver.findElement(By.id("ctl00_cp_GrdSearch_ctl04_fmslblFlight")).click();
+													 //  ce.cialmoreBuildManifestflightSelect.click();
+													   Thread.sleep(3000);
+												//	   driver.close();
+													   
+													   }
+
+													   }
+													   //switch to the parent window
+													  driver.switchTo().window(parentBM);
+													   Thread.sleep(3000);
+													   driver.switchTo().frame(0);
+													   
+													   ce.cialmoreBuildManifestULDprefixfield.click();
+													   ce.cialmoreBuildManifestULDprefixfield.sendKeys("HMA");
+													   ce.cialmoreBuildManifestULDprefixfield.sendKeys(Keys.ARROW_DOWN);
+													   ce.cialmoreBuildManifestULDprefixfield.sendKeys(Keys.ENTER);
+													   Thread.sleep(3000);
+													   ce.cialmoreBuildManifestULDnumfield.click();
+													   ce.cialmoreBuildManifestULDnumfield.sendKeys("200078");
+													   ce.cialmoreBuildManifestflightname.sendKeys("AI");
+													   Thread.sleep(3000);
+													   Select ULDdrpDown1 = new Select(driver.findElement(By.name("ctl00$ContentPlaceHolder1$uxdrpAircraftPosition")));
+													   ULDdrpDown1.selectByVisibleText("MD");
+													   Thread.sleep(3000);
+													   ce.cialmoreBuildManifestADDULDbtn.click();
+													   Thread.sleep(5000); 
+													  //14072015
+													   ce.cialmoreBuildManifestAddedeULDselect.click();
+													   Thread.sleep(3000);
+													   ce.cialmoreBuildManifestaddshipbtn.click();
+													   Thread.sleep(5000);
+													   String parentP=driver.getWindowHandle();
+													   Set<String>sP=driver.getWindowHandles();
+													   // Now iterate using Iterator
+													   Iterator<String> IP= sP.iterator();
+													   while(IP.hasNext())
+													   {
+													   String child_window=IP.next();
+													   if(!parentP.equals(child_window))
+													   {
+													   driver.switchTo().window(child_window);
+													   Thread.sleep(4000);
+													   System.out.println(driver.switchTo().window(child_window));
+													   driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBPrefixSelected")).clear();
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBPrefixSelected")).sendKeys("125");
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).clear();
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys(""+awb1);
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_cp_uxSearch")).click();
+													    Thread.sleep(3000);
+													   driver.findElement(By.id("ctl00_cp_gS_ctl02_uxSelect")).click();
+													    Thread.sleep(1000);
+													    driver.findElement(By.name("ctl00$cp$uxOk")).click();
+													    Thread.sleep(3000);
+													   Thread.sleep(2000);
+													 //  driver.close();
+													   
+													   }
+
+													   }
+													   driver.switchTo().window(parentP);
+													   Thread.sleep(3000);
+													   driver.switchTo().frame(0); 
+													   Thread.sleep(2000);
+													   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("876210");
+													    Thread.sleep(3000);
+													   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxAircraftReg")).sendKeys("7909");
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxActualDepartureDate_txtDateField")).sendKeys("21/07/2023");
+													    Thread.sleep(3000);
+													   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxATDT_uxTime")).sendKeys("1212");
+													    Thread.sleep(1000);
+													    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxRecordFlightDeparture")).click();
+													    Thread.sleep(5000);
+													//   driver.findElement(By.id("ctl00_cp_gS_ctl02_uxSelect")).click();
+													    Thread.sleep(1000);
+													   
+													   
+													   
+													 //----------EXPORT--CUSTOM--ACTIONS------
+														    ce.cialMoreExportcustomsactionTab.click();
+														    Thread.sleep(3000);
+														    driver.switchTo().frame(0);
+														    ce.cialexportcustomactionAWBprefix.click();
+														    Thread.sleep(1000);
+														    ce.cialexportcustomactionAWBprefix.sendKeys("125");
+														    Thread.sleep(3000);
+														    ce.cialexportcustomactionAWBnum.click();
+														    ce.cialexportcustomactionAWBnum.sendKeys(""+awb1);
+														    ce.cialexportcustomactionHAWBnofield.click();
+														    ce.cialexportcustomactionHAWBnofield.sendKeys("");
+														    ce.cialexportcustomactionSerchBtn.click();
+														    
+														    Thread.sleep(3000);
+														    ce.cialexportCustomActionHoldBtn.click();
+														    Thread.sleep(3000);
+														    String parentCA=driver.getWindowHandle();
+															   Set<String>sCA=driver.getWindowHandles();
+															   // Now iterate using Iterator
+															   Iterator<String> ICA= sCA.iterator();
+															   while(ICA.hasNext())
+															   {
+															   String child_window=ICA.next();
+															   if(!parentCA.equals(child_window))
+															   {
+															   driver.switchTo().window(child_window);
+															   Thread.sleep(4000);
+															   System.out.println(driver.switchTo().window(child_window));
+															   ce.cialexportHoldVerbalCheckboxTik.click();
+															   Thread.sleep(1000);
+															   Select HoldTypeDown = new Select(driver.findElement(By.name("ctl00$cp$drpHoldType$fmsGenericDropDownList")));
+															   HoldTypeDown.selectByVisibleText("Hold");
+															   Thread.sleep(3000);
+															   ce.cialexportCustomActionOrderNumber.click();
+															   Thread.sleep(1000);
+															   ce.cialexportCustomActionOrderNumber.sendKeys("893512");
+															   Thread.sleep(1000);
+															   ce.cialexportCustomActionAuthorityName.click();
+															   Thread.sleep(1000);
+															   ce.cialexportCustomActionAuthorityName.sendKeys("kale");
+															   Thread.sleep(1000);
+															   ce.cialexportCustomActionAuthorityDetails.click();
+															   Thread.sleep(1000);
+															   ce.cialexportCustomActionAuthorityDetails.sendKeys("from kale admin");
+															   Thread.sleep(1000);
+															   ce.cialexportcustomactionRemarkField.click();
+															   Thread.sleep(1000);
+															   ce.cialexportcustomactionRemarkField.sendKeys("this is for testing HOLD");
+															   Thread.sleep(1000);
+															   ce.cialexportCustomActionFinalHoldBtn.click();
+															   Thread.sleep(5000);
+														//	   driver.close();
+															   }
+															   }
+															   //switch to the parent window
+															  driver.switchTo().window(parentCA);
+															   Thread.sleep(3000);
+															   driver.switchTo().frame(0);
+															  ce.cialexportCustomActionHoldBtn.click();
+															   Thread.sleep(3000);
+															   String parentCA1=driver.getWindowHandle();
+
+															   Set<String>sCA1=driver.getWindowHandles();
+
+															   // Now iterate using Iterator
+															   Iterator<String> ICA1= sCA1.iterator();
+
+															   while(ICA1.hasNext())
+															   {
+
+															   String child_window=ICA1.next();
+
+
+															   if(!parentCA1.equals(child_window))
+															   {
+															   driver.switchTo().window(child_window);
+															   Thread.sleep(4000);
+															   System.out.println(driver.switchTo().window(child_window));
+															   ce.cialexportToUnholdEditBtn.click();
+															   Thread.sleep(2000);
+															   ce.cialexportSelectShipment.click();
+															   Thread.sleep(2000);
+															   ce.cialexportUnholdBtn.click();
+															   Thread.sleep(3000);
+														//	   driver.close();
+															   
+															   }
+
+															   }
+															   //switch to the parent window
+															  driver.switchTo().window(parentCA1);
+															   Thread.sleep(3000);
+															   driver.switchTo().frame(0);
+															   Thread.sleep(3000);
+															   ce.cialEXPORTLocationSelectSeize.click();
+															   Thread.sleep(2000);
+															   ce.cialEXPORTSeizeBtn.click();
+															   Thread.sleep(5000);
+															   ce.cialEXPORTUnSeizeBtn.click();
+															   Thread.sleep(2000);
+															   driver.switchTo().alert().accept();
+																  Thread.sleep(5000);
+												 
+												 
 	}
 
 

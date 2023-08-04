@@ -18,8 +18,8 @@ import io.cucumber.junit.CucumberOptions;
 	               //  tags ="@VCT_to_SECURITY_flowcovercial")
                    //  tags ="@SECURITY_acceptance_flowcial")
 	               //   tags ="@AWBdeatilsTabFlowCial")
-	              //  tags ="@CELEBI57")
-	                 tags ="@BuildManifest")
+	              //  tags ="@CELEBIRUN")
+	                 tags ="@completeflowCIAL")
 
 public class TestRunner {
 
