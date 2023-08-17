@@ -1,5 +1,5 @@
 
-@CELEBIRUN
+@CELEBIRUNIST
 Feature: CELEBI IST Master flow
  
  Background: Launch the CIAL application and login the application
