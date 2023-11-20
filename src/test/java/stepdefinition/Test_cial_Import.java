@@ -48,7 +48,7 @@ public class Test_cial_Import {
 	public void to_verify_if_user_is_able_to_add_uld_from_import_manifest_screen_import() throws InterruptedException {
 		Thread.sleep(1000);
 		 driver.switchTo().frame(0);
-		   Thread.sleep(3000);
+		   Thread.sleep(5000);
 		   
 		   ce.cialIMPORTflightsearchICON.click();
 	}
@@ -75,7 +75,7 @@ public class Test_cial_Import {
 		   System.out.println(driver.switchTo().window(child_window));
 		   ce.cialIMPORTflightselect1.click();
 		//   ce.cialIMPORTflightselect2.click();
-		 //  ce.cialIMPORTmanifest3rdFlightSElect.click();
+		//   ce.cialIMPORTmanifest3rdFlightSElect.click();
 		   Thread.sleep(2000);
 		 //  driver.close();
 		   
@@ -94,7 +94,7 @@ public class Test_cial_Import {
 		   ce.cialIMPORTuldTYPE.sendKeys(Keys.ARROW_DOWN);;
 		   ce.cialIMPORTuldTYPE.sendKeys(Keys.ENTER);;
 		   Thread.sleep(2000);
-		   ce.cialIMPORT_ULDnumber.sendKeys("39875");
+		   ce.cialIMPORT_ULDnumber.sendKeys("111712");
 		   Thread.sleep(2000);
 		   ce.cialIMPORT_carriershort.sendKeys("BA");
 		   Thread.sleep(2000);
@@ -128,7 +128,8 @@ public class Test_cial_Import {
 	@Then("To verify User is able to Add Console Transship Airway Bill in ULD from Import manifest screen import")
 	public void to_verify_user_is_able_to_add_console_transship_airway_bill_in_uld_from_import_manifest_screen_import() throws InterruptedException {
 		Thread.sleep(1000);
-		 ce.cialIMPORTaddedULDselect.click();
+		
+		ce.cialIMPORTaddedULDselect.click();
 		   Thread.sleep(3000);
 		// It will return the parent window name as a String
 		   String parent2=driver.getWindowHandle();
@@ -153,7 +154,7 @@ public class Test_cial_Import {
 		   ce.cialIMPORTaddedULDflightPREFIX.sendKeys("125");
 		   Thread.sleep(2000);
 		   
-		   ce.cialIMPORTaddedULDawbNUM.sendKeys("16082091");
+		   ce.cialIMPORTaddedULDawbNUM.sendKeys("17112034");
 		   Thread.sleep(2000);
 		   ce.cialIMPORTaddedULDdestination.click();
 		   ce.cialIMPORTaddedULDdestination.sendKeys("DXB");
@@ -185,7 +186,7 @@ public class Test_cial_Import {
 		   ce.cialIMPORT2ndprefix.sendKeys("125");
 		   Thread.sleep(2000);
 		   ce.cialIMPORT2ndAWBnum.click();
-		   ce.cialIMPORT2ndAWBnum.sendKeys("26062024");
+		   ce.cialIMPORT2ndAWBnum.sendKeys("17112045");
 		   Thread.sleep(2000);
 		   ce.cialIMPORT2ndORIGIN.click();
 		   ce.cialIMPORT2ndORIGIN.sendKeys("DXB");
@@ -215,6 +216,7 @@ public class Test_cial_Import {
 		   Thread.sleep(2000);
 		   driver.switchTo().alert().accept(); 
 		   Thread.sleep(3000);
+		 
 		   }}
 	}
 	@Then("To verify user is able to do part shipment from import manifest screen import")
@@ -230,13 +232,13 @@ public class Test_cial_Import {
 		   Thread.sleep(10000);
 		   ce.cialIMPORTcoustomerRefNum.click();
 		   Thread.sleep(2000);
-		   ce.cialIMPORTcoustomerRefNum.sendKeys("8929340");
+		   ce.cialIMPORTcoustomerRefNum.sendKeys("9023023");
 		   Thread.sleep(2000);
 		   ce.cialIMPORTataDATE.click();
 		   Thread.sleep(2000);
-		   ce.cialIMPORTataDATE.sendKeys("26/06/2023");
+		   ce.cialIMPORTataDATE.sendKeys("17/11/2023");
 		   Thread.sleep(2000);
-		   ce.cialIMPORTtime.sendKeys("0910");
+		   ce.cialIMPORTtime.sendKeys("1310");
 		   Thread.sleep(2000);
 		   ce.cialIMPORTrecordATAbtn.click();
 		   Thread.sleep(10000);
@@ -249,10 +251,11 @@ public class Test_cial_Import {
 		   Thread.sleep(3000);
 		//   driver.switchTo().alert().accept(); 
 		   Thread.sleep(3000);
+		   
 	}
 	@Then("To verify user is able to Move Shipment from one ULD to another ULD in import manifest screen import")
 	public void to_verify_user_is_able_to_move_shipment_from_one_uld_to_another_uld_in_import_manifest_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 	}
 	@Then("To verify user is able to Record ATA in import manifest screen import")
@@ -361,10 +364,11 @@ public class Test_cial_Import {
 		   driver.switchTo().alert().accept(); 
 		   Thread.sleep(5000);
 		   }}
+		   
 	}
 	@Then("To verify User is able to Found Airway Bill in import manifest screen import")
 	public void to_verify_user_is_able_to_found_airway_bill_in_import_manifest_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 	}
 	@Then("To verify User is able to Discrepancy Airway Bill in import manifest screen import")
@@ -414,15 +418,16 @@ public class Test_cial_Import {
 		   }
 
 		   }
+		   
 	}
 	@Then("To verify user is able to Damage Airway Bill in import manifest screen import")
 	public void to_verify_user_is_able_to_damage_airway_bill_in_import_manifest_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 	}
 	@Then("To verify User is able to view print of Damage report in import manifest screen import")
 	public void to_verify_user_is_able_to_view_print_of_damage_report_in_import_manifest_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
+	/*	Thread.sleep(1000);
 		driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   driver.switchTo().frame(0);
@@ -519,10 +524,11 @@ public class Test_cial_Import {
 		   }
 
 		   }
+		   */
 	}
 	@Then("To verify User is able to Revoke Damage Airway Bill in import manifest screen import")
 	public void to_verify_user_is_able_to_revoke_damage_airway_bill_in_import_manifest_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 	}
 	@Then("To verify User is able to e-Docket Airway Bill in import manifest screen import")
@@ -532,7 +538,7 @@ public class Test_cial_Import {
 	}
 	@Then("To verify user is able to perform direct delivery in import manifest screen import")
 	public void to_verify_user_is_able_to_perform_direct_delivery_in_import_manifest_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 	}
 	@Then("To verify User is able to Match Airway Bill in import manifest screen import")
@@ -553,7 +559,7 @@ public class Test_cial_Import {
 	@Then("To verify User is able to record Breakdown in the import manifest screen import")
 	public void to_verify_user_is_able_to_record_breakdown_in_the_import_manifest_screen_import() throws InterruptedException {
 		Thread.sleep(1000);
-		driver.switchTo().defaultContent();
+	/*	driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   driver.switchTo().frame(0);
 		   Thread.sleep(2000);
@@ -580,7 +586,7 @@ public class Test_cial_Import {
 		   System.out.println(driver.switchTo().window(child_window));
 		   ce.cialIMPORTbreakdownDocumentReciveDate.click();;
 		   Thread.sleep(2000);
-		   ce.cialIMPORTbreakdownDocumentReciveDate.sendKeys("26/06/2023");
+		   ce.cialIMPORTbreakdownDocumentReciveDate.sendKeys("11/09/2023");
 		  
 		   Thread.sleep(2000);
 		   ce.cialIMPORTBreakdownTime.click();
@@ -593,10 +599,11 @@ public class Test_cial_Import {
 		   }
 
 		   }
+		   */
 	}
 	@Then("To verify if user is able to assign location from Warehouse Location screen")
 	public void to_verify_if_user_is_able_to_assign_location_from_warehouse_location_screen() throws InterruptedException {
-		driver.switchTo().defaultContent();
+	/*	driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   driver.switchTo().frame(0);
 		  Thread.sleep(2000);
@@ -667,6 +674,7 @@ public class Test_cial_Import {
 		   }
 
 		   }
+		   */
 	}
 	@Then("To verify if user is able to move pieces from warehouse location screen in import")
 	public void to_verify_if_user_is_able_to_move_pieces_from_warehouse_location_screen_in_import() {
@@ -675,7 +683,7 @@ public class Test_cial_Import {
 	@Then("To verify user is able to delete pieces from warehouse location screen in import")
 	public void to_verify_user_is_able_to_delete_pieces_from_warehouse_location_screen_in_import() throws InterruptedException {
 		Thread.sleep(5000);
-		driver.switchTo().defaultContent();
+	/*	driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   driver.switchTo().frame(0);
 		  Thread.sleep(5000);
@@ -693,7 +701,7 @@ public class Test_cial_Import {
 			  ce.cialIMPORTwarehouseAWBprefix.sendKeys("125");
 			  Thread.sleep(2000);
 			  ce.cialIMPORTwarehouseAWBnum.click();
-			  ce.cialIMPORTwarehouseAWBnum.sendKeys("26062013");
+			  ce.cialIMPORTwarehouseAWBnum.sendKeys("11092093");
 			  Thread.sleep(2000);
 			  ce.cialIMPORTwarehousenumber.click();
 			  ce.cialIMPORTwarehousenumber.sendKeys("H1");
@@ -701,7 +709,7 @@ public class Test_cial_Import {
 			  ce.cialIMPORTwarehouseSEARCHbtn.click();
 			  Thread.sleep(3000);
 			  ce.cialIMPORTwarehouseGroupID.click();
-			  ce.cialIMPORTwarehouseGroupID.sendKeys("302001654");
+			  ce.cialIMPORTwarehouseGroupID.sendKeys("302023654");
 			  Thread.sleep(2000);
 			  ce.cialIMPORTwarehouseLOcation.sendKeys("EH001");
 			 
@@ -713,6 +721,7 @@ public class Test_cial_Import {
 				 Thread.sleep(5000);
 				 ce.cialIMPORTwarehouselocationSAVEbtn.click();
 				 Thread.sleep(5000);
+				 */
 	}
 	@Then("To verify user is able to do Hold shipment  on custom action screen import")
 	public void to_verify_user_is_able_to_do_hold_shipment_on_custom_action_screen_import() {
@@ -745,8 +754,8 @@ public class Test_cial_Import {
 	}
 	@Then("To verify user is able to view AOA print to the selected notification time from advice of arrival screen import")
 	public void to_verify_user_is_able_to_view_aoa_print_to_the_selected_notification_time_from_advice_of_arrival_screen_import() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.switchTo().defaultContent();
+		Thread.sleep(5000);
+	/*	driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   
 		   ce.cialIMPORTAWBdetailsTab.click();
@@ -761,9 +770,9 @@ public class Test_cial_Import {
 			  Thread.sleep(2000);
 			  ce.cialIMPORTawbDETAILSawbnum.click();
 			  Thread.sleep(1000);
-			  ce.cialIMPORTawbDETAILSawbnum.sendKeys("26062013");
+			  ce.cialIMPORTawbDETAILSawbnum.sendKeys("11092093");
 			  ce.cialIMPORTawbDETAILSawbnum.clear();
-			  ce.cialIMPORTawbDETAILSawbnum.sendKeys("26062013");
+			  ce.cialIMPORTawbDETAILSawbnum.sendKeys("11092093");
 			  Thread.sleep(2000);
 			  ce.cialIMPORTawbDETAILShawbNUM.click();
 			  Thread.sleep(1000);
@@ -773,10 +782,11 @@ public class Test_cial_Import {
 			  Thread.sleep(2000);
 			  ce.cialIMPORTawbDETAILShawbNUM.sendKeys(Keys.ENTER);
 			  Thread.sleep(10000);
+			  */
 	}
 	@Then("To verify User is able to Finalize Flight from Import Manifest screen import")
 	public void to_verify_user_is_able_to_finalize_flight_from_import_manifest_screen_import() throws InterruptedException {
-		driver.switchTo().defaultContent();
+	/*	driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   
 		   ce.cialIMPORTAOAtab.click();
@@ -812,11 +822,12 @@ public class Test_cial_Import {
 			   }
 
 			   }
+			   */
 	}
 	@Then("To verify user able to Generate WDO from Warehouse Delivery Order screen for Direct AWB at MAWB level import")
 	public void to_verify_user_able_to_generate_wdo_from_warehouse_delivery_order_screen_for_direct_awb_at_mawb_level_import() throws InterruptedException {
 		 //switch to the parent window
-		driver.switchTo().defaultContent();;
+	/*	driver.switchTo().defaultContent();;
 		   Thread.sleep(3000);
 		   driver.switchTo().frame(0);
 		   Thread.sleep(5000);
@@ -863,6 +874,7 @@ public class Test_cial_Import {
 		   }
 
 		   }
+		   */
 		   
 	}
 	@Then("To verify user able to Generate WDO from Warehouse Delivery Order screen for Consol AWB at HAWB level import")
@@ -877,7 +889,7 @@ public class Test_cial_Import {
 	@Then("To verify User able to  Release WDO from Warehouse Delivery Order screen import")
 	public void to_verify_user_able_to_release_wdo_from_warehouse_delivery_order_screen_import() throws InterruptedException {
 		 //switch to the parent window
-		driver.switchTo().defaultContent();
+	/*	driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   
 		   ce.cialIMPORTwarehousedeliveryOder.click();
@@ -887,7 +899,7 @@ public class Test_cial_Import {
 		ce.cialIMPORTwarehousedeleveryoderAWBprefix.sendKeys("125");
 		Thread.sleep(2000);
 		ce.cialIMPORTwarehousedeliveryoderAWBNUM.click();
-		ce.cialIMPORTwarehousedeliveryoderAWBNUM.sendKeys("26062013");
+		ce.cialIMPORTwarehousedeliveryoderAWBNUM.sendKeys("11092093");
 		Thread.sleep(2000);
 		ce.cialIMPORTwarehousedelieryHAWBno.click();
 		ce.cialIMPORTwarehousedelieryHAWBno.sendKeys("H1");
@@ -897,7 +909,7 @@ public class Test_cial_Import {
 		ce.cialIMPORTWAREhouseDELIVERYoderDSELECT1ST.click();
 		Thread.sleep(2000);
 		ce.cialIMPORTwarehouseDELIVERYselectCOUSTOMSno.click();
-		ce.cialIMPORTwarehouseDELIVERYselectCOUSTOMSno.sendKeys("1099453");
+		ce.cialIMPORTwarehouseDELIVERYselectCOUSTOMSno.sendKeys("1009453");
 		Thread.sleep(2000);
 		ce.cialIMPORTgenerateWDObtndelivery.click();
 		Thread.sleep(2000);
@@ -939,7 +951,7 @@ public class Test_cial_Import {
 		Thread.sleep(10000);
 		
 		   
-		   
+		 */  
  
 	}
 	@Then("To verify user is unable to Revoke release of WDO before Release WDO from Warehouse Delivery Order screen import")

@@ -6,7 +6,7 @@ Background: Launch the CIAL application and login the application
   Scenario: To verify user is able to create Shipment,able to accept cargo,able to submit security screening,to verify in AWB Details for CIAL Export
     Then To verify if user is able to login into the application or not export
     Then To verify if user is able to create Direct Shipment or not from VCT generation screen export
-    Then To verify if user is able to create Console Shipment or not from VCT generation screen export
+   Then To verify if user is able to create Console Shipment or not from VCT generation screen export
     Then To verify if user is able to take VCT print or not from VCT Generation Screen export
     Then To verify if user is able to search VCT no. or not from  VCT Generation Screen export
     Then To verify if user is able to search with Invalid VCT no in VCT Generation screen  proper validation message is displayed or not export
@@ -27,7 +27,7 @@ Background: Launch the CIAL application and login the application
     Then To verify if system is allowing user to record  Gate-out details or not if Dock-Out detail is pending to record in VCT Acceptance screen export
     Then To check system is allow or not  to do Dock-Out if cargo acceptance is pending from VCT Acceptance screen export
     Then To verify if Acceptance is done then accepted Cargo details is displayed or not in accepted cargo list from VCT Acceptance export
-    Then To verify user is able to complete Acceptance and process till Gate out for Direct Shipment export
+   Then To verify user is able to complete Acceptance and process till Gate out for Direct Shipment export
     Then To verify in VCT Acceptance as per acceptance done cargo progress bar percentage will be updated export
     Then To verify if security screening is not completed then the shipment should be display in Unsecured List export
     Then User is able to submit security screening if acceptance is not completed proper validation get to be displayed export
@@ -45,13 +45,12 @@ Background: Launch the CIAL application and login the application
     Then To verify in Unsecured list screening status percentage get to be reflect as per the screening status in security screening screen export
     Then To verify in AWB Details HAWB details get to be displayed export
     Then To verify If flight details are updated in AWB Details screen then if AWB get to be reflect in build manifest in hand shipment screen export
-    Then To verify In AWB details screen if user clicks on clear then all the details get to be cleared export
-    Then To verify user is able to print label from AWB Details screen export
-    Then To verify user is able to submit DG Details from AWB Details Screen export
+    Then To verify In AWB details screen if user clicks on clear then all the details get to be cleared export    Then To verify user is able to print label from AWB Details screen export
+   Then To verify user is able to submit DG Details from AWB Details Screen export
     Then To verify If DG details are saved then in AWB details screen red border get to be displayed for the AWB export
-    Then To verify user is able to click on Damage button and Pop-up screen get to be displayed export
+   Then To verify user is able to click on Damage button and Pop-up screen get to be displayed export
     Then To verify In AWB details screen legend/milestone for the process done get to be updated export
-    Then To verify when user click on Clear button on Document Acceptance screen entered details should be cleared export
+   Then To verify when user click on Clear button on Document Acceptance screen entered details should be cleared export
     Then To verify user is able to upload document in document acceptance screen export
     Then To verify In Document acceptance screen uploaded document get to be display in uploaded Document list export
     Then To verify user is  able to accept uploaded  document in Document acceptance screen export
@@ -72,9 +71,9 @@ Background: Launch the CIAL application and login the application
     Then To verify user is able to do Seize shipment  at house level from Export Custom Action export
     Then To verify if system is allowing to manifest hold shipment to flight validation get to be be display export
     Then To verify user able to seize/Clear shipment by click on Clear button in Export custom action export
-    Then To verify user is able to hold shipment direct shipment by selecting acceptance method as Letter from Export custom action screen export
+   Then To verify user is able to hold shipment direct shipment by selecting acceptance method as Letter from Export custom action screen export
     Then To verify user is able to hold shipment direct shipment by selecting acceptance method as Verbal from Export Custom Action screen export
-    Then To verify user able to Unhold shipment direct shipment from Export Custom Action export
+   Then To verify user able to Unhold shipment direct shipment from Export Custom Action export
     Then To verify user is able to do Seize shipment  for direct shipment from Export Custom Action Screen export
     Then To verify User is able to add  ULD details in build plan screen export
     Then To verify If ULD position is not selected in build plan screen proper validation get to be displayed export

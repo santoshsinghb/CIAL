@@ -32,11 +32,12 @@ public class Test_cialExport {
 		  Thread.sleep(3000);
 		  ce.celibiLoginBtn.click();
 		  Thread.sleep(5000);
+		  ce.cialExportTab.click();
+		    Thread.sleep(3000);
 	}
 	@Then("To verify if user is able to create Direct Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_direct_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
-		 ce.cialExportTab.click();
-		    Thread.sleep(3000);
+	
 		   ce.cialVCTgenerationTab.click();
 		    Thread.sleep(3000);
 		   
@@ -48,11 +49,11 @@ public class Test_cialExport {
 				   ce.cial_vehicleNumber.click();
 				   ce.cial_vehicleNumber.sendKeys("JH20DV2020");
 				   Thread.sleep(2000);
-				   int awb1=16082076;
+				   
 				 
 				   
 		    ce.cialAWBnumberField.click();
-		    ce.cialAWBnumberField.sendKeys("125"+awb1);
+		    ce.cialAWBnumberField.sendKeys("12517112012");
 		    Thread.sleep(2000);
 		    ce.cialgenerationRemarkBox.click();
 		    ce.cialgenerationRemarkBox.sendKeys("THIS IS FOR AUTOMATION TESTING");
@@ -164,17 +165,18 @@ public class Test_cialExport {
 		   Thread.sleep(2000);
 		   securitydropdown.selectByVisibleText("Secured");
 		   Thread.sleep(2000);
+		   
 	}
 	@Then("To verify if user is able to create Console Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_console_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
-		  int awb2=16082080;
+		 
 		   
 		Thread.sleep(2000);
 		   ce.cialplusbtnConsole.click();
 		   Thread.sleep(5000);
 		   
 		   ce.cialVCTgeneration2ndAWBfield.click();
-		   ce.cialVCTgeneration2ndAWBfield.sendKeys("125"+awb2);;
+		   ce.cialVCTgeneration2ndAWBfield.sendKeys("12517112023");;
 		   Thread.sleep(1000);
 		   ce.cialVCTgeneration2ndHOUSEfield.click();
 		   ce.cialVCTgeneration2ndHOUSEfield.sendKeys("HH1");
@@ -375,7 +377,7 @@ public class Test_cialExport {
 	}
 	@Then("To verify if user is able to search VCT no. or not from  VCT Generation Screen export")
 	public void to_verify_if_user_is_able_to_search_vct_no_or_not_from_vct_generation_screen_export() throws InterruptedException, AWTException {
-		
+	
 		//Double click on element             
 	      Actions act = new Actions(driver);
 	      WebElement VCT_GENERATED_NUM = driver.findElement(By.name("ctl00$cp$uxVCTNo")); 
@@ -451,11 +453,11 @@ public class Test_cialExport {
 		   Thread.sleep(3000);
 		   ce.cialAcceptanceGateInDate.click();
 		   ce.cialAcceptanceGateInDate.clear();
-		   ce.cialAcceptanceGateInDate.sendKeys("16/08/2023");
+		   ce.cialAcceptanceGateInDate.sendKeys("17/11/2023");
 		   Thread.sleep(2000);
 		   ce.cialAcceptanceGateInTime.click();
 		   ce.cialAcceptanceGateInTime.clear();
-		   ce.cialAcceptanceGateInTime.sendKeys("0912");
+		   ce.cialAcceptanceGateInTime.sendKeys("1112");
 		   Thread.sleep(2000);
 		   ce.cialGateInBtn.click();
 		   Thread.sleep(3000);
@@ -470,6 +472,7 @@ public class Test_cialExport {
 		
 		   ce.cialDockInBtn.click();
 		   Thread.sleep(3000);
+		   
 	}
 	@Then("To verify if system is allowing user to record Dock-In details or not if Gate-In detail is pending to record in VCT Acceptance screen export")
 	public void to_verify_if_system_is_allowing_user_to_record_dock_in_details_or_not_if_gate_in_detail_is_pending_to_record_in_vct_acceptance_screen_export() {
@@ -477,31 +480,9 @@ public class Test_cialExport {
 	}
 	@Then("To verify user is able to enter AWB acceptance details at HAWB level in VCT Acceptance Screen export")
 	public void to_verify_user_is_able_to_enter_awb_acceptance_details_at_hawb_level_in_vct_acceptance_screen_export() throws InterruptedException {
-		
+		Thread.sleep(2000);
 		 
-	/*	ce.cialacceptance1stAWBtikbox.click();
 		
-		  Thread.sleep(2000);
-		  ce.cialVCTacceptacnce1stTIKgroupID.click();
-		  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20230861");// TO BE CHANGE ON EVRYRUN
-		  Thread.sleep(2000);
-		  ce.cialVCTacceptance1stTikNPXremaining.click();
-		  ce.cialVCTacceptance1stTikNPXremaining.clear();
-		  ce.cialVCTacceptance1stTikNPXremaining.sendKeys("10");
-		  Thread.sleep(2000);
-		  ce.cialVCTacceptance1stTikNOP.click();
-		  ce.cialVCTacceptance1stTikNOP.clear();
-		  ce.cialVCTacceptance1stTikNOP.sendKeys("10");
-		  Thread.sleep(2000);
-		  ce.cialVCTacceptance1stTikLength.click();
-		  ce.cialVCTacceptance1stTikLength.sendKeys("100");
-		  Thread.sleep(2000);
-		  ce.cialVCTacceptance1stTikwidth.click();
-		  ce.cialVCTacceptance1stTikwidth.sendKeys("100");
-		  Thread.sleep(2000);
-		  ce.cialVCTacceptance1stTikHeight.click();
-		  ce.cialVCTacceptance1stTikHeight.sendKeys("100");
-		  Thread.sleep(2000); */
 	}
 	@Then("To verify if user is able to accept cargo on HAWB level with volumetric weight In VCT Acceptance Screen export")
 	public void to_verify_if_user_is_able_to_accept_cargo_on_hawb_level_with_volumetric_weight_in_vct_acceptance_screen_export() throws InterruptedException {
@@ -509,7 +490,7 @@ public class Test_cialExport {
 		
 		  Thread.sleep(2000);
 		  ce.cialVCTacceptacnce1stTIKgroupID.click();
-		  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20230871");// TO BE CHANGE ON EVRYRUN
+		  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20231711");// TO BE CHANGE ON EVRYRUN
 		  Thread.sleep(2000);
 		  ce.cialVCTacceptance1stTikNPXremaining.click();
 		  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -542,7 +523,7 @@ public class Test_cialExport {
 			   Thread.sleep(5000);
 			   Thread.sleep(2000);
 				  ce.cialVCTacceptacnce1stTIKgroupID.click();
-				  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20230872");// TO BE CHANGE ON EVRYRUN
+				  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20231712");// TO BE CHANGE ON EVRYRUN
 				  Thread.sleep(2000);
 			   ce.cialVCTacceptance1stTikNPXremaining.click();
 				  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -577,7 +558,7 @@ public class Test_cialExport {
 					   Thread.sleep(2000);
 					   Thread.sleep(2000);
 						  ce.cialVCTacceptacnce1stTIKgroupID.click();
-						  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20230873");// TO BE CHANGE ON EVRYRUN
+						  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20231713");// TO BE CHANGE ON EVRYRUN
 						  Thread.sleep(2000);
 					   ce.cialVCTacceptance1stTikNPXremaining.click();
 						  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -610,7 +591,7 @@ public class Test_cialExport {
 							 
 							 ce.cialVCTacceptanceHH2tikbox.click();
 							 Thread.sleep(2000);
-							 driver.findElement(By.id("ctl00_cp_uxtxtGroupId")).sendKeys("20230874");// TO BE CHANGE ON EVRYRUN
+							 driver.findElement(By.id("ctl00_cp_uxtxtGroupId")).sendKeys("20231714");// TO BE CHANGE ON EVRYRUN
 							 Thread.sleep(2000);
 							 ce.cialVCTacceptance1stTikNPXremaining.click();
 							  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -642,6 +623,8 @@ public class Test_cialExport {
 							 
 								 Thread.sleep(5000);
 								 Thread.sleep(5000);
+								 
+								 
 	}
 	@Then("To verify user is able to accept cargo in part pieces from VCT Acceptance screen export")
 	public void to_verify_user_is_able_to_accept_cargo_in_part_pieces_from_vct_acceptance_screen_export() throws InterruptedException {
@@ -692,7 +675,7 @@ public class Test_cialExport {
 			   ce.cialsecurityacceptanceairlineprifixfiled.sendKeys("125");
 			   Thread.sleep(1000);
 			   ce.cialsecurityacceptanceAWBnumfield.click();
-			   ce.cialsecurityacceptanceAWBnumfield.sendKeys("16082054");
+			   ce.cialsecurityacceptanceAWBnumfield.sendKeys("17112012");
 			   Thread.sleep(1000);
 			   ce.cialsecurityacceptanceHousenum.click();
 			   ce.cialsecurityacceptanceHousenum.sendKeys("");
@@ -756,7 +739,7 @@ public class Test_cialExport {
 					   Thread.sleep(1000);
 					   ce.cialsecurityacceptanceAWBnumfield.click();
 					   ce.cialsecurityacceptanceAWBnumfield.clear();
-					   ce.cialsecurityacceptanceAWBnumfield.sendKeys("16082065"); 
+					   ce.cialsecurityacceptanceAWBnumfield.sendKeys("17112023"); 
 					   Thread.sleep(1000);
 					   ce.cialsecurityacceptanceHousenum.click();
 					   ce.cialsecurityacceptanceHousenum.sendKeys("");
@@ -801,6 +784,8 @@ public class Test_cialExport {
 					 
 				 ce.cialsecurityacceptancfinalsubmitBtn.click();
 				 Thread.sleep(10000);
+				 
+				 
 		
 	}
 	@Then("User is able to submit security screening if acceptance is not completed proper validation get to be displayed export")
@@ -871,7 +856,7 @@ public class Test_cialExport {
 		    ce.cialawbdeatilsAWB.sendKeys("125");
 		    Thread.sleep(1000);
 		    ce.cialAWBdetailsawbentryfield.click();
-		    ce.cialAWBdetailsawbentryfield.sendKeys("16082054");
+		    ce.cialAWBdetailsawbentryfield.sendKeys("17112012");
 		    ce.cialAWBdetailsawbentryfield.sendKeys(Keys.ENTER);
 		    Thread.sleep(3000);
 		   
@@ -954,7 +939,7 @@ public class Test_cialExport {
 		    ce.cialAWBdetailsflightnumfield.sendKeys(Keys.ENTER);
 		    Thread.sleep(2000);
 		    ce.cialAWBdetailsflightdatefield.click();
-		    ce.cialAWBdetailsflightdatefield.sendKeys("16-AUG-2023");
+		    ce.cialAWBdetailsflightdatefield.sendKeys("11-SEP-2023");
 		    Thread.sleep(5000);
 		
 		    JavascriptExecutor jsAD = (JavascriptExecutor) driver;
@@ -1008,8 +993,8 @@ public class Test_cialExport {
 	   
 	}
 	@Then("To verify If DG details are saved then in AWB details screen red border get to be displayed for the AWB export")
-	public void to_verify_if_dg_details_are_saved_then_in_awb_details_screen_red_border_get_to_be_displayed_for_the_awb_export() {
-	  
+	public void to_verify_if_dg_details_are_saved_then_in_awb_details_screen_red_border_get_to_be_displayed_for_the_awb_export() throws InterruptedException {
+		
 	}
 	@Then("To verify user is able to click on Damage button and Pop-up screen get to be displayed export")
 	public void to_verify_user_is_able_to_click_on_damage_button_and_pop_up_screen_get_to_be_displayed_export() {
@@ -1020,8 +1005,8 @@ public class Test_cialExport {
 	  
 	}
 	@Then("To verify when user click on Clear button on Document Acceptance screen entered details should be cleared export")
-	public void to_verify_when_user_click_on_clear_button_on_document_acceptance_screen_entered_details_should_be_cleared_export() {
-	   
+	public void to_verify_when_user_click_on_clear_button_on_document_acceptance_screen_entered_details_should_be_cleared_export() throws InterruptedException {
+		
 	}
 	@Then("To verify user is able to upload document in document acceptance screen export")
 	public void to_verify_user_is_able_to_upload_document_in_document_acceptance_screen_export() {
@@ -1036,8 +1021,8 @@ public class Test_cialExport {
 	   
 	}
 	@Then("To verify If user click on upload document without selecting any document proper validation get to be displayed export")
-	public void to_verify_if_user_click_on_upload_document_without_selecting_any_document_proper_validation_get_to_be_displayed_export() {
-	  
+	public void to_verify_if_user_click_on_upload_document_without_selecting_any_document_proper_validation_get_to_be_displayed_export() throws InterruptedException {
+		
 	}
 	@Then("To verify If user is able to to accept document without uploading any document proper validation get to be displayed export")
 	public void to_verify_if_user_is_able_to_to_accept_document_without_uploading_any_document_proper_validation_get_to_be_displayed_export() {
@@ -1048,8 +1033,8 @@ public class Test_cialExport {
 	    
 	}
 	@Then("If document acceptance is Completed then in document acceptance screen completed status get to be displayed export")
-	public void if_document_acceptance_is_completed_then_in_document_acceptance_screen_completed_status_get_to_be_displayed_export() {
-	   
+	public void if_document_acceptance_is_completed_then_in_document_acceptance_screen_completed_status_get_to_be_displayed_export() throws InterruptedException {
+		
 	}
 	@Then("To verify user is able to assign location to direct AWB in warehouse location screen export")
 	public void to_verify_user_is_able_to_assign_location_to_direct_awb_in_warehouse_location_screen_export() throws InterruptedException {
@@ -1068,7 +1053,7 @@ public class Test_cialExport {
 			   ce.cialWarehouseLocationAWBprfixfield.sendKeys("125");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocationAWBnumfield.click();
-			   ce.cialWarehouseLocationAWBnumfield.sendKeys("16082054");
+			   ce.cialWarehouseLocationAWBnumfield.sendKeys("17112012");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocationHAWBnumfield.click();
 			   ce.cialWarehouseLocationHAWBnumfield.sendKeys("");
@@ -1076,7 +1061,7 @@ public class Test_cialExport {
 			   ce.cialWarehouseLocationSEARCHbtn.click();
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocationGroupId.click();
-			   ce.cialWarehouseLocationGroupId.sendKeys("20230869");
+			   ce.cialWarehouseLocationGroupId.sendKeys("20231715");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocation_locationsearchicon.click();
 			   Thread.sleep(2000);
@@ -1120,7 +1105,7 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   
 			   ce.cialWarehouseLocationGroupId.click();
-			   ce.cialWarehouseLocationGroupId.sendKeys("20230868");
+			   ce.cialWarehouseLocationGroupId.sendKeys("20231716");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocation_locationsearchicon.click();
 			   Thread.sleep(2000);
@@ -1227,8 +1212,13 @@ public class Test_cialExport {
 	}
 	@Then("To verify if user is able to hold shipment at house level by selecting acceptance method as Letter from Export Custom Action export")
 	public void to_verify_if_user_is_able_to_hold_shipment_at_house_level_by_selecting_acceptance_method_as_letter_from_export_custom_action_export() throws InterruptedException {
-	
+	////switch to default window
 		
+		//	driver.switchTo().defaultContent();
+			   Thread.sleep(3000);
+		
+			   ce.cialMoreTab.click();
+			    Thread.sleep(5000);
 		ce.cialMoreExportcustomsactionTab.click();
 		    Thread.sleep(3000);
 		    driver.switchTo().frame(0);
@@ -1237,7 +1227,7 @@ public class Test_cialExport {
 		    ce.cialexportcustomactionAWBprefix.sendKeys("125");
 		    Thread.sleep(3000);
 		    ce.cialexportcustomactionAWBnum.click();
-		    ce.cialexportcustomactionAWBnum.sendKeys("16082032");
+		    ce.cialexportcustomactionAWBnum.sendKeys("17112012");
 		    ce.cialexportcustomactionHAWBnofield.click();
 		    ce.cialexportcustomactionHAWBnofield.sendKeys("");
 		    ce.cialexportcustomactionSerchBtn.click();
@@ -1264,7 +1254,7 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   ce.cialexportCustomActionOrderNumber.click();
 			   Thread.sleep(1000);
-			   ce.cialexportCustomActionOrderNumber.sendKeys("202308");
+			   ce.cialexportCustomActionOrderNumber.sendKeys("202317");
 			   Thread.sleep(1000);
 			   ce.cialexportCustomActionAuthorityName.click();
 			   Thread.sleep(1000);
@@ -1373,7 +1363,7 @@ public class Test_cialExport {
 	@Then("To verify User is able to add  ULD details in build plan screen export")
 	public void to_verify_user_is_able_to_add_uld_details_in_build_plan_screen_export() throws InterruptedException {
 	
-		driver.switchTo().defaultContent();
+	//	driver.switchTo().defaultContent();
 		    ce.cialMoreTab.click();
 		    Thread.sleep(5000);
 		    ce.cialmoreBuildManifestTab.click();
@@ -1419,7 +1409,7 @@ public class Test_cialExport {
 			   ce.cialmoreBuildManifestULDprefixfield.sendKeys(Keys.ENTER);
 			   Thread.sleep(3000);
 			   ce.cialmoreBuildManifestULDnumfield.click();
-			   ce.cialmoreBuildManifestULDnumfield.sendKeys("201078");
+			   ce.cialmoreBuildManifestULDnumfield.sendKeys("131002");
 			   ce.cialmoreBuildManifestflightname.sendKeys("AI");
 			   Thread.sleep(3000);
 			   Select ULDdrpDown1 = new Select(driver.findElement(By.name("ctl00$ContentPlaceHolder1$uxdrpAircraftPosition")));
@@ -1450,7 +1440,7 @@ public class Test_cialExport {
 			    Thread.sleep(1000);
 			    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).clear();
 			    Thread.sleep(1000);
-			    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("16082032");
+			    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("17112012");
 			    Thread.sleep(1000);
 			    driver.findElement(By.id("ctl00_cp_uxSearch")).click();
 			    Thread.sleep(3000);
@@ -1468,20 +1458,20 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   driver.switchTo().frame(0); 
 			   Thread.sleep(2000);
-			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("872610");
+			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("2131717");
 			    Thread.sleep(3000);
-			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxAircraftReg")).sendKeys("7099");
+			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxAircraftReg")).sendKeys("9080");
 			    Thread.sleep(1000);
-			    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxActualDepartureDate_txtDateField")).sendKeys("16/08/2023");
+			    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxActualDepartureDate_txtDateField")).sendKeys("17/11/2023");
 			    Thread.sleep(3000);
-			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxATDT_uxTime")).sendKeys("1212");
+			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxATDT_uxTime")).sendKeys("1600");
 			    Thread.sleep(1000);
 			    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxRecordFlightDeparture")).click();
 			    Thread.sleep(5000);
 			//   driver.findElement(By.id("ctl00_cp_gS_ctl02_uxSelect")).click();
 			    Thread.sleep(1000);
 			    
-			    
+			  
 	}
 	@Then("To verify If ULD position is not selected in build plan screen proper validation get to be displayed export")
 	public void to_verify_if_uld_position_is_not_selected_in_build_plan_screen_proper_validation_get_to_be_displayed_export() {
