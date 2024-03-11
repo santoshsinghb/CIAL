@@ -1,9 +1,11 @@
-Feature: AUTOMATION FOR CIAL EXPORT all  Scenario TEST CASES
-Background: Launch the CIAL application and login the application
+ #Feature: AUTOMATION FOR NAS EXPORT all Scenario TEST CASES
+#Feature: AUTOMATION FOR CIAL EXPORT all Scenario TEST CASES
+Feature: AUTOMATION FOR Celebi EXPORT all Scenario TEST CASES
+Background: Launch the  application and login the application
 
 
   @CIAL_EXPORT_ALL_Scenario
-  Scenario: To verify user is able to create Shipment,able to accept cargo,able to submit security screening,to verify in AWB Details for CIAL Export
+  Scenario: To verify user is able to create Shipment,able to accept cargo,able to submit security screening,to verify in AWB Details for  Export
     Then To verify if user is able to login into the application or not export
     Then To verify if user is able to create Direct Shipment or not from VCT generation screen export
    Then To verify if user is able to create Console Shipment or not from VCT generation screen export
@@ -45,7 +47,8 @@ Background: Launch the CIAL application and login the application
     Then To verify in Unsecured list screening status percentage get to be reflect as per the screening status in security screening screen export
     Then To verify in AWB Details HAWB details get to be displayed export
     Then To verify If flight details are updated in AWB Details screen then if AWB get to be reflect in build manifest in hand shipment screen export
-    Then To verify In AWB details screen if user clicks on clear then all the details get to be cleared export    Then To verify user is able to print label from AWB Details screen export
+    Then To verify In AWB details screen if user clicks on clear then all the details get to be cleared export    
+    Then To verify user is able to print label from AWB Details screen export
    Then To verify user is able to submit DG Details from AWB Details Screen export
     Then To verify If DG details are saved then in AWB details screen red border get to be displayed for the AWB export
    Then To verify user is able to click on Damage button and Pop-up screen get to be displayed export

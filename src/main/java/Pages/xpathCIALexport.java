@@ -667,7 +667,7 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='3']")
 	public WebElement cialIMPORTtab;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[2]/ul/li[3]/a/span")
+	@FindBy(xpath = "//*[text()='Import Manifest']")
 	public WebElement cialIMPORTimportmanifest;
 	
 	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_AirNo']")

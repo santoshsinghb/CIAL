@@ -11,6 +11,7 @@ import Methods.WebDriverMethod;
 import Pages.CommonOprations;
 
 import Pages.Login_Screen;
+import Pages.NAS_kwiuatXPATH;
 import Pages.xpathCIALexport;
 import TestDataOperations.POJO;
 import TestDataOperations.TestDataReader;
@@ -29,7 +30,7 @@ public class BaseObjects {
 	public static xpathCIALexport ce;
 	public static ScreenShotMethod ss;
 	public static PropertyFileUtils prop;
-	
+	public static NAS_kwiuatXPATH kw;
 	
 	
 public static Login_Screen loginScreen;

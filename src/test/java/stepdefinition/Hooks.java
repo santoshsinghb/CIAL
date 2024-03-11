@@ -23,6 +23,7 @@ import Methods.ScreenShotMethod;
 import Methods.WebDriverMethod;
 import Pages.CommonOprations;
 import Pages.Login_Screen;
+import Pages.NAS_kwiuatXPATH;
 import Pages.xpathCIALexport;
 import TestDataOperations.ConfigFileHandler;
 import TestDataOperations.POJO;
@@ -57,6 +58,7 @@ public class Hooks {
 		co= new CommonOprations(driver);
 		ce= new xpathCIALexport(driver);
 		cm= new CommonMethods(driver);
+		kw= new NAS_kwiuatXPATH(driver);
 		
 		pojo = new POJO(driver);
 	   loginScreen= new Login_Screen(driver);

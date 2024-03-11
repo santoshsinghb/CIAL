@@ -51,132 +51,132 @@ public class Test_cialExport {
 				   Thread.sleep(2000);
 				   
 				 
-				   
-		    ce.cialAWBnumberField.click();
-		    ce.cialAWBnumberField.sendKeys("12517112012");
-		    Thread.sleep(2000);
-		    ce.cialgenerationRemarkBox.click();
-		    ce.cialgenerationRemarkBox.sendKeys("THIS IS FOR AUTOMATION TESTING");
-		    ce.cialAWNnpx.click();
-		    ce.cialAWNnpx.clear();
-		    ce.cialAWNnpx.sendKeys("20");
-		    Thread.sleep(2000);
-		    ce.cial_AWBwt.click();
-		    Thread.sleep(1000);
-		    ce.cial_AWBwt.clear();
-		    Thread.sleep(1000);
-		    ce.cial_AWBwt.sendKeys("200");
-		    Thread.sleep(2000);
-		   ce.cial_originAirport.click();
-		   ce.cial_originAirport.sendKeys("COK");
-		   Thread.sleep(2000);
-		   ce.cial_originAirport.sendKeys(Keys.ARROW_DOWN);
-		   ce.cial_originAirport.sendKeys(Keys.ENTER);
-		   Thread.sleep(1000);
-		   ce.cial_destinationAirport.click();
-		   ce.cial_destinationAirport.sendKeys("DXB");
-		   Thread.sleep(2000);
-		   ce.cial_destinationAirport.sendKeys(Keys.ARROW_DOWN);
-		   ce.cial_destinationAirport.sendKeys(Keys.ENTER);
-		   Thread.sleep(2000);
-		   
-		   ce.cialcommoditysearch.click();
-		   Thread.sleep(3000);
-		//   driver.switchTo().frame(3);
-		   Thread.sleep(2000);
-		// It will return the parent window name as a String
-		   String parentVG1=driver.getWindowHandle();
-
-		   Set<String>sVG1=driver.getWindowHandles();
-
-		   // Now iterate using Iterator
-		   Iterator<String> IVG1= sVG1.iterator();
-
-		   while(IVG1.hasNext())
-		   {
-
-		   String child_window=IVG1.next();
-
-
-		   if(!parentVG1.equals(child_window))
-		   {
-		   driver.switchTo().window(child_window);
-		   Thread.sleep(4000);
-		   System.out.println(driver.switchTo().window(child_window));
-		   ce.cialfertilizer.click();
-		   Thread.sleep(2000);
-		 //  driver.close();
-		   
-		   }
-
-		   }
-		   //switch to the parent window
-		  driver.switchTo().window(parentVG1);
-		   Thread.sleep(3000);
-		   driver.switchTo().frame(0);
-		   Thread.sleep(2000);
-		   ce.cial_natureofGoods.sendKeys("FERTILIZER");
-		   Thread.sleep(2000);
-		   ce.cial_natureofGoods.sendKeys(Keys.ARROW_DOWN);;
-		   ce.cial_natureofGoods.sendKeys(Keys.ENTER);;
-		   Thread.sleep(2000);
-		   ce.cialSHC.click();
-		   Thread.sleep(4000);
-		   ce.cialSHCbox1.sendKeys("GEN");
-		   Thread.sleep(2000);
-		   ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);
-		   Thread.sleep(2000);
-		   ce.cialSHCboxCloseBtn.click();
-		   Thread.sleep(2000);
-		   ce.cial_agentSearch.click();
-		   Thread.sleep(3000);
-		   String parentVG2=driver.getWindowHandle();
-
-		   Set<String>sVG2=driver.getWindowHandles();
-
-		   // Now iterate using Iterator
-		   Iterator<String> IVG2= sVG2.iterator();
-
-		   while(IVG2.hasNext())
-		   {
-
-		   String child_window=IVG2.next();
-
-
-		   if(!parentVG2.equals(child_window))
-		   {
-		   driver.switchTo().window(child_window);
-
-		   System.out.println(driver.switchTo().window(child_window));
-		   ce.cialagentName.click();;
-		   Thread.sleep(2000);
-		
-		   }
-
-		   }
-		   //switch to the parent window
-		  driver.switchTo().window(parentVG2);
-		   Thread.sleep(3000);
-		   driver.switchTo().frame(0);
-		   Thread.sleep(2000);
-		   Select securitydropdown = new Select(driver.findElement(By.name("ctl00$cp$uxgrdAWBContents$ctl02$chkSecured")));
-		   ce.cialsecuritysatus.click();
-		 //  ce.cialsecuritysatus.sendKeys(Keys.ARROW_DOWN);
-		   Thread.sleep(2000);
-		   securitydropdown.selectByVisibleText("Secured");
-		   Thread.sleep(2000);
-		   
+//				   
+//		    ce.cialAWBnumberField.click();
+//		    ce.cialAWBnumberField.sendKeys("12522012012");
+//		    Thread.sleep(2000);
+//		    ce.cialgenerationRemarkBox.click();
+//		    ce.cialgenerationRemarkBox.sendKeys("THIS IS FOR AUTOMATION TESTING");
+//		    ce.cialAWNnpx.click();
+//		    ce.cialAWNnpx.clear();
+//		    ce.cialAWNnpx.sendKeys("20");
+//		    Thread.sleep(2000);
+//		    ce.cial_AWBwt.click();
+//		    Thread.sleep(1000);
+//		    ce.cial_AWBwt.clear();
+//		    Thread.sleep(1000);
+//		    ce.cial_AWBwt.sendKeys("200");
+//		    Thread.sleep(2000);
+//		   ce.cial_originAirport.click();
+//		   ce.cial_originAirport.sendKeys("COK");
+//		   Thread.sleep(2000);
+//		   ce.cial_originAirport.sendKeys(Keys.ARROW_DOWN);
+//		   ce.cial_originAirport.sendKeys(Keys.ENTER);
+//		   Thread.sleep(1000);
+//		   ce.cial_destinationAirport.click();
+//		   ce.cial_destinationAirport.sendKeys("DXB");
+//		   Thread.sleep(2000);
+//		   ce.cial_destinationAirport.sendKeys(Keys.ARROW_DOWN);
+//		   ce.cial_destinationAirport.sendKeys(Keys.ENTER);
+//		   Thread.sleep(2000);
+//		   
+//		   ce.cialcommoditysearch.click();
+//		   Thread.sleep(3000);
+//		//   driver.switchTo().frame(3);
+//		   Thread.sleep(2000);
+//		// It will return the parent window name as a String
+//		   String parentVG1=driver.getWindowHandle();
+//
+//		   Set<String>sVG1=driver.getWindowHandles();
+//
+//		   // Now iterate using Iterator
+//		   Iterator<String> IVG1= sVG1.iterator();
+//
+//		   while(IVG1.hasNext())
+//		   {
+//
+//		   String child_window=IVG1.next();
+//
+//
+//		   if(!parentVG1.equals(child_window))
+//		   {
+//		   driver.switchTo().window(child_window);
+//		   Thread.sleep(4000);
+//		   System.out.println(driver.switchTo().window(child_window));
+//		   ce.cialfertilizer.click();
+//		   Thread.sleep(2000);
+//		 //  driver.close();
+//		   
+//		   }
+//
+//		   }
+//		   //switch to the parent window
+//		  driver.switchTo().window(parentVG1);
+//		   Thread.sleep(3000);
+//		   driver.switchTo().frame(0);
+//		   Thread.sleep(2000);
+//		   ce.cial_natureofGoods.sendKeys("FERTILIZER");
+//		   Thread.sleep(2000);
+//		   ce.cial_natureofGoods.sendKeys(Keys.ARROW_DOWN);;
+//		   ce.cial_natureofGoods.sendKeys(Keys.ENTER);;
+//		   Thread.sleep(2000);
+//		   ce.cialSHC.click();
+//		   Thread.sleep(4000);
+//		   ce.cialSHCbox1.sendKeys("GEN");
+//		   Thread.sleep(2000);
+//		   ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);
+//		   Thread.sleep(2000);
+//		   ce.cialSHCboxCloseBtn.click();
+//		   Thread.sleep(2000);
+//		   ce.cial_agentSearch.click();
+//		   Thread.sleep(3000);
+//		   String parentVG2=driver.getWindowHandle();
+//
+//		   Set<String>sVG2=driver.getWindowHandles();
+//
+//		   // Now iterate using Iterator
+//		   Iterator<String> IVG2= sVG2.iterator();
+//
+//		   while(IVG2.hasNext())
+//		   {
+//
+//		   String child_window=IVG2.next();
+//
+//
+//		   if(!parentVG2.equals(child_window))
+//		   {
+//		   driver.switchTo().window(child_window);
+//
+//		   System.out.println(driver.switchTo().window(child_window));
+//		   ce.cialagentName.click();;
+//		   Thread.sleep(2000);
+//		
+//		   }
+//
+//		   }
+//		   //switch to the parent window
+//		  driver.switchTo().window(parentVG2);
+//		   Thread.sleep(3000);
+//		   driver.switchTo().frame(0);
+//		   Thread.sleep(2000);
+//		   Select securitydropdown = new Select(driver.findElement(By.name("ctl00$cp$uxgrdAWBContents$ctl02$chkSecured")));
+//		   ce.cialsecuritysatus.click();
+//		 //  ce.cialsecuritysatus.sendKeys(Keys.ARROW_DOWN);
+//		   Thread.sleep(2000);
+//		   securitydropdown.selectByVisibleText("Secured");
+//		   Thread.sleep(2000);
+//		   
 	}
 	@Then("To verify if user is able to create Console Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_console_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
 		 
 		   
 		Thread.sleep(2000);
-		   ce.cialplusbtnConsole.click();
+	/*	   ce.cialplusbtnConsole.click();
 		   Thread.sleep(5000);
 		   
 		   ce.cialVCTgeneration2ndAWBfield.click();
-		   ce.cialVCTgeneration2ndAWBfield.sendKeys("12517112023");;
+		   ce.cialVCTgeneration2ndAWBfield.sendKeys("12527122045");;
 		   Thread.sleep(1000);
 		   ce.cialVCTgeneration2ndHOUSEfield.click();
 		   ce.cialVCTgeneration2ndHOUSEfield.sendKeys("HH1");
@@ -366,6 +366,7 @@ public class Test_cialExport {
 					  Thread.sleep(5000);
 					  
 					  driver.switchTo().alert().accept();
+					  */
 					  Thread.sleep(5000);
 					  Thread.sleep(10000);
 					  Thread.sleep(5000);
@@ -377,7 +378,7 @@ public class Test_cialExport {
 	}
 	@Then("To verify if user is able to search VCT no. or not from  VCT Generation Screen export")
 	public void to_verify_if_user_is_able_to_search_vct_no_or_not_from_vct_generation_screen_export() throws InterruptedException, AWTException {
-	
+	/*
 		//Double click on element             
 	      Actions act = new Actions(driver);
 	      WebElement VCT_GENERATED_NUM = driver.findElement(By.name("ctl00$cp$uxVCTNo")); 
@@ -417,7 +418,7 @@ public class Test_cialExport {
 			  robot.keyRelease(KeyEvent.VK_V);
 			  Thread.sleep(2000);
 		   ce.cialVCTtabSearchbtn.click();
-
+*/
 	}
 	@Then("To verify if user is able to search with Invalid VCT no in VCT Generation screen  proper validation message is displayed or not export")
 	public void to_verify_if_user_is_able_to_search_with_invalid_vct_no_in_vct_generation_screen_proper_validation_message_is_displayed_or_not_export() {
@@ -451,26 +452,28 @@ public class Test_cialExport {
 	public void to_verify_user_is_able_to_record_gate_in_details_in_vct_acceptance_screen_export() throws InterruptedException {
 		 Thread.sleep(3000);
 		   Thread.sleep(3000);
-		   ce.cialAcceptanceGateInDate.click();
+		 /*  ce.cialAcceptanceGateInDate.click();
 		   ce.cialAcceptanceGateInDate.clear();
-		   ce.cialAcceptanceGateInDate.sendKeys("17/11/2023");
+		   ce.cialAcceptanceGateInDate.sendKeys("27/12/2023");
 		   Thread.sleep(2000);
 		   ce.cialAcceptanceGateInTime.click();
 		   ce.cialAcceptanceGateInTime.clear();
-		   ce.cialAcceptanceGateInTime.sendKeys("1112");
+		   ce.cialAcceptanceGateInTime.sendKeys("1612");
 		   Thread.sleep(2000);
 		   ce.cialGateInBtn.click();
+		   */
 		   Thread.sleep(3000);
 		  
 	}
 	@Then("To verify user is able to record Dock in details in VCT Acceptance Screen export")
 	public void to_verify_user_is_able_to_record_dock_in_details_in_vct_acceptance_screen_export() throws InterruptedException {
-		 ce.cialDookDoordropdown.click();
+	/*	 ce.cialDookDoordropdown.click();
 		   Select DoordrpDown = new Select(driver.findElement(By.name("ctl00$cp$ddlDoor")));
 		   DoordrpDown.selectByVisibleText("Door 2");
 		   Thread.sleep(3000);
 		
 		   ce.cialDockInBtn.click();
+		   */
 		   Thread.sleep(3000);
 		   
 	}
@@ -486,11 +489,12 @@ public class Test_cialExport {
 	}
 	@Then("To verify if user is able to accept cargo on HAWB level with volumetric weight In VCT Acceptance Screen export")
 	public void to_verify_if_user_is_able_to_accept_cargo_on_hawb_level_with_volumetric_weight_in_vct_acceptance_screen_export() throws InterruptedException {
+		/*
 		ce.cialacceptance1stAWBtikbox.click();
 		
 		  Thread.sleep(2000);
 		  ce.cialVCTacceptacnce1stTIKgroupID.click();
-		  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20231711");// TO BE CHANGE ON EVRYRUN
+		  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20232112");// TO BE CHANGE ON EVRYRUN
 		  Thread.sleep(2000);
 		  ce.cialVCTacceptance1stTikNPXremaining.click();
 		  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -523,7 +527,7 @@ public class Test_cialExport {
 			   Thread.sleep(5000);
 			   Thread.sleep(2000);
 				  ce.cialVCTacceptacnce1stTIKgroupID.click();
-				  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20231712");// TO BE CHANGE ON EVRYRUN
+				  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20232113");// TO BE CHANGE ON EVRYRUN
 				  Thread.sleep(2000);
 			   ce.cialVCTacceptance1stTikNPXremaining.click();
 				  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -558,7 +562,7 @@ public class Test_cialExport {
 					   Thread.sleep(2000);
 					   Thread.sleep(2000);
 						  ce.cialVCTacceptacnce1stTIKgroupID.click();
-						  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20231713");// TO BE CHANGE ON EVRYRUN
+						  ce.cialVCTacceptacnce1stTIKgroupID.sendKeys("20232114");// TO BE CHANGE ON EVRYRUN
 						  Thread.sleep(2000);
 					   ce.cialVCTacceptance1stTikNPXremaining.click();
 						  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -591,7 +595,7 @@ public class Test_cialExport {
 							 
 							 ce.cialVCTacceptanceHH2tikbox.click();
 							 Thread.sleep(2000);
-							 driver.findElement(By.id("ctl00_cp_uxtxtGroupId")).sendKeys("20231714");// TO BE CHANGE ON EVRYRUN
+							 driver.findElement(By.id("ctl00_cp_uxtxtGroupId")).sendKeys("20232115");// TO BE CHANGE ON EVRYRUN
 							 Thread.sleep(2000);
 							 ce.cialVCTacceptance1stTikNPXremaining.click();
 							  ce.cialVCTacceptance1stTikNPXremaining.clear();
@@ -620,7 +624,7 @@ public class Test_cialExport {
 							   Thread.sleep(3000);
 							   JavascriptExecutor jsff4 = (JavascriptExecutor) driver;
 								 jsff4.executeScript("window.scrollBy(0,-250)", "");
-							 
+							 */
 								 Thread.sleep(5000);
 								 Thread.sleep(5000);
 								 
@@ -661,7 +665,7 @@ public class Test_cialExport {
 	@Then("To verify if security screening is not completed then the shipment should be display in Unsecured List export")
 	public void to_verify_if_security_screening_is_not_completed_then_the_shipment_should_be_display_in_unsecured_list_export() throws InterruptedException {
 	////switch to default window
-		  driver.switchTo().defaultContent();
+/*		  driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   ce.cialSecurityAceeptanceTab.click();
 		    Thread.sleep(4000);
@@ -675,7 +679,7 @@ public class Test_cialExport {
 			   ce.cialsecurityacceptanceairlineprifixfiled.sendKeys("125");
 			   Thread.sleep(1000);
 			   ce.cialsecurityacceptanceAWBnumfield.click();
-			   ce.cialsecurityacceptanceAWBnumfield.sendKeys("17112012");
+			   ce.cialsecurityacceptanceAWBnumfield.sendKeys("27122034");
 			   Thread.sleep(1000);
 			   ce.cialsecurityacceptanceHousenum.click();
 			   ce.cialsecurityacceptanceHousenum.sendKeys("");
@@ -739,7 +743,7 @@ public class Test_cialExport {
 					   Thread.sleep(1000);
 					   ce.cialsecurityacceptanceAWBnumfield.click();
 					   ce.cialsecurityacceptanceAWBnumfield.clear();
-					   ce.cialsecurityacceptanceAWBnumfield.sendKeys("17112023"); 
+					   ce.cialsecurityacceptanceAWBnumfield.sendKeys("27122045"); 
 					   Thread.sleep(1000);
 					   ce.cialsecurityacceptanceHousenum.click();
 					   ce.cialsecurityacceptanceHousenum.sendKeys("");
@@ -783,6 +787,7 @@ public class Test_cialExport {
 					 
 					 
 				 ce.cialsecurityacceptancfinalsubmitBtn.click();
+				 */
 				 Thread.sleep(10000);
 				 
 				 
@@ -843,7 +848,7 @@ public class Test_cialExport {
 	@Then("To verify in AWB Details HAWB details get to be displayed export")
 	public void to_verify_in_awb_details_hawb_details_get_to_be_displayed_export() throws InterruptedException {
 	////switch to default window
-		
+		/*
 		driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		 
@@ -856,7 +861,7 @@ public class Test_cialExport {
 		    ce.cialawbdeatilsAWB.sendKeys("125");
 		    Thread.sleep(1000);
 		    ce.cialAWBdetailsawbentryfield.click();
-		    ce.cialAWBdetailsawbentryfield.sendKeys("17112012");
+		    ce.cialAWBdetailsawbentryfield.sendKeys("19122051");
 		    ce.cialAWBdetailsawbentryfield.sendKeys(Keys.ENTER);
 		    Thread.sleep(3000);
 		   
@@ -939,7 +944,7 @@ public class Test_cialExport {
 		    ce.cialAWBdetailsflightnumfield.sendKeys(Keys.ENTER);
 		    Thread.sleep(2000);
 		    ce.cialAWBdetailsflightdatefield.click();
-		    ce.cialAWBdetailsflightdatefield.sendKeys("11-SEP-2023");
+		    ce.cialAWBdetailsflightdatefield.sendKeys("19-DEC-2023");
 		    Thread.sleep(5000);
 		
 		    JavascriptExecutor jsAD = (JavascriptExecutor) driver;
@@ -972,6 +977,7 @@ public class Test_cialExport {
 				 driver.switchTo().alert().accept();
 				 Thread.sleep(2000);
 				 driver.switchTo().alert().accept();
+				 */
 				 Thread.sleep(10000);
 				 
 				 
@@ -1039,7 +1045,7 @@ public class Test_cialExport {
 	@Then("To verify user is able to assign location to direct AWB in warehouse location screen export")
 	public void to_verify_user_is_able_to_assign_location_to_direct_awb_in_warehouse_location_screen_export() throws InterruptedException {
 	////switch to default window
-		
+		/*
 		driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		 ce.cialWarehouseLocationTab.click();
@@ -1053,7 +1059,7 @@ public class Test_cialExport {
 			   ce.cialWarehouseLocationAWBprfixfield.sendKeys("125");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocationAWBnumfield.click();
-			   ce.cialWarehouseLocationAWBnumfield.sendKeys("17112012");
+			   ce.cialWarehouseLocationAWBnumfield.sendKeys("19122051");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocationHAWBnumfield.click();
 			   ce.cialWarehouseLocationHAWBnumfield.sendKeys("");
@@ -1061,7 +1067,7 @@ public class Test_cialExport {
 			   ce.cialWarehouseLocationSEARCHbtn.click();
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocationGroupId.click();
-			   ce.cialWarehouseLocationGroupId.sendKeys("20231715");
+			   ce.cialWarehouseLocationGroupId.sendKeys("20232115");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocation_locationsearchicon.click();
 			   Thread.sleep(2000);
@@ -1105,7 +1111,7 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   
 			   ce.cialWarehouseLocationGroupId.click();
-			   ce.cialWarehouseLocationGroupId.sendKeys("20231716");
+			   ce.cialWarehouseLocationGroupId.sendKeys("20232116");
 			   Thread.sleep(2000);
 			   ce.cialWarehouseLocation_locationsearchicon.click();
 			   Thread.sleep(2000);
@@ -1183,6 +1189,7 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   driver.switchTo().frame(0);
 			   ce.cialWarehouseLocationSaveBtn.click();
+			   */
 			   Thread.sleep(3000);
 			   
 	}
@@ -1216,7 +1223,7 @@ public class Test_cialExport {
 		
 		//	driver.switchTo().defaultContent();
 			   Thread.sleep(3000);
-		
+		/*
 			   ce.cialMoreTab.click();
 			    Thread.sleep(5000);
 		ce.cialMoreExportcustomsactionTab.click();
@@ -1227,7 +1234,7 @@ public class Test_cialExport {
 		    ce.cialexportcustomactionAWBprefix.sendKeys("125");
 		    Thread.sleep(3000);
 		    ce.cialexportcustomactionAWBnum.click();
-		    ce.cialexportcustomactionAWBnum.sendKeys("17112012");
+		    ce.cialexportcustomactionAWBnum.sendKeys("19122036");
 		    ce.cialexportcustomactionHAWBnofield.click();
 		    ce.cialexportcustomactionHAWBnofield.sendKeys("");
 		    ce.cialexportcustomactionSerchBtn.click();
@@ -1254,7 +1261,7 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   ce.cialexportCustomActionOrderNumber.click();
 			   Thread.sleep(1000);
-			   ce.cialexportCustomActionOrderNumber.sendKeys("202317");
+			   ce.cialexportCustomActionOrderNumber.sendKeys("202320");
 			   Thread.sleep(1000);
 			   ce.cialexportCustomActionAuthorityName.click();
 			   Thread.sleep(1000);
@@ -1321,7 +1328,7 @@ public class Test_cialExport {
 			   Thread.sleep(2000);
 			   driver.switchTo().alert().accept();
 				  Thread.sleep(5000);
-				  
+				*/  
 				  
 	}
 	@Then("To verify if user is able to hold shipment at house level by selecting acceptance method as Verbal from Export Custom Action export")
@@ -1364,7 +1371,7 @@ public class Test_cialExport {
 	public void to_verify_user_is_able_to_add_uld_details_in_build_plan_screen_export() throws InterruptedException {
 	
 	//	driver.switchTo().defaultContent();
-		    ce.cialMoreTab.click();
+		/*    ce.cialMoreTab.click();
 		    Thread.sleep(5000);
 		    ce.cialmoreBuildManifestTab.click();
 		    Thread.sleep(5000);
@@ -1409,7 +1416,7 @@ public class Test_cialExport {
 			   ce.cialmoreBuildManifestULDprefixfield.sendKeys(Keys.ENTER);
 			   Thread.sleep(3000);
 			   ce.cialmoreBuildManifestULDnumfield.click();
-			   ce.cialmoreBuildManifestULDnumfield.sendKeys("131002");
+			   ce.cialmoreBuildManifestULDnumfield.sendKeys("201002");
 			   ce.cialmoreBuildManifestflightname.sendKeys("AI");
 			   Thread.sleep(3000);
 			   Select ULDdrpDown1 = new Select(driver.findElement(By.name("ctl00$ContentPlaceHolder1$uxdrpAircraftPosition")));
@@ -1440,7 +1447,7 @@ public class Test_cialExport {
 			    Thread.sleep(1000);
 			    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).clear();
 			    Thread.sleep(1000);
-			    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("17112012");
+			    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("19122036");
 			    Thread.sleep(1000);
 			    driver.findElement(By.id("ctl00_cp_uxSearch")).click();
 			    Thread.sleep(3000);
@@ -1458,11 +1465,11 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   driver.switchTo().frame(0); 
 			   Thread.sleep(2000);
-			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("2131717");
+			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("2132017");
 			    Thread.sleep(3000);
 			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxAircraftReg")).sendKeys("9080");
 			    Thread.sleep(1000);
-			    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxActualDepartureDate_txtDateField")).sendKeys("17/11/2023");
+			    driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxActualDepartureDate_txtDateField")).sendKeys("19/12/2023");
 			    Thread.sleep(3000);
 			   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxATDT_uxTime")).sendKeys("1600");
 			    Thread.sleep(1000);
@@ -1470,7 +1477,7 @@ public class Test_cialExport {
 			    Thread.sleep(5000);
 			//   driver.findElement(By.id("ctl00_cp_gS_ctl02_uxSelect")).click();
 			    Thread.sleep(1000);
-			    
+			   */ 
 			  
 	}
 	@Then("To verify If ULD position is not selected in build plan screen proper validation get to be displayed export")

@@ -1,6 +1,7 @@
 
-@tag
-Feature: AUTOMATION FOR CIAL IMPORT TEST CASES
+#Feature: AUTOMATION FOR CIAL IMPORT TEST CASES
+ # Feature: AUTOMATION FOR NAS IMPORT TEST CASES
+ Feature: AUTOMATION FOR Celebi IMPORT TEST CASES
   
 Background: Launch the CIAL application and login the application
  #   When I login with "CIAL USER" user given in "Login" sheet of excel data
@@ -12,7 +13,7 @@ Background: Launch the CIAL application and login the application
    
 
   @cialImport_all_Scenario
-  Scenario: CIAL IMPORT COMPLETE FLOW
+  Scenario:  IMPORT TEST CASES COMPLETE FLOW
    Given To verify user is able to login into the application import
    Then To verify user is able to navigate to Import manifest screen import
    Then To verify if user is able to add ULD  from Import Manifest screen import
