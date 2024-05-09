@@ -35,7 +35,7 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "//input[@name='ctl00$cp$uxgrdAWBContents$ctl02$uxDest$FMSAirportSelected']")
 	public WebElement cial_destinationAirport;
 	
-	@FindBy(xpath = "//*[@id='ctl00_cp_uxgrdAWBContents_ctl02_uxAgent_showpopup']")
+	@FindBy(xpath = "//*[@ID='ctl00_cp_uxgrdAWBContents_ctl02_uxAgent_showpopup']")
 	public WebElement cial_agentSearch;
 	
 	@FindBy(xpath = "//input[@name='ctl00$cp$FMSVehicleNo']")
@@ -50,7 +50,7 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_cp_uxgrdAWBContents_ctl02_gCTN_showpopup']")
 	public WebElement cialcommoditysearch;
 	
-	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr[2]/td[3]")
+	@FindBy(xpath = "//*[text()='GENERAL CARGO']")
 	public WebElement cialfertilizer;
 	
 	
@@ -70,8 +70,10 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_cp_btnOk']")
 	public WebElement cialSHCboxCloseBtn;
 	
-	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl09_fmslblName']")
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl03_fmslblNumber']")
 	public WebElement cialagentName;
+	
+	
 	
 	@FindBy(xpath = "//*[@id='ctl00_cp_uxgrdAWBContents_ctl02_uxHAWBNo']")
 	public WebElement cialHouseNUMBER;
@@ -425,7 +427,7 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl03_fmslblName']")
 	public WebElement  cialAWBdeatilsshipperselct;
 	
-	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl06_fmslblName']")
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl04_fmslblName']")
 	public WebElement cialAWBdetailsconsineeselect;
 	
 	@FindBy(xpath = "//*[@id='txtFlightNo1']")
@@ -679,10 +681,10 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_showpopup']")
 	public WebElement cialIMPORTflightsearchICON;
 	
-	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[4]/td[1]")
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl02_fmslblFlight']")
 	public WebElement cialIMPORTflightselect1;
 	
-	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[6]/td[1]")
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl03_fmslblFlight']")
 	public WebElement cialIMPORTflightselect2;
 	
 	@FindBy(xpath = "//*[@id='ctl00_cp_uxULD_FMSULDType']")
@@ -1066,7 +1068,7 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[5]/td[1]")
 	public WebElement cialIMPORTAOA2ndFlightSelect;
 	
-	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[5]/td[1]")
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl04_fmslblFlight']")
 	public WebElement cialIMPORTmanifest3rdFlightSElect;
 	
 	@FindBy(xpath = "/html/body/form/div[3]/fieldset/fieldset[2]/table[1]/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr[5]/td[1]")
@@ -1347,80 +1349,80 @@ public class xpathCIALexport extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[3]/div[5]/ul/li[8]/ul/li[5]/a/span")
 	public WebElement celibiMasterMoreflightscheduleBtn;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi3411;
+	@FindBy(xpath = "(//*[text()='Document Acceptance'])[1]")
+	public WebElement DocumentAcceptanceTab;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi3511;
+	@FindBy(xpath = "//*[@id='ctl00_cp_ucAWBNo_FMSAWBPrefixSelected']")
+	public WebElement documentaccptanceAWBprefix;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi3611;
+	@FindBy(xpath = "//*[@name='ctl00$cp$ucAWBNo$FMSAWBNoSelected']")
+	public WebElement documentaccptanceAWBNum;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi3711;
+	@FindBy(xpath = "//*[@name='ctl00$cp$ucdbtnSearch']")
+	public WebElement documentaccptanceAWBNumSearchButton;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi3811;
+	@FindBy(xpath = "//*[@id='chkDoc_0']")
+	public WebElement documentaccptanceDocument1STtik;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi3911;
+	@FindBy(xpath = "//*[@id='fileUpload_0']")
+	public WebElement documentaccptanceDocumentUpload1ST;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4011;
+	@FindBy(xpath = "//*[@id='ctl00_cp_ucdbtnSave']")
+	public WebElement documentaccptanceDocumentUploadbutton;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4111;
+	@FindBy(xpath = "//*[@id='txtDescription_0']")
+	public WebElement documentaccptanceDocumenttxtDescription1;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4211;
+	@FindBy(xpath = "//*[@name='ctl00$cp$btnAcceptDocument']")
+	public WebElement btnAcceptDocument;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4311;
+	@FindBy(xpath = "//*[@name='ctl00$ContentPlaceHolder1$uxgrdMan$ctl03$imgUndo']")
+	public WebElement tocloseULD;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4411;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxScaleWt$Number']")
+	public WebElement ScaleWtNumber;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4511;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxSaveETV']")
+	public WebElement SaveScaleWeight;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi46111;
+	@FindBy(xpath = "//*[@name='ctl00$ContentPlaceHolder1$uxFlightBuiltUp']")
+	public WebElement FlightBuiltUpTab;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4711;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxGrdFlightBuiltUp$ctl02$uxSelect']")
+	public WebElement selectUldGatepass;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4811;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxbtnGP']")
+	public WebElement btnGP;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi4911;
+	@FindBy(xpath = "//*[text()='Gatepass']")
+	public WebElement GatepassTab;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi5011;
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGridGP_ctl02_lnkGatepass']")
+	public WebElement lnkGatepass;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi5111;
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxGrdULD_ctl02_uxSelect']")
+	public WebElement ULD_ctl02_uxSelect;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi5211;
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxRelease']")
+	public WebElement ReleaseButton;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi5311;
+	@FindBy(xpath = "//*[@id='ctl00_cp_uxFlightBox_showpopup']")
+	public WebElement searchflightInrELEASEsCREEN;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi5411;
+	@FindBy(xpath = "//*[@name='ctl00$ContentPlaceHolder1$uxFinaliseFlightdirect']")
+	public WebElement FinaliseFlight;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi6511;
+	@FindBy(xpath = "//*[@id='ctl00_cp_GrdSearch_ctl02_fmslblFlight']")
+	public WebElement FirstFlightTOselect;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi6611;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxBtnCancel']")
+	public WebElement breakdownClose;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi6711;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxFinaliseFlight']")
+	public WebElement FinaliseFlightImport;
 	
-	@FindBy(xpath = "")
-	public WebElement celibi6811;
+	@FindBy(xpath = "//*[@name='ctl00$cp$uxTime$uxTime']")
+	public WebElement documentAcceptTime;
 	
 	@FindBy(xpath = "")
 	public WebElement celibi6911;

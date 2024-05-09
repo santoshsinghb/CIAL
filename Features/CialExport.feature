@@ -1,6 +1,6 @@
- #Feature: AUTOMATION FOR NAS EXPORT all Scenario TEST CASES
-#Feature: AUTOMATION FOR CIAL EXPORT all Scenario TEST CASES
-Feature: AUTOMATION FOR Celebi EXPORT all Scenario TEST CASES
+# Feature: AUTOMATION FOR NAS EXPORT all Scenario TEST CASES
+Feature: AUTOMATION FOR CIAL EXPORT all Scenario TEST CASES
+#Feature: AUTOMATION FOR Celebi EXPORT all Scenario TEST CASES
 Background: Launch the  application and login the application
 
 

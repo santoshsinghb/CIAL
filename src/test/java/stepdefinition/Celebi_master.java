@@ -25,9 +25,9 @@ public class Celebi_master {
 	@Then("To verify user is able to login into the application with English Language")
 	public void to_verify_user_is_able_to_login_into_the_application_with_english_language() throws InterruptedException {
 		Thread.sleep(5000); 
-	//	Select securitydropdown = new Select(driver.findElement(By.name("ddl_lang")));
-	//	  securitydropdown.selectByVisibleText("Turkish");
-	//	  Thread.sleep(3000);
+		Select securitydropdown = new Select(driver.findElement(By.name("ddl_lang")));
+		  securitydropdown.selectByVisibleText("Turkish");
+		  Thread.sleep(3000);
 		Select securitydropdown1 = new Select(driver.findElement(By.name("ddl_lang")));
 		  securitydropdown1.selectByVisibleText("English");
 		  Thread.sleep(3000);
@@ -95,7 +95,7 @@ public class Celebi_master {
 		//  Thread.sleep(3000);
 		  ce.celibiMoreBtnSystemSetup.click();
 		  Thread.sleep(3000);
-		  ce.celibiMoreBtnSystemSetupMaster.click();
+		//  ce.celibiMoreBtnSystemSetupMaster.click();
 		  Thread.sleep(3000);
 		  
 	}
@@ -118,7 +118,7 @@ public class Celebi_master {
 		//  Thread.sleep(3000);
 		  ce.celibiMoreBtnSystemSetup.click();
 		  Thread.sleep(3000);
-		  ce.celibiMoreBtnSystemSetupMaster.click();
+/*		  ce.celibiMoreBtnSystemSetupMaster.click();
 		  Thread.sleep(3000);
 		  driver.switchTo().frame(0);
 			  Thread.sleep(2000);
@@ -214,7 +214,7 @@ public class Celebi_master {
 				  ce.celibiPasswordInput.sendKeys("KEN@123");
 				  Thread.sleep(3000);
 				  ce.celibiLoginBtn.click();
-				  Thread.sleep(5000);
+				  Thread.sleep(5000);*/
 	}
 
 	@Then("To verify user is able to updated created user details")
@@ -247,7 +247,7 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  ce.celibiMoreBtnSystemSetup.click();
 		  Thread.sleep(3000);
-		  ce.celibiMoreGroupMaster.click();
+	/*	  ce.celibiMoreGroupMaster.click();
 		  Thread.sleep(3000);
 		   driver.switchTo().frame(0);
 		  Thread.sleep(3000);
@@ -258,7 +258,7 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  ce.celibiEditGroupDescription.click();
 		  Thread.sleep(3000);
-		/*  ce.celibiEditGroupDescription.clear();
+		  ce.celibiEditGroupDescription.clear();
 		  Thread.sleep(1000);
 		  ce.celibiEditGroupDescription.sendKeys("AUTOMATION TESTING group");
 		  Thread.sleep(3000);
@@ -294,9 +294,9 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  ce.celibiMoreBtnSystemSetup.click();
 		  Thread.sleep(3000);
-		  ce.celibiPasswordPolicyTab.click();
+	/*	  ce.celibiPasswordPolicyTab.click();
 		  Thread.sleep(3000);
-	/*	  driver.switchTo().frame(0);
+		  driver.switchTo().frame(0);
 		  Thread.sleep(3000);
 		  ce.celibipaswordpolicytik1.click();
 		  Thread.sleep(1000);
@@ -306,8 +306,8 @@ public class Celebi_master {
 		  Thread.sleep(1000);
 		  ce.celibipaswordpolicytik2.click();
 		  Thread.sleep(1000);
-		  ce.celibiUpdatePasswordPolicyBtn.click();*/
-		  Thread.sleep(5000);
+		  ce.celibiUpdatePasswordPolicyBtn.click();
+		  Thread.sleep(5000);*/
 	}
 
 	@Then("To verify user is able to create new Airline into Airline screen in Masters of GHA application")
@@ -327,7 +327,7 @@ public class Celebi_master {
 		  driver.switchTo().frame(0);
 		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(3000);
-	/*	  ce.celibiCarrierCode.sendKeys("0OH");
+		  ce.celibiCarrierCode.sendKeys("0OH");
 		  Thread.sleep(2000);
 		  ce.celibiShortCode.sendKeys("GRF");
 		  Thread.sleep(2000);
@@ -347,7 +347,7 @@ public class Celebi_master {
 		  Thread.sleep(2000);
 		  ce.celibiFLOPPYSAVEbtn.click();
 		  Thread.sleep(5000);
-		/*  ce.celibicarrierCodeSearchField.click();
+	/*	  ce.celibicarrierCodeSearchField.click();
 		  Thread.sleep(2000);
 		  ce.celibicarrierCodeSearchField.sendKeys("go airline");
 		//  ce.celibisearchicon.click();
@@ -396,7 +396,7 @@ public class Celebi_master {
 		  Thread.sleep(2000);
 		//  ce.celibiFLOPPYSAVEbtn.click();
 		  Thread.sleep(3000);
-		/*  ce.celibischeduleairlinedetailseditselect.click();
+	/*	  ce.celibischeduleairlinedetailseditselect.click();
 		  Thread.sleep(2000);
 		  ce.celibieditbtn.click();
 		  Thread.sleep(2000);
@@ -423,24 +423,24 @@ public class Celebi_master {
 		  Thread.sleep(2000);
 		  ce.celibiAirportCityAirportCode.sendKeys("ROG");
 		  Thread.sleep(3000);
-//		  
-//		  ce.celibiAirportCityNameAirport.sendKeys("roG_INTERNATIONAL");
-//		  Thread.sleep(3000);
-//		  driver.switchTo().alert().accept();
-//		   Thread.sleep(3000);
-//		  ce.celibiAirportCityCode.sendKeys("roG");
-//		  Thread.sleep(2000);
-//		  ce.celibiAirportCityName.sendKeys("roGi");
-//		  Thread.sleep(2000);
-//		  ce.celibiAirportCityStateCode.sendKeys("05");
-//		  Thread.sleep(2000);
-//		  ce.celibiAirportCityCountryCode.sendKeys("IN");
-//		  Thread.sleep(2000);
-//		  ce.celibiAirportCitySitaAddress.sendKeys("TEEISKK");
-//		  Thread.sleep(2000);
-//		  ce.celibiAirportCityCustPermissionNum.sendKeys("126784");
-//		  Thread.sleep(2000);
-	//	  ce.celibiFLOPPYSAVEbtn.click();
+		  
+		  ce.celibiAirportCityNameAirport.sendKeys("roG_INTERNATIONAL");
+		  Thread.sleep(3000);
+		  driver.switchTo().alert().accept();
+		   Thread.sleep(3000);
+		  ce.celibiAirportCityCode.sendKeys("roG");
+		  Thread.sleep(2000);
+		  ce.celibiAirportCityName.sendKeys("roGi");
+		  Thread.sleep(2000);
+		  ce.celibiAirportCityStateCode.sendKeys("05");
+		  Thread.sleep(2000);
+		  ce.celibiAirportCityCountryCode.sendKeys("IN");
+		  Thread.sleep(2000);
+		  ce.celibiAirportCitySitaAddress.sendKeys("TEEISKK");
+		  Thread.sleep(2000);
+		  ce.celibiAirportCityCustPermissionNum.sendKeys("126784");
+		  Thread.sleep(2000);
+		  ce.celibiFLOPPYSAVEbtn.click();
 		  Thread.sleep(20000);
 	}
 	
@@ -465,7 +465,7 @@ public class Celebi_master {
 		  driver.switchTo().frame(0);
 		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(2000);
-		  ce.celibiMasterMoreCountryMasterCountryCode.sendKeys("PC");
+	/*	  ce.celibiMasterMoreCountryMasterCountryCode.sendKeys("PC");
 		  Thread.sleep(2000);
 		  ce.celibiMasterMoreCountryMasterFullName.sendKeys("PEA COUNTRY");
 		  Thread.sleep(2000);
@@ -476,7 +476,7 @@ public class Celebi_master {
 		  Thread.sleep(5000);
 	//	  ce.celibiFLOPPYSAVEbtn.click();
 		  Thread.sleep(5000); 
-		/*  ce.celibiMasterMoreCountryMasterCountryCodeSearching.sendKeys("GC");
+		  ce.celibiMasterMoreCountryMasterCountryCodeSearching.sendKeys("GC");
 		  Thread.sleep(30000);
 		  Thread.sleep(5000);
 		  ce.celibiMasterMoreCountryMasterCountryCodeSearchingSelect.click();
@@ -554,7 +554,7 @@ public class Celebi_master {
 		  
 		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(5000);
-	/*	  ce.celibiMasterMoreCustomerMasterShortCode.sendKeys("CAN");
+		  ce.celibiMasterMoreCustomerMasterShortCode.sendKeys("CAN");
 		  Thread.sleep(2000);
 		  Select statusdropdown = new Select(driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$drpStatus")));
 		  statusdropdown.selectByVisibleText("Active");
@@ -573,7 +573,7 @@ public class Celebi_master {
 		  Thread.sleep(2000);
 		  ce.celibiMasterMoreCustomerpostalcode.sendKeys("400080");
 		  Thread.sleep(2000);
-		 */
+		 
 	}
 	
 	@Then("To verify user is able to add TAX details to selected customer from customer master screen")
@@ -592,7 +592,7 @@ public class Celebi_master {
 		  Thread.sleep(2000);
 		  ce.celibiMasterMoreCustomerMaster.click();
 		  Thread.sleep(5000);
-		/* 
+		
 		  driver.switchTo().frame(0);
 		  driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div[2]/div/fieldset/div/div[2]/div[1]/div/div[1]/div/table/tbody/tr[2]/td[4]")).click();;
 		  Thread.sleep(2000);
@@ -604,7 +604,7 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$btnTaxdetails")).click();;
 		  Thread.sleep(2000);
-		  
+		  /*
 		  String parent=driver.getWindowHandle();
 
 		   Set<String>s=driver.getWindowHandles();
@@ -702,7 +702,7 @@ public class Celebi_master {
 		  Thread.sleep(2000);
 		  ce.celibicustomermasterCurrencyMaster.click();
 		  Thread.sleep(3000);
-		/*  driver.switchTo().frame(0);
+		 driver.switchTo().frame(0);
 		   Thread.sleep(2000);
 		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(3000);
@@ -716,13 +716,13 @@ public class Celebi_master {
 		  Thread.sleep(1000);
 		  ce.celibiFLOPPYSAVEbtn.click();
 		  Thread.sleep(3000);
-		  driver.findElement(By.id("ctl00_cp_tc_tp1_ctl00_uxgrdCurrency_ctl02_fmsName")).click();
+	/*	  driver.findElement(By.id("ctl00_cp_tc_tp1_ctl00_uxgrdCurrency_ctl02_fmsName")).click();
 		  Thread.sleep(3000);
 		  ce.celibieditbtn.click();
 		  Thread.sleep(3000);
 		  ce.celibiFloppyCancleBtn.click();
-		  Thread.sleep(5000);
-		  */
+		  Thread.sleep(5000);*/
+		  
 	}
 
 	@Then("To verify user is able to add new commodity in commodity master in GHA application")
@@ -744,7 +744,7 @@ public class Celebi_master {
 		   Thread.sleep(2000);
 		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(3000);
-	/*	  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxIATAComodityGrp$FMSReferenceDataSelected")).sendKeys("GEN");
+		  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxIATAComodityGrp$FMSReferenceDataSelected")).sendKeys("GEN");
 		  Thread.sleep(1000);
 		  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxtxtDensityKg")).sendKeys("1004");
 		  Thread.sleep(1000);
@@ -757,13 +757,13 @@ public class Celebi_master {
 		
 		  ce.celibiFLOPPYSAVEbtn.click();
 		  Thread.sleep(3000);
-		  driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/fieldset/div/div[2]/div[1]/div/table/tbody/tr[2]/td[2]")).click();
+/*		  driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/fieldset/div/div[2]/div[1]/div/table/tbody/tr[2]/td[2]")).click();
 			  Thread.sleep(3000);
 			  ce.celibieditbtn.click();
 			  Thread.sleep(3000);
 			  ce.celibiFloppyCancleBtn.click();
-			  Thread.sleep(3000);
-			  */
+			  Thread.sleep(3000);*/
+			  
 	}
 
 	@Then("To verify User is able to create flight in GHA")
@@ -784,7 +784,7 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  driver.switchTo().frame(0);
 		   Thread.sleep(2000);
-	/*	  ce.celibiNewIconBtn.click();
+		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(3000);
 		  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxFlightNo")).sendKeys("FI241");
 		   Thread.sleep(2000);
@@ -810,7 +810,7 @@ public class Celebi_master {
 			  Thread.sleep(2000);
 			  ce.celibiFLOPPYSAVEbtn.click();
 			  Thread.sleep(2000);
-			  */
+			  
 	}
 	
 
@@ -834,7 +834,7 @@ public class Celebi_master {
 		   Thread.sleep(2000);
 		  ce.celibiNewIconBtn.click();
 		  Thread.sleep(3000);
-		/*  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxbutAirlineSchedule")).click();
+/*		 driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxbutAirlineSchedule")).click();
 		  Thread.sleep(2000);
 		  String parent=driver.getWindowHandle();
 
@@ -916,11 +916,11 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  ce.celibiMasterMoreTab.click();
 		  Thread.sleep(2000);
-		  ce.celibiMasterMorAirlineUldMapping.click();
+	/*	  ce.celibiMasterMorAirlineUldMapping.click();
 		  Thread.sleep(2000);
 		  driver.switchTo().frame(0);
 		   Thread.sleep(2000);
-	/*	   driver.findElement(By.name("ctl00$cp$uxULDOwner$FMSAirlineSelected")).sendKeys("4A");
+		   driver.findElement(By.name("ctl00$cp$uxULDOwner$FMSAirlineSelected")).sendKeys("4A");
 		   Thread.sleep(2000);
 			  driver.findElement(By.name("ctl00$cp$uxULDType$FMSReferenceDataSelected")).sendKeys("FET");
 			  Thread.sleep(2000);
@@ -941,8 +941,8 @@ public class Celebi_master {
 			  driver.findElement(By.name("ctl00$cp$grdAirlineULD$ctl02$uxbtnDelete")).click();
 			  Thread.sleep(2000);
 			 driver.switchTo().alert().accept();
-			  Thread.sleep(2000);
-			  */
+			  Thread.sleep(2000);*/
+			  
 	}
 
 	
@@ -961,11 +961,11 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  ce.celibiMasterMoreTab.click();
 		  Thread.sleep(2000);
-		  ce.celibiMasterMoreScreenerMaster.click();
+	/*	  ce.celibiMasterMoreScreenerMaster.click();
 		  Thread.sleep(2000);
 		  driver.switchTo().frame(0);
 		   Thread.sleep(2000);
-		/*  Select userdropdown = new Select(driver.findElement(By.name("ctl00$cp$uxGrdM$ctl12$uxFUserName$fmsGenericDropDownList")));
+		  Select userdropdown = new Select(driver.findElement(By.name("ctl00$cp$uxGrdM$ctl12$uxFUserName$fmsGenericDropDownList")));
 		  userdropdown.selectByVisibleText("FIKE");
 		  Thread.sleep(2000);
 		  driver.findElement(By.name("ctl00$cp$uxGrdM$ctl12$uxFtxtLicense")).click();

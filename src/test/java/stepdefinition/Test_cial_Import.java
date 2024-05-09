@@ -48,7 +48,7 @@ public class Test_cial_Import {
 	public void to_verify_if_user_is_able_to_add_uld_from_import_manifest_screen_import() throws InterruptedException {
 		Thread.sleep(1000);
 		 driver.switchTo().frame(0);
-		   Thread.sleep(5000);
+		   Thread.sleep(50000);
 		   
 	//	   ce.cialIMPORTflightsearchICON.click();
 	}

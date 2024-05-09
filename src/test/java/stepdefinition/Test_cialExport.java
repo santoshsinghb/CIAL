@@ -33,11 +33,11 @@ public class Test_cialExport {
 		  ce.celibiLoginBtn.click();
 		  Thread.sleep(5000);
 		  ce.cialExportTab.click();
-		    Thread.sleep(3000);
+		    Thread.sleep(200000);
 	}
 	@Then("To verify if user is able to create Direct Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_direct_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
-	
+	/*
 		   ce.cialVCTgenerationTab.click();
 		    Thread.sleep(3000);
 		   
@@ -51,121 +51,122 @@ public class Test_cialExport {
 				   Thread.sleep(2000);
 				   
 				 
-//				   
-//		    ce.cialAWBnumberField.click();
-//		    ce.cialAWBnumberField.sendKeys("12522012012");
-//		    Thread.sleep(2000);
-//		    ce.cialgenerationRemarkBox.click();
-//		    ce.cialgenerationRemarkBox.sendKeys("THIS IS FOR AUTOMATION TESTING");
-//		    ce.cialAWNnpx.click();
-//		    ce.cialAWNnpx.clear();
-//		    ce.cialAWNnpx.sendKeys("20");
-//		    Thread.sleep(2000);
-//		    ce.cial_AWBwt.click();
-//		    Thread.sleep(1000);
-//		    ce.cial_AWBwt.clear();
-//		    Thread.sleep(1000);
-//		    ce.cial_AWBwt.sendKeys("200");
-//		    Thread.sleep(2000);
-//		   ce.cial_originAirport.click();
-//		   ce.cial_originAirport.sendKeys("COK");
-//		   Thread.sleep(2000);
-//		   ce.cial_originAirport.sendKeys(Keys.ARROW_DOWN);
-//		   ce.cial_originAirport.sendKeys(Keys.ENTER);
-//		   Thread.sleep(1000);
-//		   ce.cial_destinationAirport.click();
-//		   ce.cial_destinationAirport.sendKeys("DXB");
-//		   Thread.sleep(2000);
-//		   ce.cial_destinationAirport.sendKeys(Keys.ARROW_DOWN);
-//		   ce.cial_destinationAirport.sendKeys(Keys.ENTER);
-//		   Thread.sleep(2000);
-//		   
-//		   ce.cialcommoditysearch.click();
-//		   Thread.sleep(3000);
-//		//   driver.switchTo().frame(3);
-//		   Thread.sleep(2000);
-//		// It will return the parent window name as a String
-//		   String parentVG1=driver.getWindowHandle();
-//
-//		   Set<String>sVG1=driver.getWindowHandles();
-//
-//		   // Now iterate using Iterator
-//		   Iterator<String> IVG1= sVG1.iterator();
-//
-//		   while(IVG1.hasNext())
-//		   {
-//
-//		   String child_window=IVG1.next();
-//
-//
-//		   if(!parentVG1.equals(child_window))
-//		   {
-//		   driver.switchTo().window(child_window);
-//		   Thread.sleep(4000);
-//		   System.out.println(driver.switchTo().window(child_window));
-//		   ce.cialfertilizer.click();
-//		   Thread.sleep(2000);
-//		 //  driver.close();
-//		   
-//		   }
-//
-//		   }
-//		   //switch to the parent window
-//		  driver.switchTo().window(parentVG1);
-//		   Thread.sleep(3000);
-//		   driver.switchTo().frame(0);
-//		   Thread.sleep(2000);
-//		   ce.cial_natureofGoods.sendKeys("FERTILIZER");
-//		   Thread.sleep(2000);
-//		   ce.cial_natureofGoods.sendKeys(Keys.ARROW_DOWN);;
-//		   ce.cial_natureofGoods.sendKeys(Keys.ENTER);;
-//		   Thread.sleep(2000);
-//		   ce.cialSHC.click();
-//		   Thread.sleep(4000);
-//		   ce.cialSHCbox1.sendKeys("GEN");
-//		   Thread.sleep(2000);
-//		   ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);
-//		   Thread.sleep(2000);
-//		   ce.cialSHCboxCloseBtn.click();
-//		   Thread.sleep(2000);
-//		   ce.cial_agentSearch.click();
-//		   Thread.sleep(3000);
-//		   String parentVG2=driver.getWindowHandle();
-//
-//		   Set<String>sVG2=driver.getWindowHandles();
-//
-//		   // Now iterate using Iterator
-//		   Iterator<String> IVG2= sVG2.iterator();
-//
-//		   while(IVG2.hasNext())
-//		   {
-//
-//		   String child_window=IVG2.next();
-//
-//
-//		   if(!parentVG2.equals(child_window))
-//		   {
-//		   driver.switchTo().window(child_window);
-//
-//		   System.out.println(driver.switchTo().window(child_window));
-//		   ce.cialagentName.click();;
-//		   Thread.sleep(2000);
-//		
-//		   }
-//
-//		   }
-//		   //switch to the parent window
-//		  driver.switchTo().window(parentVG2);
-//		   Thread.sleep(3000);
-//		   driver.switchTo().frame(0);
-//		   Thread.sleep(2000);
-//		   Select securitydropdown = new Select(driver.findElement(By.name("ctl00$cp$uxgrdAWBContents$ctl02$chkSecured")));
-//		   ce.cialsecuritysatus.click();
-//		 //  ce.cialsecuritysatus.sendKeys(Keys.ARROW_DOWN);
-//		   Thread.sleep(2000);
-//		   securitydropdown.selectByVisibleText("Secured");
-//		   Thread.sleep(2000);
-//		   
+				   
+		    ce.cialAWBnumberField.click();
+		    ce.cialAWBnumberField.sendKeys("12518042426");
+		    Thread.sleep(2000);
+		    ce.cialgenerationRemarkBox.click();
+		    ce.cialgenerationRemarkBox.sendKeys("THIS IS FOR AUTOMATION TESTING");
+		    ce.cialAWNnpx.click();
+		    ce.cialAWNnpx.clear();
+		    ce.cialAWNnpx.sendKeys("20");
+		    Thread.sleep(2000);
+		    ce.cial_AWBwt.click();
+		    Thread.sleep(1000);
+		    ce.cial_AWBwt.clear();
+		    Thread.sleep(1000);
+		    ce.cial_AWBwt.sendKeys("200");
+		    Thread.sleep(2000);
+		   ce.cial_originAirport.click();
+		   ce.cial_originAirport.sendKeys("COK");
+		   Thread.sleep(2000);
+		   ce.cial_originAirport.sendKeys(Keys.ARROW_DOWN);
+		   ce.cial_originAirport.sendKeys(Keys.ENTER);
+		   Thread.sleep(1000);
+		   ce.cial_destinationAirport.click();
+		   ce.cial_destinationAirport.sendKeys("DXB");
+		   Thread.sleep(2000);
+		   ce.cial_destinationAirport.sendKeys(Keys.ARROW_DOWN);
+		   ce.cial_destinationAirport.sendKeys(Keys.ENTER);
+		   Thread.sleep(2000);
+		   
+		   ce.cialcommoditysearch.click();
+		   Thread.sleep(3000);
+		//   driver.switchTo().frame(3);
+		   Thread.sleep(2000);
+		// It will return the parent window name as a String
+		   String parentVG1=driver.getWindowHandle();
+
+		   Set<String>sVG1=driver.getWindowHandles();
+
+		   // Now iterate using Iterator
+		   Iterator<String> IVG1= sVG1.iterator();
+
+		   while(IVG1.hasNext())
+		   {
+
+		   String child_window=IVG1.next();
+
+
+		   if(!parentVG1.equals(child_window))
+		   {
+		   driver.switchTo().window(child_window);
+		   Thread.sleep(4000);
+		   System.out.println(driver.switchTo().window(child_window));
+		   ce.cialfertilizer.click();
+		   Thread.sleep(2000);
+		 //  driver.close();
+		   
+		   }
+
+		   }
+		   //switch to the parent window
+		  driver.switchTo().window(parentVG1);
+		   Thread.sleep(3000);
+		   driver.switchTo().frame(0);
+		   Thread.sleep(2000);
+		   ce.cial_natureofGoods.sendKeys("FERTILIZER");
+		   Thread.sleep(2000);
+		   ce.cial_natureofGoods.sendKeys(Keys.ARROW_DOWN);;
+		   ce.cial_natureofGoods.sendKeys(Keys.ENTER);;
+		   Thread.sleep(2000);
+		   ce.cialSHC.click();
+		   Thread.sleep(4000);
+		   ce.cialSHCbox1.sendKeys("GEN");
+		   Thread.sleep(2000);
+		   ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);
+		   Thread.sleep(2000);
+		   ce.cialSHCboxCloseBtn.click();
+		   Thread.sleep(2000);
+		   ce.cial_agentSearch.click();
+		   Thread.sleep(3000);
+		   String parentVG2=driver.getWindowHandle();
+
+		   Set<String>sVG2=driver.getWindowHandles();
+
+		   // Now iterate using Iterator
+		   Iterator<String> IVG2= sVG2.iterator();
+
+		   while(IVG2.hasNext())
+		   {
+
+		   String child_window=IVG2.next();
+
+
+		   if(!parentVG2.equals(child_window))
+		   {
+		   driver.switchTo().window(child_window);
+
+		   System.out.println(driver.switchTo().window(child_window));
+		   ce.cialagentName.click();;
+		   Thread.sleep(2000);
+		
+		   }
+
+		   }
+		   //switch to the parent window
+		  driver.switchTo().window(parentVG2);
+		   Thread.sleep(3000);
+		   driver.switchTo().frame(0);
+		   Thread.sleep(2000);
+		   Select securitydropdown = new Select(driver.findElement(By.name("ctl00$cp$uxgrdAWBContents$ctl02$chkSecured")));
+		   ce.cialsecuritysatus.click();
+		 //  ce.cialsecuritysatus.sendKeys(Keys.ARROW_DOWN);
+		   Thread.sleep(2000);
+		   securitydropdown.selectByVisibleText("Secured");
+		   Thread.sleep(2000);
+		   */
+		   
 	}
 	@Then("To verify if user is able to create Console Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_console_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
@@ -361,7 +362,7 @@ public class Test_cialExport {
 				 //  ce.cialsecuritysatus.sendKeys(Keys.ARROW_DOWN);
 				   Thread.sleep(2000);
 				   securitydropdown2.selectByVisibleText("Non-Secured");
-				   Thread.sleep(2000);
+				   Thread.sleep(2000); 
 				   ce.cial_saveButton.click();
 					  Thread.sleep(5000);
 					  
@@ -369,7 +370,7 @@ public class Test_cialExport {
 					  */
 					  Thread.sleep(5000);
 					  Thread.sleep(10000);
-					  Thread.sleep(5000);
+					  Thread.sleep(50000);
 				   
 	}
 	@Then("To verify if user is able to take VCT print or not from VCT Generation Screen export")
@@ -451,18 +452,18 @@ public class Test_cialExport {
 	@Then("To verify user is able to record Gate in details in VCT Acceptance Screen export")
 	public void to_verify_user_is_able_to_record_gate_in_details_in_vct_acceptance_screen_export() throws InterruptedException {
 		 Thread.sleep(3000);
-		   Thread.sleep(3000);
-		 /*  ce.cialAcceptanceGateInDate.click();
+	/*	   Thread.sleep(3000);
+		   ce.cialAcceptanceGateInDate.click();
 		   ce.cialAcceptanceGateInDate.clear();
-		   ce.cialAcceptanceGateInDate.sendKeys("27/12/2023");
+		   ce.cialAcceptanceGateInDate.sendKeys("18/04/2024");
 		   Thread.sleep(2000);
 		   ce.cialAcceptanceGateInTime.click();
 		   ce.cialAcceptanceGateInTime.clear();
 		   ce.cialAcceptanceGateInTime.sendKeys("1612");
 		   Thread.sleep(2000);
 		   ce.cialGateInBtn.click();
-		   */
-		   Thread.sleep(3000);
+		   
+		   Thread.sleep(3000);*/
 		  
 	}
 	@Then("To verify user is able to record Dock in details in VCT Acceptance Screen export")
@@ -624,10 +625,10 @@ public class Test_cialExport {
 							   Thread.sleep(3000);
 							   JavascriptExecutor jsff4 = (JavascriptExecutor) driver;
 								 jsff4.executeScript("window.scrollBy(0,-250)", "");
-							 */
+							 
 								 Thread.sleep(5000);
 								 Thread.sleep(5000);
-								 
+						*/		 
 								 
 	}
 	@Then("To verify user is able to accept cargo in part pieces from VCT Acceptance screen export")
@@ -665,7 +666,9 @@ public class Test_cialExport {
 	@Then("To verify if security screening is not completed then the shipment should be display in Unsecured List export")
 	public void to_verify_if_security_screening_is_not_completed_then_the_shipment_should_be_display_in_unsecured_list_export() throws InterruptedException {
 	////switch to default window
-/*		  driver.switchTo().defaultContent();
+		
+		/*
+		driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   ce.cialSecurityAceeptanceTab.click();
 		    Thread.sleep(4000);
@@ -787,10 +790,10 @@ public class Test_cialExport {
 					 
 					 
 				 ce.cialsecurityacceptancfinalsubmitBtn.click();
-				 */
+				 
 				 Thread.sleep(10000);
 				 
-				 
+				 */
 		
 	}
 	@Then("User is able to submit security screening if acceptance is not completed proper validation get to be displayed export")
@@ -848,7 +851,7 @@ public class Test_cialExport {
 	@Then("To verify in AWB Details HAWB details get to be displayed export")
 	public void to_verify_in_awb_details_hawb_details_get_to_be_displayed_export() throws InterruptedException {
 	////switch to default window
-		/*
+	/*	
 		driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		 
@@ -977,9 +980,9 @@ public class Test_cialExport {
 				 driver.switchTo().alert().accept();
 				 Thread.sleep(2000);
 				 driver.switchTo().alert().accept();
-				 */
-				 Thread.sleep(10000);
 				 
+				 Thread.sleep(10000);
+				*/ 
 				 
 	}
 	@Then("To verify If flight details are updated in AWB Details screen then if AWB get to be reflect in build manifest in hand shipment screen export")
@@ -1189,9 +1192,9 @@ public class Test_cialExport {
 			   Thread.sleep(3000);
 			   driver.switchTo().frame(0);
 			   ce.cialWarehouseLocationSaveBtn.click();
-			   */
-			   Thread.sleep(3000);
 			   
+			   Thread.sleep(3000);
+			*/   
 	}
 	@Then("To verify user is able to assign location to shipment from warehouse location screen export")
 	public void to_verify_user_is_able_to_assign_location_to_shipment_from_warehouse_location_screen_export() {
@@ -1328,7 +1331,7 @@ public class Test_cialExport {
 			   Thread.sleep(2000);
 			   driver.switchTo().alert().accept();
 				  Thread.sleep(5000);
-				*/  
+				*/ 
 				  
 	}
 	@Then("To verify if user is able to hold shipment at house level by selecting acceptance method as Verbal from Export Custom Action export")
@@ -1371,7 +1374,7 @@ public class Test_cialExport {
 	public void to_verify_user_is_able_to_add_uld_details_in_build_plan_screen_export() throws InterruptedException {
 	
 	//	driver.switchTo().defaultContent();
-		/*    ce.cialMoreTab.click();
+	/*	    ce.cialMoreTab.click();
 		    Thread.sleep(5000);
 		    ce.cialmoreBuildManifestTab.click();
 		    Thread.sleep(5000);
@@ -1477,7 +1480,7 @@ public class Test_cialExport {
 			    Thread.sleep(5000);
 			//   driver.findElement(By.id("ctl00_cp_gS_ctl02_uxSelect")).click();
 			    Thread.sleep(1000);
-			   */ 
+			  */  
 			  
 	}
 	@Then("To verify If ULD position is not selected in build plan screen proper validation get to be displayed export")

@@ -21,6 +21,130 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.cucumber.java.en.When;
 public class Import_test {
+
+
+	@Then("Cial Import flow  to finalize the flight")
+	public void cial_import_flow_to_finalize_the_flight() throws InterruptedException {
+		 ce.cialIMPORTtab.click();
+		    Thread.sleep(3000);
+		   
+		   ce.cialIMPORTimportmanifest.click();
+		    Thread.sleep(3000);
+		   
+			   driver.switchTo().frame(0);
+			   Thread.sleep(3000);
+			   
+			   ce.cialIMPORTflightsearchICON.click();
+			// It will return the parent window name as a String
+			   String parent1=driver.getWindowHandle();
+
+			   Set<String>s1=driver.getWindowHandles();
+
+			   // Now iterate using Iterator
+			   Iterator<String> I1= s1.iterator();
+
+			   while(I1.hasNext())
+			   {
+
+			   String child_window=I1.next();
+
+
+			   if(!parent1.equals(child_window))
+			   {
+			   driver.switchTo().window(child_window);
+			   Thread.sleep(4000);
+			   System.out.println(driver.switchTo().window(child_window));
+			//   ce.cialIMPORTflightselect1.click();
+			   ce.cialIMPORTflightselect2.click();
+			 //  ce.cialIMPORTmanifest3rdFlightSElect.click();
+			   Thread.sleep(2000);
+			 //  driver.close();
+			   
+			   }
+
+			   }
+			   //switch to the parent window
+			  driver.switchTo().window(parent1);
+			   Thread.sleep(3000);
+			   driver.switchTo().frame(0);
+			   Thread.sleep(3000);
+			 
+			   ce.cialIMPORTuldTYPE.click();
+			   
+			   ce.cialIMPORTuldTYPE.sendKeys("AAF");
+			   ce.cialIMPORTuldTYPE.sendKeys(Keys.ARROW_DOWN);;
+			   ce.cialIMPORTuldTYPE.sendKeys(Keys.ENTER);;
+			   Thread.sleep(5000);
+			   ce.cialIMPORT_ULDnumber.sendKeys("18041");
+			   Thread.sleep(3000);
+			   ce.cialIMPORT_carriershort.sendKeys("BA");
+			   Thread.sleep(3000);
+			   ce.cialIMPORT_carriershort.sendKeys(Keys.ARROW_DOWN);;
+			   ce.cialIMPORT_carriershort.sendKeys(Keys.ENTER);;
+			   Thread.sleep(3000);
+			   ce.cialIMPORTadduldbtn.click();
+			   Thread.sleep(3000);
+			   ce.cialIMPORTaddedULDselect.click();
+			   Thread.sleep(3000);
+			// It will return the parent window name as a String
+			   String parent2=driver.getWindowHandle();
+
+			   Set<String>s2=driver.getWindowHandles();
+
+			   // Now iterate using Iterator
+			   Iterator<String> I2= s2.iterator();
+
+			   while(I2.hasNext())
+			   {
+
+			   String child_window=I2.next();
+
+
+			   if(!parent2.equals(child_window))
+			   {
+			   driver.switchTo().window(child_window);
+			   Thread.sleep(4000);
+			   System.out.println(driver.switchTo().window(child_window));
+			   ce.cialIMPORTaddedULDflightPREFIX.click();
+			   ce.cialIMPORTaddedULDflightPREFIX.sendKeys("125");
+			   Thread.sleep(2000);
+			   
+			   ce.cialIMPORTaddedULDawbNUM.sendKeys("18042415");
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedULDdestination.click();
+			   ce.cialIMPORTaddedULDdestination.sendKeys("DXB");
+			   Thread.sleep(2000);
+			   ce.cialIMPORTconsoleTIK.click();
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedULDnatureofGOODS.click();
+			   ce.cialIMPORTaddedULDnatureofGOODS.sendKeys("CONSOLIDATION");
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedULDnpx.click();
+			   ce.cialIMPORTaddedULDnpx.sendKeys("45");
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedUldnpxwt.click();
+			   ce.cialIMPORTaddedUldnpxwt.sendKeys("4500");
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedULDchargebleWT.click();
+			   ce.cialIMPORTaddedULDchargebleWT.sendKeys("6000");
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedULDconsignee.click();
+			   Thread.sleep(2000);
+			   ce.cialIMPORTaddedULDconsignee.sendKeys("FLY DUBAI[71]");
+			   ce.cialIMPORTaddedULDconsignee.sendKeys(Keys.ARROW_DOWN);;
+			   ce.cialIMPORTaddedULDconsignee.sendKeys(Keys.ENTER);;
+			   Thread.sleep(2000);  }
+
+			   }
+	}
+
+
+
+	
+	
+	
+	
+	
 	
 	@Then("Cial Import flow")
 	public void cial_import_flow() throws InterruptedException {
@@ -53,8 +177,8 @@ public class Import_test {
 			   driver.switchTo().window(child_window);
 			   Thread.sleep(4000);
 			   System.out.println(driver.switchTo().window(child_window));
-			   ce.cialIMPORTflightselect1.click();
-			//   ce.cialIMPORTflightselect2.click();
+			//   ce.cialIMPORTflightselect1.click();
+			   ce.cialIMPORTflightselect2.click();
 			 //  ce.cialIMPORTmanifest3rdFlightSElect.click();
 			   Thread.sleep(2000);
 			 //  driver.close();
@@ -73,11 +197,11 @@ public class Import_test {
 			   ce.cialIMPORTuldTYPE.sendKeys("AAF");
 			   ce.cialIMPORTuldTYPE.sendKeys(Keys.ARROW_DOWN);;
 			   ce.cialIMPORTuldTYPE.sendKeys(Keys.ENTER);;
-			   Thread.sleep(2000);
-			   ce.cialIMPORT_ULDnumber.sendKeys("38975");
-			   Thread.sleep(2000);
+			   Thread.sleep(5000);
+			   ce.cialIMPORT_ULDnumber.sendKeys("18041");
+			   Thread.sleep(3000);
 			   ce.cialIMPORT_carriershort.sendKeys("BA");
-			   Thread.sleep(2000);
+			   Thread.sleep(3000);
 			   ce.cialIMPORT_carriershort.sendKeys(Keys.ARROW_DOWN);;
 			   ce.cialIMPORT_carriershort.sendKeys(Keys.ENTER);;
 			   Thread.sleep(3000);
@@ -108,7 +232,7 @@ public class Import_test {
 			   ce.cialIMPORTaddedULDflightPREFIX.sendKeys("125");
 			   Thread.sleep(2000);
 			   
-			   ce.cialIMPORTaddedULDawbNUM.sendKeys("26062013");
+			   ce.cialIMPORTaddedULDawbNUM.sendKeys("18042415");
 			   Thread.sleep(2000);
 			   ce.cialIMPORTaddedULDdestination.click();
 			   ce.cialIMPORTaddedULDdestination.sendKeys("DXB");
@@ -133,7 +257,7 @@ public class Import_test {
 			   ce.cialIMPORTaddedULDconsignee.sendKeys(Keys.ARROW_DOWN);;
 			   ce.cialIMPORTaddedULDconsignee.sendKeys(Keys.ENTER);;
 			   Thread.sleep(2000);
-			   ce.cialIMPORTaddbtn.click();
+		/*	   ce.cialIMPORTaddbtn.click();
 			   Thread.sleep(2000);
 			   ce.cialIMPORT2ndprefix.click();
 			   ce.cialIMPORT2ndprefix.sendKeys("125");
@@ -162,7 +286,7 @@ public class Import_test {
 			   Thread.sleep(2000);
 			   ce.cialIMPORT2ndconsignee.sendKeys("Balkan Cargo[72]");
 			   ce.cialIMPORT2ndconsignee.sendKeys(Keys.ARROW_DOWN);;
-			   ce.cialIMPORT2ndconsignee.sendKeys(Keys.ENTER);;
+			   ce.cialIMPORT2ndconsignee.sendKeys(Keys.ENTER);*/
 			 //  driver.close();
 			   Thread.sleep(3000);
 			   ce.cialIMPORTAddedULDsavecloseBtn.click();
@@ -186,7 +310,7 @@ public class Import_test {
 			   Thread.sleep(2000);
 			   ce.cialIMPORTataDATE.click();
 			   Thread.sleep(2000);
-			   ce.cialIMPORTataDATE.sendKeys("26/06/2023");
+			   ce.cialIMPORTataDATE.sendKeys("18/04/2024");
 			   Thread.sleep(2000);
 			   ce.cialIMPORTtime.sendKeys("0910");
 			   Thread.sleep(2000);
@@ -201,7 +325,7 @@ public class Import_test {
 			   Thread.sleep(3000);
 			//   driver.switchTo().alert().accept(); 
 			   Thread.sleep(3000);
-			  
+			 /* 
 			   ce.cialIMPORT_M_hyperlink.click();
 			   Thread.sleep(5000);
 			   String parent3=driver.getWindowHandle();
@@ -458,7 +582,7 @@ public class Import_test {
 			   Thread.sleep(3000);
 			   driver.switchTo().frame(0);
 			   Thread.sleep(2000);
-			   
+			   */
 			   ce.cialIMPORTBreakdownBtn.click();
 			   Thread.sleep(2000);
 			   String parent6=driver.getWindowHandle();

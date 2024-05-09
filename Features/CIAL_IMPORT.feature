@@ -1,7 +1,7 @@
 
-#Feature: AUTOMATION FOR CIAL IMPORT TEST CASES
- # Feature: AUTOMATION FOR NAS IMPORT TEST CASES
- Feature: AUTOMATION FOR Celebi IMPORT TEST CASES
+Feature: AUTOMATION FOR CIAL IMPORT TEST CASES
+#  Feature: AUTOMATION FOR NAS IMPORT TEST CASES
+# Feature: AUTOMATION FOR Celebi IMPORT TEST CASES
   
 Background: Launch the CIAL application and login the application
  #   When I login with "CIAL USER" user given in "Login" sheet of excel data
@@ -11,6 +11,11 @@ Background: Launch the CIAL application and login the application
    
     Then Cial Import flow 
    
+   
+    @cialImportFinalize
+  Scenario: CIAL IMPORT FLOW TO FINALIZE THE FLIGHT
+   
+    Then Cial Import flow  to finalize the flight
 
   @cialImport_all_Scenario
   Scenario:  IMPORT TEST CASES COMPLETE FLOW
