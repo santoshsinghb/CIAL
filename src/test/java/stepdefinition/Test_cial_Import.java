@@ -24,7 +24,7 @@ public class Test_cial_Import {
 
 	@Given("To verify user is able to login into the application import")
 	public void to_verify_user_is_able_to_login_into_the_application_import() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		  ce.celibiUserNameInput.click();
 		  ce.celibiUserNameInput.sendKeys("kale");
 		  Thread.sleep(3000);

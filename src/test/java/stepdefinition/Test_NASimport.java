@@ -23,15 +23,15 @@ public class Test_NASimport {
 		  Thread.sleep(3000);
 		  ce.celibiLoginBtn.click();
 		  Thread.sleep(5000);
-//		  ce.cialIMPORTtab.click();
-//		    Thread.sleep(3000);
-//		 
-//		   ce.cialIMPORTimportmanifest.click();
-//		    Thread.sleep(3000);
+		  ce.cialIMPORTtab.click();
+		    Thread.sleep(3000);
+		 
+		   ce.cialIMPORTimportmanifest.click();
+		    Thread.sleep(3000);
 	}
 	@Then("To verify user is able to navigate to Import manifest screen NAS import")
 	public void to_verify_user_is_able_to_navigate_to_import_manifest_screen_nas_import() throws InterruptedException {
-	/*	Thread.sleep(1000);
+		Thread.sleep(1000);
 		 driver.switchTo().frame(0);
 		   Thread.sleep(20000);
 		   
@@ -83,14 +83,14 @@ public class Test_NASimport {
 		   ce.cialIMPORT_carriershort.sendKeys(Keys.ENTER);;
 		   
 		   Thread.sleep(3000);
-		   ce.cialIMPORTadduldbtn.click();*/
-		   Thread.sleep(300000);
+		   ce.cialIMPORTadduldbtn.click();
+		   Thread.sleep(30000);
 	}
 	
 	@Then("To verify if user is able to add ULD awbnumber {string}, destination {string}, npx {string},npxwt {string},chargebleWT {string}   from Import Manifest screen NAS import")
 	public void to_verify_if_user_is_able_to_add_uld_awbnumber_destination_npx_npxwt_chargeble_wt_from_import_manifest_screen_nas_import(String awbnumber, String destination, String npx, String npxwt, String chargebleWT) throws InterruptedException {
 		Thread.sleep(2000);
-		/*
+		
 		ce.cialIMPORTaddedULDselect.click();
 		   Thread.sleep(3000);
 		// It will return the parent window name as a String
@@ -229,7 +229,7 @@ public class Test_NASimport {
 					   driver.switchTo().frame(0);
 					   Thread.sleep(2000);
 					   ce.FinaliseFlightImport.click(); 
-					   Thread.sleep(50000);*/
+					   Thread.sleep(50000);
 	}
 
 

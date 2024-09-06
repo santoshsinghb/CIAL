@@ -23,7 +23,7 @@ public class Test_cialExport {
 	
 	@Then("To verify if user is able to login into the application or not export")
 	public void to_verify_if_user_is_able_to_login_into_the_application_or_not_export() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		  ce.celibiUserNameInput.click();
 		  ce.celibiUserNameInput.sendKeys("kale");
 		  Thread.sleep(3000);
@@ -33,11 +33,11 @@ public class Test_cialExport {
 		  ce.celibiLoginBtn.click();
 		  Thread.sleep(5000);
 		  ce.cialExportTab.click();
-		    Thread.sleep(200000);
+		    Thread.sleep(20000);
 	}
 	@Then("To verify if user is able to create Direct Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_direct_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
-	/*
+	
 		   ce.cialVCTgenerationTab.click();
 		    Thread.sleep(3000);
 		   
@@ -53,7 +53,7 @@ public class Test_cialExport {
 				 
 				   
 		    ce.cialAWBnumberField.click();
-		    ce.cialAWBnumberField.sendKeys("12518042426");
+		    ce.cialAWBnumberField.sendKeys("12520240592");
 		    Thread.sleep(2000);
 		    ce.cialgenerationRemarkBox.click();
 		    ce.cialgenerationRemarkBox.sendKeys("THIS IS FOR AUTOMATION TESTING");
@@ -165,8 +165,9 @@ public class Test_cialExport {
 		   Thread.sleep(2000);
 		   securitydropdown.selectByVisibleText("Secured");
 		   Thread.sleep(2000);
-		   */
 		   
+		   
+		  ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);  
 	}
 	@Then("To verify if user is able to create Console Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_console_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
@@ -368,8 +369,8 @@ public class Test_cialExport {
 					  
 					  driver.switchTo().alert().accept();
 					  */
-					  Thread.sleep(5000);
-					  Thread.sleep(10000);
+//					  Thread.sleep(5000);
+//					  Thread.sleep(10000);
 					  Thread.sleep(50000);
 				   
 	}
@@ -666,8 +667,8 @@ public class Test_cialExport {
 	@Then("To verify if security screening is not completed then the shipment should be display in Unsecured List export")
 	public void to_verify_if_security_screening_is_not_completed_then_the_shipment_should_be_display_in_unsecured_list_export() throws InterruptedException {
 	////switch to default window
-		
 		/*
+		
 		driver.switchTo().defaultContent();
 		   Thread.sleep(3000);
 		   ce.cialSecurityAceeptanceTab.click();
@@ -792,8 +793,8 @@ public class Test_cialExport {
 				 ce.cialsecurityacceptancfinalsubmitBtn.click();
 				 
 				 Thread.sleep(10000);
-				 
 				 */
+				 
 		
 	}
 	@Then("User is able to submit security screening if acceptance is not completed proper validation get to be displayed export")

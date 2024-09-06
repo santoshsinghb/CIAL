@@ -33,7 +33,7 @@ public class NAS_export {
 		  ce.celibiPasswordInput.sendKeys("Kale@123");
 		  Thread.sleep(3000);
 		  ce.celibiLoginBtn.click();
-		  Thread.sleep(5000);
+		  Thread.sleep(50000);
 		  ce.cialExportTab.click();
 		    Thread.sleep(2000);
 	}
@@ -212,7 +212,7 @@ public class NAS_export {
 					   ce.cialAcceptanceGateInDate.click();
 					   ce.cialAcceptanceGateInDate.clear();
 					   ///----------------------------------------------------------------------------------date---------------
-					   ce.cialAcceptanceGateInDate.sendKeys("26/04/2024");
+					   ce.cialAcceptanceGateInDate.sendKeys("21/05/2024");
 					   Thread.sleep(2000);
 					   ce.cialAcceptanceGateInTime.click();
 					   ce.cialAcceptanceGateInTime.clear();
@@ -278,7 +278,7 @@ public class NAS_export {
 									   Thread.sleep(1000);
 									///////////////////////////////////////////////////////////////////////AWBnumber------------   
 									   ce.cialsecurityacceptanceAWBnumfield.click();
-									   ce.cialsecurityacceptanceAWBnumfield.sendKeys("20240544");
+									   ce.cialsecurityacceptanceAWBnumfield.sendKeys("20249622");
 									   Thread.sleep(1000);
 									   ce.cialsecurityacceptanceHousenum.click();
 									   ce.cialsecurityacceptanceHousenum.sendKeys("");
@@ -327,10 +327,10 @@ public class NAS_export {
 								 Thread.sleep(10000);
 											 
 								 
-									driver.switchTo().defaultContent();
+									driver.switchTo().defaultContent();   
 									   Thread.sleep(3000);
 	///AWB DETAILS TAB start here----------------------------------------------------------------------------------------								 
-					/*				 ce.cialAWB_DetailsTab.click();
+									 ce.cialAWB_DetailsTab.click();
 									    Thread.sleep(3000);
 									    driver.switchTo().frame(0);
 										   Thread.sleep(3000);
@@ -340,7 +340,7 @@ public class NAS_export {
 									    Thread.sleep(1000);
 									    ////////////////////////////////////////////------------------awb-----------------
 									    ce.cialAWBdetailsawbentryfield.click();
-									    ce.cialAWBdetailsawbentryfield.sendKeys("20240496");
+									    ce.cialAWBdetailsawbentryfield.sendKeys("20249622");
 									    ce.cialAWBdetailsawbentryfield.sendKeys(Keys.ENTER);
 									    Thread.sleep(3000);
 									   
@@ -442,7 +442,7 @@ public class NAS_export {
 												   ///////////////////////////////////////////////////AWBnumber
 												   ce.documentaccptanceAWBNum.click();
 												   Thread.sleep(1000);
-												   ce.documentaccptanceAWBNum.sendKeys("20240496");
+												   ce.documentaccptanceAWBNum.sendKeys("20249622");
 												   Thread.sleep(1000);
 												   ce.documentaccptanceAWBNumSearchButton.click();
 												   Thread.sleep(3000);
@@ -456,7 +456,7 @@ public class NAS_export {
 										 Thread.sleep(1000);
 										 ce.documentaccptanceDocumenttxtDescription1.click(); Thread.sleep(1000);
 										 ce.documentaccptanceDocumenttxtDescription1.sendKeys("DocumentUpload1");; Thread.sleep(1000);
-										 ce.documentaccptanceDocumentUpload1ST.sendKeys("C:\\Users\\Gaurav.Abhishek\\Downloads\\Report.pdf");Thread.sleep(2000);
+										 ce.documentaccptanceDocumentUpload1ST.sendKeys("D:\\CIALproject\\CIALgithub\\CIAL\\Report.pdf");Thread.sleep(2000);
 										 ce.documentaccptanceDocumentUploadbutton.click();Thread.sleep(3000);
 										 ce.btnAcceptDocument.click();Thread.sleep(3000);
 ///////////warehouse flow start from here------------------------------------------------------------------------
@@ -474,7 +474,7 @@ public class NAS_export {
 											   Thread.sleep(2000);
 											  //------------------------------------------------------------AWBnumber-------- 
 											   ce.cialWarehouseLocationAWBnumfield.click();
-											   ce.cialWarehouseLocationAWBnumfield.sendKeys("20240496");
+											   ce.cialWarehouseLocationAWBnumfield.sendKeys("20249622");
 											   Thread.sleep(2000);
 											   ce.cialWarehouseLocationHAWBnumfield.click();
 											   ce.cialWarehouseLocationHAWBnumfield.sendKeys("");
@@ -483,7 +483,7 @@ public class NAS_export {
 											   Thread.sleep(2000);
 											  ///--------------------------------------------------------------gruopid-------- 
 											   ce.cialWarehouseLocationGroupId.click();
-											   ce.cialWarehouseLocationGroupId.sendKeys("20242547");
+											   ce.cialWarehouseLocationGroupId.sendKeys("20242548");
 											   Thread.sleep(2000);
 											   ce.cialWarehouseLocation_locationsearchicon.click();
 											   Thread.sleep(2000);
@@ -531,7 +531,7 @@ public class NAS_export {
 											   Thread.sleep(3000);
 //										
 //											   ce.cialMoreTab.click();
-//											    Thread.sleep(5000);			*/				   								 
+//											    Thread.sleep(5000);							   								 
 								
 	}
 
@@ -547,7 +547,7 @@ public class NAS_export {
 	@Then("To verify if user is able to take VCT print or not from VCT Generation Screen NAS export")
 	public void to_verify_if_user_is_able_to_take_vct_print_or_not_from_vct_generation_screen_nas_export() throws AWTException, InterruptedException {
 //		driver.switchTo().defaultContent();
-	/*    ce.cialMoreTab.click();
+	    ce.cialMoreTab.click();
 	    Thread.sleep(5000);
 	    ce.cialmoreBuildManifestTab.click();
 	    Thread.sleep(5000);
@@ -592,7 +592,7 @@ public class NAS_export {
 		   ce.cialmoreBuildManifestULDprefixfield.sendKeys(Keys.ENTER);
 		   Thread.sleep(3000);
 		   ce.cialmoreBuildManifestULDnumfield.click();
-		   ce.cialmoreBuildManifestULDnumfield.sendKeys("201005");
+		   ce.cialmoreBuildManifestULDnumfield.sendKeys("201008");
 		   ce.cialmoreBuildManifestflightname.sendKeys("AI");
 		   Thread.sleep(3000);
 		   Select ULDdrpDown1 = new Select(driver.findElement(By.name("ctl00$ContentPlaceHolder1$uxdrpAircraftPosition")));
@@ -624,7 +624,7 @@ public class NAS_export {
 		    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).clear();
 		    Thread.sleep(1000);
 		    //////////////////////////////////////////////////////////////////////////////////////////awb-----------
-		    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("20240496");
+		    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("20249622");
 		    Thread.sleep(1000);
 		    driver.findElement(By.id("ctl00_cp_uxSearch")).click();
 		    Thread.sleep(3000);
@@ -812,12 +812,12 @@ public class NAS_export {
 					   //switch to the parent window
 					  driver.switchTo().window(parentBM2);
 					   Thread.sleep(3000);
-					   driver.switchTo().frame(0); */
+					   driver.switchTo().frame(0); 
 				    
 	}
 	@Then("To verify if user is able to search VCT no. or not from  VCT Generation Screen NAS export")
 	public void to_verify_if_user_is_able_to_search_vct_no_or_not_from_vct_generation_screen_nas_export() throws AWTException, InterruptedException {
-	/*	  driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("25042002");
+		  driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("25042002");
 		    Thread.sleep(3000);
 		   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxAircraftReg")).sendKeys("9080");
 		    Thread.sleep(1000);
@@ -831,7 +831,7 @@ public class NAS_export {
 		    Thread.sleep(1000);
 		    ce.FinaliseFlight.click();
 		    Thread.sleep(10000);
-		    */
+		    
 	}
 	@Then("To verify if user is able to search with Invalid VCT no in VCT Generation screen  proper validation message is displayed or not NAS export")
 	public void to_verify_if_user_is_able_to_search_with_invalid_vct_no_in_vct_generation_screen_proper_validation_message_is_displayed_or_not_nas_export() {

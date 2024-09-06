@@ -123,6 +123,8 @@ Background: Launch the  application and login the application
   
    Examples: 
       |AWBnumber  |AWBnpx|AWBwt|origin|destination|
-      |12520240544| 20   | 100 |cok   |dxb        |
+      |12520249622| 20   | 100 |cok   |dxb        |
       
-  
+  #
+  #20249633
+  #20249644

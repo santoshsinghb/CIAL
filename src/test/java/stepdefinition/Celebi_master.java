@@ -596,7 +596,7 @@ public class Celebi_master {
 		  driver.switchTo().frame(0);
 		  driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div[2]/div/fieldset/div/div[2]/div[1]/div/div[1]/div/table/tbody/tr[2]/td[4]")).click();;
 		  Thread.sleep(2000);
-		  ce.celibieditbtn.click();
+		/*  ce.celibieditbtn.click();
 		  Thread.sleep(2000);
 		  JavascriptExecutor js = (JavascriptExecutor) driver;
 		  WebElement flag= driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$btnTaxdetails"));
@@ -604,7 +604,7 @@ public class Celebi_master {
 		  Thread.sleep(3000);
 		  driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$btnTaxdetails")).click();;
 		  Thread.sleep(2000);
-		  /*
+		  
 		  String parent=driver.getWindowHandle();
 
 		   Set<String>s=driver.getWindowHandles();
