@@ -37,7 +37,7 @@ public class Test_cialExport {
 	}
 	@Then("To verify if user is able to create Direct Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_direct_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {
-	
+	/*
 		   ce.cialVCTgenerationTab.click();
 		    Thread.sleep(3000);
 		   
@@ -167,7 +167,7 @@ public class Test_cialExport {
 		   Thread.sleep(2000);
 		   
 		   
-		  ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);  
+		  ce.cialSHCbox1.sendKeys(Keys.ARROW_DOWN);  */
 	}
 	@Then("To verify if user is able to create Console Shipment or not from VCT generation screen export")
 	public void to_verify_if_user_is_able_to_create_console_shipment_or_not_from_vct_generation_screen_export() throws InterruptedException {

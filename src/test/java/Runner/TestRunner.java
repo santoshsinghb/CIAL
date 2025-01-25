@@ -13,9 +13,9 @@ import io.cucumber.junit.CucumberOptions;
 	                		 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	                		 "rerun:Rerun/rerun1.txt" },
 	                 		
-	                tags ="@NAS_EXPORT_directShipment_ALL_Scenario")
-	       //        tags ="@NASImport_all_Scenario")
-	
+	             tags ="@NAS_EXPORT_directShipment_ALL_Scenario")
+	      //         tags ="@NASImport_all_Scenario")
+	      //           tags ="@CELEBIRUNIST")
 	
 
 public class TestRunner {

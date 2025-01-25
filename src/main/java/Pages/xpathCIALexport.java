@@ -1429,4 +1429,19 @@ public class xpathCIALexport extends Pages.BasePage {
 	
 	@FindBy(xpath = "")
 	public WebElement celibi7011;
+	
+	public String MAWBGenerate(){
+		  int min = 1000001; 
+	      int max = 9999999;
+	      //System.out.println("Random value in int from "+ min + " to " + max + ":");
+	      int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min);
+	      System.out.println("number ="+random_int);
+	      int mod =random_int%7;
+	      System.out.println("mod");
+	      String s1 = Integer.toString(random_int);
+	      String s2 = Integer.toString(mod);
+	      String mawb= s1+s2;  
+	      System.out.println("mawb no="+mawb);
+	        return mawb;
+	}
 }

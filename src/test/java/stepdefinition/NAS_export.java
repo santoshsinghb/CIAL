@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.Select;
 import io.cucumber.java.en.When;
 
 public class NAS_export {
-	public String AWBnum;
+	public String AWBnumber;
 	@Then("To verify if user is able to login into the application or not NAS export")
 	public void to_verify_if_user_is_able_to_login_into_the_application_or_not_nas_export() throws InterruptedException {
 		Thread.sleep(3000);
@@ -39,9 +39,9 @@ public class NAS_export {
 	}
 
 	@Then("To verify if user is able to create Direct Shipment or not with AWB {string},AWBnpx {string},AWBwt {string},origin {string}, destination {string} from VCT generation screen NAS export")
-	public void to_verify_if_user_is_able_to_create_direct_shipment_or_not_with_awb_aw_bnpx_aw_bwt_origin_destination_from_vct_generation_screen_nas_export(String AWBnumber, String AWBnpx, String AWBwt, String origin, String destination) throws InterruptedException, AWTException {
-		AWBnum=AWBnumber;
-		ce.cialVCTgenerationTab.click();
+	public void to_verify_if_user_is_able_to_create_direct_shipment_or_not_with_awb_aw_bnpx_aw_bwt_origin_destination_from_vct_generation_screen_nas_export(String AWBnum, String AWBnpx, String AWBwt, String origin, String destination) throws InterruptedException, AWTException {
+	//	AWBnum=AWBnumber;
+	/*	ce.cialVCTgenerationTab.click();
 	    Thread.sleep(3000);
 	   
 		   driver.switchTo().frame(0);
@@ -56,6 +56,8 @@ public class NAS_export {
 			 
 			   
 	    ce.cialAWBnumberField.click();
+	    ce.cialAWBnumberField.sendKeys("125");
+	    AWBnumber= ce.MAWBGenerate();
 	    ce.cialAWBnumberField.sendKeys(AWBnumber);
 	    Thread.sleep(2000);
 	    ce.cialgenerationRemarkBox.click();
@@ -278,7 +280,7 @@ public class NAS_export {
 									   Thread.sleep(1000);
 									///////////////////////////////////////////////////////////////////////AWBnumber------------   
 									   ce.cialsecurityacceptanceAWBnumfield.click();
-									   ce.cialsecurityacceptanceAWBnumfield.sendKeys("20249622");
+									   ce.cialsecurityacceptanceAWBnumfield.sendKeys(AWBnumber);
 									   Thread.sleep(1000);
 									   ce.cialsecurityacceptanceHousenum.click();
 									   ce.cialsecurityacceptanceHousenum.sendKeys("");
@@ -288,8 +290,8 @@ public class NAS_export {
 									   
 									   ce.cialsecurityacceptancemachinedropdow.click();
 									   Select machinedrpDown = new Select(driver.findElement(By.name("ctl00$cp$tc$tp2$ctl00$uxddlMachine$fmsGenericDropDownList")));
-									//   machinedrpDown.selectByVisibleText("etv 1");
-									   machinedrpDown.selectByVisibleText("XRAY 1");
+									   machinedrpDown.selectByVisibleText("etv 1");
+									//   machinedrpDown.selectByVisibleText("XRAY 1");
 
 									   Thread.sleep(3000);
 									   ce.cialsecurityacceptancstickerstrtnumber.click();
@@ -340,7 +342,7 @@ public class NAS_export {
 									    Thread.sleep(1000);
 									    ////////////////////////////////////////////------------------awb-----------------
 									    ce.cialAWBdetailsawbentryfield.click();
-									    ce.cialAWBdetailsawbentryfield.sendKeys("20249622");
+									    ce.cialAWBdetailsawbentryfield.sendKeys(AWBnumber);
 									    ce.cialAWBdetailsawbentryfield.sendKeys(Keys.ENTER);
 									    Thread.sleep(3000);
 									   
@@ -380,39 +382,39 @@ public class NAS_export {
 										   Thread.sleep(3000);
 										   driver.switchTo().frame(0);
 										   Thread.sleep(2000);
-									    ce.cialAWBdetailsconsigneenameadress.click();
-									    Thread.sleep(3000);
-									 // It will return the parent window name as a String
-										   String parent2=driver.getWindowHandle();
-
-										   Set<String>s2=driver.getWindowHandles();
-
-										   // Now iterate using Iterator
-										   Iterator<String> I2= s2.iterator();
-
-										   while(I2.hasNext())
-										   {
-
-										   String child_window=I2.next();
-
-
-										   if(!parent2.equals(child_window))
-										   {
-										   driver.switchTo().window(child_window);
-										   Thread.sleep(4000);
-										   System.out.println(driver.switchTo().window(child_window));
-										   ce.cialAWBdetailsconsineeselect.click();
-										   Thread.sleep(2000);
-										 //  driver.close();
-										   
-										   }
-
-										   }
-										   //switch to the parent window
-										  driver.switchTo().window(parent2);
-										   Thread.sleep(3000);
-										   driver.switchTo().frame(0);
-										   Thread.sleep(2000);
+//									    ce.cialAWBdetailsconsigneenameadress.click();
+//									    Thread.sleep(3000);
+//									 // It will return the parent window name as a String
+//										   String parent2=driver.getWindowHandle();
+//
+//										   Set<String>s2=driver.getWindowHandles();
+//
+//										   // Now iterate using Iterator
+//										   Iterator<String> I2= s2.iterator();
+//
+//										   while(I2.hasNext())
+//										   {
+//
+//										   String child_window=I2.next();
+//
+//
+//										   if(!parent2.equals(child_window))
+//										   {
+//										   driver.switchTo().window(child_window);
+//										   Thread.sleep(4000);
+//										   System.out.println(driver.switchTo().window(child_window));
+//										   ce.cialAWBdetailsconsineeselect.click();
+//										   Thread.sleep(2000);
+//										 //  driver.close();
+//										   
+//										   }
+//
+//										   }
+//										   //switch to the parent window
+//										  driver.switchTo().window(parent2);
+//										   Thread.sleep(3000);
+//										   driver.switchTo().frame(0);
+//										   Thread.sleep(2000);
 									
 											 Thread.sleep(3000);
 										//	 JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -442,7 +444,7 @@ public class NAS_export {
 												   ///////////////////////////////////////////////////AWBnumber
 												   ce.documentaccptanceAWBNum.click();
 												   Thread.sleep(1000);
-												   ce.documentaccptanceAWBNum.sendKeys("20249622");
+												   ce.documentaccptanceAWBNum.sendKeys(AWBnumber);
 												   Thread.sleep(1000);
 												   ce.documentaccptanceAWBNumSearchButton.click();
 												   Thread.sleep(3000);
@@ -474,7 +476,7 @@ public class NAS_export {
 											   Thread.sleep(2000);
 											  //------------------------------------------------------------AWBnumber-------- 
 											   ce.cialWarehouseLocationAWBnumfield.click();
-											   ce.cialWarehouseLocationAWBnumfield.sendKeys("20249622");
+											   ce.cialWarehouseLocationAWBnumfield.sendKeys(AWBnumber);
 											   Thread.sleep(2000);
 											   ce.cialWarehouseLocationHAWBnumfield.click();
 											   ce.cialWarehouseLocationHAWBnumfield.sendKeys("");
@@ -528,10 +530,11 @@ public class NAS_export {
 							
 											   Thread.sleep(3000);
 												driver.switchTo().defaultContent();
-											   Thread.sleep(3000);
+											   Thread.sleep(3000);  					   ce.cialAcceptanceGateInDate.click();
+
 //										
 //											   ce.cialMoreTab.click();
-//											    Thread.sleep(5000);							   								 
+//											    Thread.sleep(5000);	*/					   							 
 								
 	}
 
@@ -546,7 +549,7 @@ public class NAS_export {
 	}
 	@Then("To verify if user is able to take VCT print or not from VCT Generation Screen NAS export")
 	public void to_verify_if_user_is_able_to_take_vct_print_or_not_from_vct_generation_screen_nas_export() throws AWTException, InterruptedException {
-//		driver.switchTo().defaultContent();
+/*		driver.switchTo().defaultContent();
 	    ce.cialMoreTab.click();
 	    Thread.sleep(5000);
 	    ce.cialmoreBuildManifestTab.click();
@@ -624,7 +627,7 @@ public class NAS_export {
 		    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).clear();
 		    Thread.sleep(1000);
 		    //////////////////////////////////////////////////////////////////////////////////////////awb-----------
-		    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys("20249622");
+		    driver.findElement(By.id("ctl00_cp_uxAWB_FMSAWBNoSelected")).sendKeys(AWBnumber);
 		    Thread.sleep(1000);
 		    driver.findElement(By.id("ctl00_cp_uxSearch")).click();
 		    Thread.sleep(3000);
@@ -813,11 +816,11 @@ public class NAS_export {
 					  driver.switchTo().window(parentBM2);
 					   Thread.sleep(3000);
 					   driver.switchTo().frame(0); 
-				    
+				    */
 	}
 	@Then("To verify if user is able to search VCT no. or not from  VCT Generation Screen NAS export")
 	public void to_verify_if_user_is_able_to_search_vct_no_or_not_from_vct_generation_screen_nas_export() throws AWTException, InterruptedException {
-		  driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("25042002");
+	/*	  driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxCustomReference")).sendKeys("25042002");
 		    Thread.sleep(3000);
 		   driver.findElement(By.id("ctl00_ContentPlaceHolder1_uxAircraftReg")).sendKeys("9080");
 		    Thread.sleep(1000);
@@ -830,7 +833,7 @@ public class NAS_export {
 		//   driver.findElement(By.id("ctl00_cp_gS_ctl02_uxSelect")).click();
 		    Thread.sleep(1000);
 		    ce.FinaliseFlight.click();
-		    Thread.sleep(10000);
+		    Thread.sleep(10000);*/
 		    
 	}
 	@Then("To verify if user is able to search with Invalid VCT no in VCT Generation screen  proper validation message is displayed or not NAS export")

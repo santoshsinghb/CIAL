@@ -1,20 +1,19 @@
 Feature: AUTOMATION FOR NAS EXPORT all Scenario TEST CASES
 
-Background: Launch the  application and login the application
+  Background: Launch the  application and login the application
 
- @NAS_EXPORT_directShipment_ALL_Scenario
- Scenario Outline: To verify user is able to create DIRECT  Shipment,able to accept cargo,able to submit security screening,to verify in AWB Details for  Export
-  
-   Then To verify if user is able to login into the application or not NAS export
- # #  Then To verify if user is able to create Direct Shipment or not from VCT generation screen NAS export
-    Then To verify if user is able to create Direct Shipment or not with AWB "<AWBnumber>",AWBnpx "<AWBnpx>",AWBwt "<AWBwt>",origin "<origin>", destination "<destination>" from VCT generation screen NAS export
-##   Then To verify if user is able to create Console Shipment or not from VCT generation screen NAS export
+  @NAS_EXPORT_directShipment_ALL_Scenario
+  Scenario Outline: To verify user is able to create DIRECT  Shipment,able to accept cargo,able to submit security screening,to verify in AWB Details for  Export
+    Then To verify if user is able to login into the application or not NAS export
+    # #  Then To verify if user is able to create Direct Shipment or not from VCT generation screen NAS export
+    Then To verify if user is able to create Direct Shipment or not with AWB "<AWBnum>",AWBnpx "<AWBnpx>",AWBwt "<AWBwt>",origin "<origin>", destination "<destination>" from VCT generation screen NAS export
+    ##   Then To verify if user is able to create Console Shipment or not from VCT generation screen NAS export
     Then To verify if user is able to take VCT print or not from VCT Generation Screen NAS export
     Then To verify if user is able to search VCT no. or not from  VCT Generation Screen NAS export
     Then To verify if user is able to search with Invalid VCT no in VCT Generation screen  proper validation message is displayed or not NAS export
     Then To verify if user is able to generate one VCT for multiple Shipment from VCT generation screen NAS export
     Then To verify if user is able to delete AWB details from VCT Generation screen NAS export
-   Then To verify if user is able to take VCT Ticket Print from VCT Generation screen NAS export
+    Then To verify if user is able to take VCT Ticket Print from VCT Generation screen NAS export
     Then To verify if user is able to create VCT with security status as Non-Secured (Ex) from VCT Generation screen NAS export
     Then To verify if user is able to create VCT with security status as Secured from VCT Generation screen NAS export
     Then To verify if user is able to search with VCT no. in VCT Acceptance Screen NAS export
@@ -29,7 +28,7 @@ Background: Launch the  application and login the application
     Then To verify if system is allowing user to record  Gate-out details or not if Dock-Out detail is pending to record in VCT Acceptance screen NAS export
     Then To check system is allow or not  to do Dock-Out if cargo acceptance is pending from VCT Acceptance screen NAS export
     Then To verify if Acceptance is done then accepted Cargo details is displayed or not in accepted cargo list from VCT Acceptance NAS export
-   Then To verify user is able to complete Acceptance and process till Gate out for Direct Shipment NAS export
+    Then To verify user is able to complete Acceptance and process till Gate out for Direct Shipment NAS export
     Then To verify in VCT Acceptance as per acceptance done cargo progress bar percentage will be updated NAS export
     Then To verify if security screening is not completed then the shipment should be display in Unsecured List NAS export
     Then User is able to submit security screening if acceptance is not completed proper validation get to be displayed NAS export
@@ -47,13 +46,13 @@ Background: Launch the  application and login the application
     Then To verify in Unsecured list screening status percentage get to be reflect as per the screening status in security screening screen NAS export
     Then To verify in AWB Details HAWB details get to be displayed NAS export
     Then To verify If flight details are updated in AWB Details screen then if AWB get to be reflect in build manifest in hand shipment screen NAS export
-    Then To verify In AWB details screen if user clicks on clear then all the details get to be cleared NAS export    
+    Then To verify In AWB details screen if user clicks on clear then all the details get to be cleared NAS export
     Then To verify user is able to print label from AWB Details screen NAS export
-   Then To verify user is able to submit DG Details from AWB Details Screen NAS export
+    Then To verify user is able to submit DG Details from AWB Details Screen NAS export
     Then To verify If DG details are saved then in AWB details screen red border get to be displayed for the AWB NAS export
-   Then To verify user is able to click on Damage button and Pop-up screen get to be displayed NAS export
+    Then To verify user is able to click on Damage button and Pop-up screen get to be displayed NAS export
     Then To verify In AWB details screen legend/milestone for the process done get to be updated NAS export
-   Then To verify when user click on Clear button on Document Acceptance screen entered details should be cleared NAS export
+    Then To verify when user click on Clear button on Document Acceptance screen entered details should be cleared NAS export
     Then To verify user is able to upload document in document acceptance screen NAS export
     Then To verify In Document acceptance screen uploaded document get to be display in uploaded Document list NAS export
     Then To verify user is  able to accept uploaded  document in Document acceptance screen NAS export
@@ -74,9 +73,9 @@ Background: Launch the  application and login the application
     Then To verify user is able to do Seize shipment  at house level from Export Custom Action NAS export
     Then To verify if system is allowing to manifest hold shipment to flight validation get to be be display NAS export
     Then To verify user able to seize/Clear shipment by click on Clear button in Export custom action NAS export
-   Then To verify user is able to hold shipment direct shipment by selecting acceptance method as Letter from Export custom action screen NAS export
+    Then To verify user is able to hold shipment direct shipment by selecting acceptance method as Letter from Export custom action screen NAS export
     Then To verify user is able to hold shipment direct shipment by selecting acceptance method as Verbal from Export Custom Action screen NAS export
-   Then To verify user able to Unhold shipment direct shipment from Export Custom Action NAS export
+    Then To verify user able to Unhold shipment direct shipment from Export Custom Action NAS export
     Then To verify user is able to do Seize shipment  for direct shipment from Export Custom Action Screen NAS export
     Then To verify User is able to add  ULD details in build plan screen NAS export
     Then To verify If ULD position is not selected in build plan screen proper validation get to be displayed NAS export
@@ -84,7 +83,7 @@ Background: Launch the  application and login the application
     Then To verify if user enter incorrect flight details in build manifest screen proper validation get to be displayed NAS export
     Then To verify user is able to add  ULD details in build manifest screen NAS export
     Then To verify If ULD position is not selected in build manifest screen proper validation get to be displayed NAS export
-    Then To verify user is able to  add consol shipment into flight from Build manifest screen NAS export 
+    Then To verify user is able to  add consol shipment into flight from Build manifest screen NAS export
     Then To verify user is able to view manifested consol shipment details in build manifest screen NAS export
     Then To verify user is able to add direct shipment into flight from Build manifest screen NAS export
     Then To verify user is able to view  manifested direct shipment details in build manifest screen NAS export
@@ -120,11 +119,10 @@ Background: Launch the  application and login the application
     Then To verify user is able to Re-Generate Cancelled  GP from BTT screen NAS export
     Then To verify user is able to Release the shipment in BTT screen NAS export
     Then To verify user is able to Generate and cancel GP after Release  in  BTT screen NAS export
-  
-   Examples: 
-      |AWBnumber  |AWBnpx|AWBwt|origin|destination|
-      |12520249622| 20   | 100 |cok   |dxb        |
-      
+
+    Examples: 
+      | AWBnum | AWBnpx | AWBwt | origin | destination |
+      |  10042432 |     20 |   100 | cok    | dxb         |
   #
   #20249633
   #20249644
